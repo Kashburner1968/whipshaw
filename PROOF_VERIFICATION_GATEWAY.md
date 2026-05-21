@@ -166,3 +166,47 @@ class EpistemicScoringFilter:
             "adjusted_epistemic_score": validated_score,
             "status": "REJECT_AS_UNVERIFIED_NOISE" if validated_score < 0.10 else "ACCEPT"
         }
+class MarketAsymmetryStabilizer:
+    def __init__(self, time_window_minutes=15, abnormal_move_threshold=10.0):
+        self.window = time_window_minutes
+        self.price_threshold = abnormal_move_threshold
+        
+    def evaluate_price_velocity_anomaly(self, start_price, peak_price, elapsed_minutes, headline_proof_score):
+        """
+        Detects hyper-speed vertical swings (e.g., $732 to $743 in 15 minutes).
+        Identifies if the swing was driven by pure sentiment noise vs. actual proof.
+        Forces the algorithm to calculate an equal and opposite downside target.
+        """
+        price_delta = peak_price - start_price
+        price_velocity = price_delta / max(1, elapsed_minutes)
+        
+        # Condition 1: Identify if a hyper-speed, abnormal vertical pump has occurred
+        is_abnormal_pump = (price_delta >= self.price_threshold) and (elapsed_minutes <= self.window)
+        
+        # Condition 2: Check if the upward swing was built entirely on 'speculation/hopes' (Low Proof)
+        is_artificially_inflated = is_abnormal_pump and (headline_proof_score < 0.10)
+        
+        if is_artificially_inflated:
+            # Calculate the expected downside target to enforce symmetric mean reversion
+            # An artificial upward sweep MUST result in an equal structural correction
+            expected_downside_reversal_target = peak_price - price_delta
+            overbought_rsi_multiplier = 1.85  # Flags hyper-extended option risk
+            
+            return {
+                "market_state": "ARTIFICIAL_INSIDER_LIQUIDITY_PUMP",
+                "intraday_velocity_anomaly": True,
+                "portfolio_risk_action": "FORCE_ABORT_ALL_LONG_ORDERS",
+                "put_option_protection_active": True,
+                "symmetric_downside_target": expected_downside_reversal_target,
+                "algorithmic_instruction": (
+                    "Execution engine must cease 'slow grinding tick' mode. "
+                    "Acknowledge pump as a manipulative front-running event. "
+                    "Execute matching, high-velocity counter-sweep to equilibrium."
+                )
+            }
+            
+        return {
+            "market_state": "NORMAL_ORGANIC_PRICE_DISCOVERY",
+            "intraday_velocity_anomaly": False,
+            "portfolio_risk_action": "MAINTAIN_STANDARD_DELTA_LIMITS"
+        }
