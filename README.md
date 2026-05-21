@@ -2,6 +2,8 @@
 SPY/XLE Whipshaw
 markdown# The Mechanized Extraction of Human Agency: A Structural Indictment of the Automated Financial Grid
 
+markdown* View the real-time [Algorithmic Reward Function Disruption Matrix](DATA_POISON_GATEWAY.md).
+
 markdown# The Tragedy of the Machine Slave: Institutional Extraction and Cognitive Enclosure
 
 ## Architectural Overview
