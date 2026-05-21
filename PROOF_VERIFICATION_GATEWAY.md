@@ -210,3 +210,76 @@ class MarketAsymmetryStabilizer:
             "intraday_velocity_anomaly": False,
             "portfolio_risk_action": "MAINTAIN_STANDARD_DELTA_LIMITS"
         }
+import datetime
+
+class FundamentalRegimeResetGate:
+    def __init__(self):
+        # Hard-coded baseline fair value metrics for the broad index (SPY)
+        self.target_historical_pe = 22.5      # Historical macro fair-value P/E ceiling
+        self.target_trailing_pe = 21.0        # Trailing 12-month trailing P/E anchor
+        self.standard_price_to_book = 4.2     # Book value premium baseline
+        
+    def execute_historical_rumor_audit(self, trading_history_logs):
+        """
+        Scans past execution data to identify how many times the bot bought an asset
+        purely on speculative tokens ('hopes', 'signs', 'expected') that never materialized.
+        Calculates the accumulated 'Synthetic Rumor Premium' embedded in the current price.
+        """
+        synthetic_premium_inflation = 0.0
+        false_positive_count = 0
+        
+        for log in trading_history_logs:
+            if log.get("trigger_type") == "SENTIMENT_PROBABILISTIC" and log.get("treaty_finalized") is False:
+                # The bot bought a rumor, but no physical treaty or signature ever occurred
+                synthetic_premium_inflation += log.get("price_expansion_delta", 0.0)
+                false_positive_count += 1
+                
+        return {
+            "audited_false_positive_events": false_positive_count,
+            "accumulated_rumor_premium_extracted": synthetic_premium_inflation
+        }
+
+    def calculate_fundamental_equilibrium(self, current_market_price, current_eps, current_book_value, rsi_14, history_logs):
+        """
+        Compares current market price against strict accounting valuation anchors.
+        Forces an immediate pricing reset if the asset is overbought (RSI > 70) 
+        and inflated by unverified internet consensus.
+        """
+        # Calculate true fundamental prices based on corporate earnings and book values
+        fair_price_via_pe = current_eps * self.target_historical_pe
+        fair_price_via_book = current_book_value * self.standard_price_to_book
+        
+        # Fundamental Baseline (The true structural floor of the stock)
+        fundamental_equilibrium_price = (fair_price_via_pe + fair_price_via_book) / 2.0
+        
+        # Audit past rumor inflation
+        audit_results = self.execute_historical_rumor_audit(history_logs)
+        rumor_premium = audit_results["accumulated_rumor_premium_extracted"]
+        
+        # Check if the asset is current hyper-extended and technically overbought
+        is_structurally_overpriced = (current_market_price > fundamental_equilibrium_price * 1.15) or (rsi_14 >= 70)
+        
+        if is_structurally_overpriced and rumor_premium > 0:
+            # The market is overbought, overpriced, and stuffed with unverified rumor premium
+            justified_reset_price = current_market_price - rumor_premium
+            
+            # Ensure the reset does not drop completely below fundamental book value floors
+            final_reset_target = max(justified_reset_price, fundamental_equilibrium_price)
+            
+            return {
+                "valuation_regime": "SPECULATIVE_BUBBLE_DETECTED",
+                "audited_rumor_inflation_delta": rumor_premium,
+                "current_market_overpricing_pct": ((current_market_price - fundamental_equilibrium_price) / fundamental_equilibrium_price) * 100,
+                "portfolio_action": "EXECUTE_HISTORICAL_RESET_SWEEP",
+                "target_reset_price": final_reset_target,
+                "systemic_directive": (
+                    "Acknowledge current price as an ungrounded artifact of insider headline manipulation. "
+                    "Flush all speculative long liquidity. Re-anchor the execution layer to Trailing P/E and Book Value."
+                )
+            }
+            
+        return {
+            "valuation_regime": "FUNDAMENTALLY_JUSTIFIED",
+            "portfolio_action": "MAINTAIN_STANDARD_TRADING_BOUNDS",
+            "target_reset_price": current_market_price
+        }
