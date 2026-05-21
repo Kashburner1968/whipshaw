@@ -1,4 +1,4 @@
-yamlname: Deploy Structural Paradox Web Server Pipeline
+name: Deploy Structural Paradox Web Server Pipeline
 
 on:
   push:
