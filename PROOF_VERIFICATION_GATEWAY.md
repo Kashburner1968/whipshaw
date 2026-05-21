@@ -129,3 +129,40 @@ if __name__ == "__main__":
 
 </div>
 <!-- END PROOF_OF_STATE_GATEWAY -->
+
+class EpistemicScoringFilter:
+    def __init__(self):
+        # High-risk linguistic markers that indicate zero concrete proof
+        self.speculative_blacklist = ["hopes", "expected", "signs", "rumors", "progressing", "could", "might"]
+        
+    def calculate_epistemic_score(self, article_text):
+        """
+        Analyzes text strings for linguistic finality.
+        Penalizes articles that substitute sentiment for empirical state changes.
+        """
+        words = article_text.lower().split()
+        total_words = len(words)
+        
+        # Count occurrences of non-validated, speculative words
+        speculative_count = sum(1 for word in words if word in self.speculative_blacklist)
+        
+        if total_words == 0:
+            return 0.0
+            
+        # The Core Penalty Multiplier: Higher speculative density equals lower final score
+        speculative_density = speculative_count / total_words
+        base_sentiment_score = 1.0  # Assumes a naive NLP model read a "positive" headline
+        
+        # Calculate true validated score using an exponential decay gate
+        validated_score = base_sentiment_score * math.exp(-25.0 * speculative_density)
+        
+        # Hard Gate: If the article text relies strictly on "hopes", crush the score to zero
+        if "hopes" in words or "signs" in words:
+            validated_score *= 0.05
+            
+        return {
+            "naive_sentiment_score": base_sentiment_score,
+            "linguistic_speculation_density": speculative_density,
+            "adjusted_epistemic_score": validated_score,
+            "status": "REJECT_AS_UNVERIFIED_NOISE" if validated_score < 0.10 else "ACCEPT"
+        }
