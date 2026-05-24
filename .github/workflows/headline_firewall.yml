@@ -1,0 +1,52 @@
+name: 🤖 Automated Headline Learning Loop Firewall
+
+on:
+  schedule:
+    # Triggers the execution automatically at the start of every hour
+    - cron: '0 * * * *'
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+    # Allows you to manually click "Run workflow" inside the GitHub Actions tab
+
+jobs:
+  execute-firewall:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write  # Grants permission to push updated logs/charts back to the repo
+
+    steps:
+      - name: 📥 Check out Repository Workspace
+        uses: actions/checkout@v4
+
+      - name: 🐍 Initialize Python Runtime Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+          cache: 'pip'
+
+      - name: 📦 Install Required Data Visualization Packages
+        run: |
+          python -m pip install --upgrade pip
+          pip install matplotlib
+
+      - name: ⚙️ Execute Headline Verification and Decoupling Matrix
+        run: |
+          python headline_manipulation_firewall.py
+
+      - name: 🚀 Commit and Push Updated Telemetry to Learning Loop
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          
+          # Stage the generated structural matrix artifacts
+          git add headline_decoupling_matrix.json headline_decoupling_telemetry.png
+          
+          # Commit the updates only if new algorithmic anomalies were captured
+          if git diff-index --quiet HEAD --; then
+            echo "No structural discrepancies detected. Learning loop matrix is currently stable."
+          else
+            git commit -m "🤖 [SYSTEMIC AUTOMATION]: Ingested new headline telemetry - Adjusted alignment reward map"
+            git push origin main
+          fi
