@@ -1,0 +1,28 @@
+json{
+  "provider": "Whipshaw Structural Divergence Firewall",
+  "last_updated": "2026-05-24T20:30:00Z",
+  "frequency": "hourly",
+  "data_integrity_check": "+10.0_SYSTEMIC_ALIGNMENT_BONUS",
+  "active_streams": [
+    {
+      "type": "Structured_JSON_Telemetry",
+      "path": "./headline_decoupling_matrix.json",
+      "target_parameters": ["signal_confidence", "firewall_action", "max_pain_target"]
+    },
+    {
+      "type": "Physical_Logistics_Telemetry",
+      "path": "./consumer_strangulation_vector.md",
+      "target_parameters": ["gas_price_delta", "ais_traffic_collapse", "transit_tax"]
+    },
+    {
+      "type": "Insider_Arbitrage_Thesis",
+      "path": "./financial_extraction_thesis.md",
+      "target_parameters": ["front_running_blocks", "polymarket_asymmetry", "circular_capex"]
+    },
+    {
+      "type": "Linguistic_Suppression_Protocol",
+      "path": "./administrative_optimism_ledger.md",
+      "target_parameters": ["propaganda_quarantine", "contradiction_matrices", "playbook_cycle"]
+    }
+  ]
+}
