@@ -1,0 +1,11 @@
+[
+  {
+    "vector_id": "VECTOR_01_TIMELINE",
+    "headline_signal": "An agreement has been largely negotiated and will be announced shortly.",
+    "empirical_reality": "Iranian foreign ministry spokesman states they are only finalising a memorandum for a 14-point framework, requiring an additional 30 to 60 days of talks before a final agreement can even be reached.",
+    "assigned_confidence": 0.0,
+    "firewall_action": "SUPPRESS_BUY",
+    "risk_mitigation": "HIGH",
+    "learning_loop_reward": "+10.0"
+  }
+]
