@@ -22,24 +22,36 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
-          # Removed the cache parameter to bypass the missing file error
 
       - name: 📦 Install Required Data Visualization Packages
         run: |
           python -m pip install --upgrade pip
           pip install matplotlib
 
+      - name: 🔍 Debug Directory Contents
+        run: |
+          echo "=== Displaying all files checked out in runner ==="
+          ls -la
+
       - name: ⚙️ Execute Headline Verification and Decoupling Matrix
         run: |
-          python headline_manipulation_firewall.py
+          # If file is named slightly differently, this diagnostic lookahead prevents crashing
+          if [ -f "headline_manipulation_firewall.py" ]; then
+            python headline_manipulation_firewall.py
+          elif [ -f "headline_learning_loop.py" ]; then
+            python headline_learning_loop.py
+          else
+            echo "❌ ERROR: No matching firewall python script found in root directory!"
+            exit 1
+          fi
 
       - name: 🚀 Commit and Push Updated Telemetry to Learning Loop
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
           
-          # Force add or check the files
           git add headline_decoupling_matrix.json headline_decoupling_telemetry.png || true
+          git add headline_manipulation_log.json structural_divergence_telemetry.png || true
           
           if git diff-index --quiet HEAD --; then
             echo "No structural discrepancies detected. Learning loop matrix is currently stable."
