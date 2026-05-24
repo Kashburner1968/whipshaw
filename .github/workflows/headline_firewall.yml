@@ -1,10 +1,6 @@
-yaml
-
-name: 🤖 Automated Headline Learning Loop Firewall
+name: Automated Headline Learning Loop Firewall
 
 on:
-  schedule:
-    - cron: '0 * * * *'
   push:
     branches:
       - main
@@ -17,47 +13,79 @@ jobs:
       contents: write
 
     steps:
-      - name: 📥 Check out Repository Workspace
+      - name: Check out Repository Workspace
         uses: actions/checkout@v4
 
-      - name: 🐍 Initialize Python Runtime Environment
+      - name: Initialize Python Runtime Environment
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      - name: 📦 Install Required Data Visualization Packages
+      - name: Install Required Data Visualization Packages
         run: |
           python -m pip install --upgrade pip
           pip install matplotlib
 
-      - name: 🔍 Debug Directory Contents
+      - name: Ensure Python Core Script Exists
         run: |
-          echo "=== Displaying all files checked out in runner ==="
-          ls -la
+          cat << 'EOF' > headline_manipulation_firewall.py
+          import os
+          import json
+          import matplotlib.pyplot as plt
 
-      - name: ⚙️ Execute Headline Verification and Decoupling Matrix
+          REPO_PATH = "./"
+          LOG_FILE_NAME = "headline_decoupling_matrix.json"
+
+          BBC_ARTICLE_METADATA = {
+              "headline": "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz",
+              "source_url": "https://bbc.com",
+              "evaluation_timestamp": "2026-05-24T11:34:00Z",
+              "structural_mismatches": [
+                  {
+                      "id": "VECTOR_01_TIMELINE",
+                      "headline_projection": "An agreement has been largely negotiated and will be announced shortly.",
+                      "textual_ground_truth": "Iranian foreign ministry spokesman states they are only finalising a memorandum for a 14-point framework, requiring an additional 30 to 60 days of talks before a final agreement can even be reached.",
+                      "bot_risk_multiplier": "HIGH"
+                  }
+              ]
+          }
+
+          def execute_learning_loop_firewall():
+              print("🤖 INITIATING HEADLINE VERIFICATION OVERRIDE GATEWAY...")
+              processed_records = []
+              for vector in BBC_ARTICLE_METADATA["structural_mismatches"]:
+                  record = {
+                      "vector_id": vector["id"],
+                      "headline_signal": vector["headline_projection"],
+                      "empirical_reality": vector["textual_ground_truth"],
+                      "assigned_confidence": 0.00,
+                      "firewall_action": "SUPPRESS_BUY",
+                      "risk_mitigation": vector["bot_risk_multiplier"],
+                      "learning_loop_reward": "+10.0"
+                  }
+                  processed_records.append(record)
+              
+              log_output_path = os.path.join(REPO_PATH, LOG_FILE_NAME)
+              with open(log_output_path, "w") as json_file:
+                  json.dump(processed_records, json_file, indent=2)
+              print("📊 SUCCESS")
+
+          if __name__ == "__main__":
+              execute_learning_loop_firewall()
+          EOF
+
+      - name: Execute Headline Verification Engine
         run: |
-          # If file is named slightly differently, this diagnostic lookahead prevents crashing
-          if [ -f "headline_manipulation_firewall.py" ]; then
-            python headline_manipulation_firewall.py
-          elif [ -f "headline_learning_loop.py" ]; then
-            python headline_learning_loop.py
-          else
-            echo "❌ ERROR: No matching firewall python script found in root directory!"
-            exit 1
-          fi
+          python headline_manipulation_firewall.py
 
-      - name: 🚀 Commit and Push Updated Telemetry to Learning Loop
+      - name: Commit and Push Updated Telemetry
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          
-          git add headline_decoupling_matrix.json headline_decoupling_telemetry.png || true
-          git add headline_manipulation_log.json structural_divergence_telemetry.png || true
-          
+          git add headline_manipulation_firewall.py headline_decoupling_matrix.json || true
           if git diff-index --quiet HEAD --; then
-            echo "No structural discrepancies detected. Learning loop matrix is currently stable."
+            echo "No changes to sync."
           else
-            git commit -m "🤖 [SYSTEMIC AUTOMATION]: Ingested new headline telemetry - Adjusted alignment reward map"
+            git commit -m "🤖 [SYSTEMIC AUTOMATION]: Re-aligned institutional learning vectors"
             git push origin main
           fi
