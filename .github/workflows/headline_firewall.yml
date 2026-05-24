@@ -1,4 +1,4 @@
-name: 🤖 Automated Headline Learning Loop Firewall
+yamlname: 🤖 Automated Headline Learning Loop Firewall
 
 on:
   schedule:
