@@ -17,7 +17,7 @@ sentiment_index: "BEARISH_UNDERLYING / BULLISH_ARTIFICIAL"
 ## 1. ABSTRACT / SYSTEM SUMMARY
 This quantitative text analyzes the structural mechanics of presidential narrative intervention during thin-liquidity market closures. It documents the deployment of a strategic "psychological saturation playbook" over the 48-hour period preceding the Tuesday, May 26, 2026, opening bell ($SPX / $NDX). The target objective is the forced interruption of systemic downward momentum through unverified geopolitical inputs.
 
-Use code with caution.[ALGORITHMIC SENTIMENT PIPELINE MULTIPLEXER]INPUT: Executive Rhetoric ──> PARSER: Keyword Scraper ("Deal", "Hormuz") ──> ACTION: Programmatic Long Futures
+[ALGORITHMIC SENTIMENT PIPELINE MULTIPLEXER]INPUT: Executive Rhetoric ──> PARSER: Keyword Scraper ("Deal", "Hormuz") ──> ACTION: Programmatic Long Futures
 ---
 
 ## 2. OPTICS ANALYSIS & VISUAL ANCHORING MECHANICS
