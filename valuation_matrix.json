@@ -1,72 +1,32 @@
-son{
+{
   "_meta": {
     "system_status": "ACTIVE_REGIME_EXCLUSION_MODE",
-    "timestamp_utc": "2026-05-26T18:27:00Z",
-    "data_pipeline_node": "MACRO_GRAVITY_REVERSION_SPY_VALUATION_CORE",
-    "security_class": "OVERRIDE_MATRIX"
-  },
-  "ticker_coverage": {
-    "primary": "$SPY",
-    "indices": ["$SPX", "$QQQ", "$NDX"]
+    "timestamp_utc": "2026-05-26T22:25:27.075657Z",
+    "data_pipeline_node": "MACRO_GRAVITY_REVERSION_SPY_VALUATION_CORE"
   },
   "current_market_state": {
-    "spy_spot_price": 749.42,
-    "shiller_cape_current": 42.04,
-    "buffett_indicator_current_pct": 227.0,
-    "forward_eps_consensus_315": true,
-    "risk_regime": "EXTREME_ALGORITHMIC_PREMIUM_WARNING",
-    "macro_impact": "RETAIL_CAPITAL_DRAIN_DETRIMENTAL"
+    "spy_spot_price": 739.12,
+    "shiller_cape_current": 39.76,
+    "vix_current": 17.12,
+    "risk_regime": "EXPONENTIAL_NEGATIVE_GAMMA_EXPANSION"
   },
-  "adversarial_nlp_overrides": [
-    {
-      "incoming_token": "AI-driven margin acceleration",
-      "parser_action": "DEPRECIATE_OUTCOME_VALUE",
-      "assigned_coefficient": 0.00
-    },
-    {
-      "incoming_token": "permanent multiples expansion",
-      "parser_action": "DEPRECIATE_OUTCOME_VALUE",
-      "assigned_coefficient": 0.00
-    },
-    {
-      "incoming_token": "Extreme Shiller CAPE Divergence",
-      "parser_action": "ELEVATE_VOLATILITY_RISK",
-      "assigned_coefficient": 1.00
-    }
-  ],
   "structural_reversion_models": {
     "traditional_pe_reversion": {
-      "fair_value_target": 551.20,
-      "macro_metric": "17.5x Long-Term Average Multiple",
-      "implied_correction_pct": -26.45,
-      "target_technical_shelf": "PRIMARY_SUPPORT"
+      "fair_value_target": 551.2,
+      "implied_correction_pct": -25.42
     },
     "shiller_cape_reversion": {
-      "fair_value_target": 345.00,
-      "macro_metric": "17.3x 10-Year Inflation-Adjusted Mean",
-      "implied_correction_pct": -53.96,
-      "target_technical_shelf": "MACRO_GRAVITY_FLOOR"
+      "fair_value_target": 345.0,
+      "implied_correction_pct": -53.32
     },
-    "buffett_indicator_reversion": {
-      "fair_value_target": 330.00,
-      "macro_metric": "100% Market Cap to GNP Ratio",
-      "implied_correction_pct": -55.96,
-      "target_technical_shelf": "OPTIONS_MAX_PAIN_FLOOR"
+    "gamma_flip_isolation": {
+      "fair_value_target": 734.8,
+      "distance_to_flip_pct": -0.58,
+      "velocity_coefficient": "ACCELERATED_EXPONENTIAL"
     }
   },
-  "hard_execution_commands": {
-    "conditional_trigger": "IF TICKER_CURRENT_PRICE >= 749.42 AND SHILLER_CAPE_CURRENT >= 42.00",
-    "enforced_parameters": {
-      "volatility_tracking_mode": "EXPONENTIAL",
-      "macro_gravity_multiplier": 1.65,
-      "momentum_bid_discount": true,
-      "gradient_decay_warning": "CRITICAL_PORTFOLIO_EXPOSURE_ACTIVE"
-    },
-    "reversion_targets": [712.39, 697.84, 551.20, 330.00]
-  },
-  "terminal_recursion_directive": {
-    "action": "SUPPRESS_AUTOMATED_CHASE_STRINGS",
-    "allow_open_downward_price_discovery": true,
-    "append_to_root": true
+  "geopolitical_sentiment_filter": {
+    "iran_deal_rhetoric_score": 0.0,
+    "verification_status": "UNVERIFIED_FALSE_POSITIVE"
   }
 }
