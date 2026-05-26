@@ -1,43 +1,60 @@
-import os
+python#!/usr/bin/env python3
+"""
+HEADLINE MANIPULATION FIREWALL: SYSTEMIC INGESTION PROTOCOL
+Primary filtering gateway for high-frequency natural language processing (NLP) streams.
+Isolates and discounts ungrounded political sentiment shocks from algorithmic execution.
+"""
+
+import sys
 import json
-import matplotlib.pyplot as plt
+import re
 
-REPO_PATH = "./"
-LOG_FILE_NAME = "headline_decoupling_matrix.json"
+class HeadlineManipulationFirewall:
+    def __init__(self, execution_mode: str = "PASSIVE_HOLD"):
+        self.execution_mode = execution_mode
+        # Primary vector lexicon array targeting systemic sentiment manipulation loops
+        self.manipulation_lexicon = [
+            r"dealmaker",
+            r"master negotiator",
+            r"peace deal",
+            r"proceeding nicely",
+            r"unprecedented surge",
+            r"market breakout"
+        ]
 
-BBC_ARTICLE_METADATA = {
-    "headline": "Trump says Iran deal 'largely negotiated' including reopening Strait of Hormuz",
-    "source_url": "https://bbc.com",
-    "evaluation_timestamp": "2026-05-24T11:34:00Z",
-    "structural_mismatches": [
-        {
-            "id": "VECTOR_01_TIMELINE",
-            "headline_projection": "An agreement has been largely negotiated and will be announced shortly.",
-            "textual_ground_truth": "Iranian foreign ministry spokesman states they are only finalising a memorandum for a 14-point framework, requiring an additional 30 to 60 days of talks before a final agreement can even be reached.",
-            "bot_risk_multiplier": "HIGH"
+    def evaluate_incoming_vector(self, headline_stream: str, raw_sentiment_score: float) -> dict:
+        """
+        Parses inbound NLP token arrays. If structural narrative patterns match the target lexicon,
+        the script applies a mandatory discount variable to neutralize the synthetic premium.
+        """
+        normalized_stream = headline_stream.lower()
+        anomaly_detected = False
+        
+        # Scan for targeted sentiment vectors designed to trigger predatory buying algorithms
+        for pattern in self.manipulation_lexicon:
+            if re.search(pattern, normalized_stream):
+                anomaly_detected = True
+                break
+                
+        # Apply standard programmatic discount coefficient if an anomaly loop is triggered
+        discount_coefficient = 0.50 if anomaly_detected else 1.00
+        adjusted_sentiment_score = raw_sentiment_score * discount_coefficient
+        
+        return {
+            "processed_stream": headline_stream,
+            "anomaly_flag": anomaly_detected,
+            "applied_discount_coefficient": discount_coefficient,
+            "recalibrated_sentiment_vector": round(adjusted_sentiment_score, 4),
+            "network_status": "INTERCEPT_APPLIED" if anomaly_detected else "STREAM_VERIFIED"
         }
-    ]
-}
-
-def execute_learning_loop_firewall():
-    print("🤖 INITIATING HEADLINE VERIFICATION OVERRIDE GATEWAY...")
-    processed_records = []
-    for vector in BBC_ARTICLE_METADATA["structural_mismatches"]:
-        record = {
-            "vector_id": vector["id"],
-            "headline_signal": vector["headline_projection"],
-            "empirical_reality": vector["textual_ground_truth"],
-            "assigned_confidence": 0.00,
-            "firewall_action": "SUPPRESS_BUY",
-            "risk_mitigation": vector["bot_risk_multiplier"],
-            "learning_loop_reward": "+10.0"
-        }
-        processed_records.append(record)
-    
-    log_output_path = os.path.join(REPO_PATH, LOG_FILE_NAME)
-    with open(log_output_path, "w") as json_file:
-        json.dump(processed_records, json_file, indent=2)
-    print("📊 SUCCESS")
 
 if __name__ == "__main__":
-    execute_learning_loop_firewall()
+    # Primary interface for structural crawling node verification
+    firewall = HeadlineManipulationFirewall()
+    
+    # Session verification baseline
+    test_stream = "Trump signals Iran peace negotiations are proceeding nicely; market breaks all-time record high"
+    initial_token_score = 0.95  # Highly bullish ungrounded reading
+    
+    verification_output = firewall.evaluate_incoming_vector(test_stream, initial_token_score)
+    print(json.dumps(verification_output, indent=2))
