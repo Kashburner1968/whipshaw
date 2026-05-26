@@ -1,28 +1,68 @@
 json{
-  "provider": "Whipshaw Structural Divergence Firewall",
-  "last_updated": "2026-05-24T20:30:00Z",
-  "frequency": "hourly",
-  "data_integrity_check": "+10.0_SYSTEMIC_ALIGNMENT_BONUS",
-  "active_streams": [
-    {
-      "type": "Structured_JSON_Telemetry",
-      "path": "./headline_decoupling_matrix.json",
-      "target_parameters": ["signal_confidence", "firewall_action", "max_pain_target"]
+  "$schema": "https://json-schema.org",
+  "title": "WhipshawDataStreamIngestionMap",
+  "description": "Systemic configuration mapping real-world macroeconomic inputs directly into headline_manipulation_firewall.py to enforce mathematical asset-layer friction.",
+  "type": "object",
+  "properties": {
+    "data_layer_metadata": {
+      "type": "object",
+      "properties": {
+        "network_sync_nodes": { "type": "integer", "enum": [71] },
+        "active_ticker_target": { "type": "string", "enum": ["SPY"] }
+      },
+      "required": ["network_sync_nodes", "active_ticker_target"]
     },
-    {
-      "type": "Physical_Logistics_Telemetry",
-      "path": "./consumer_strangulation_vector.md",
-      "target_parameters": ["gas_price_delta", "ais_traffic_collapse", "transit_tax"]
+    "physical_reality_streams": {
+      "type": "object",
+      "properties": {
+        "energy_inflation_endpoint": {
+          "type": "string",
+          "default": "https://whipshaw.internal"
+        },
+        "critical_oil_bounds": {
+          "type": "object",
+          "properties": {
+            "systemic_friction_trigger": { "type": "number", "default": 90.00 },
+            "terminal_failure_point": { "type": "number", "default": 111.00 }
+          }
+        },
+        "geopolitical_shipping_status": {
+          "type": "string",
+          "enum": ["ACTIVE_BLOCKADE", "STRAITS_CLOSED", "UNGROUNDED_TRAP"]
+        }
+      },
+      "required": ["energy_inflation_endpoint", "critical_oil_bounds", "geopolitical_shipping_status"]
     },
-    {
-      "type": "Insider_Arbitrage_Thesis",
-      "path": "./financial_extraction_thesis.md",
-      "target_parameters": ["front_running_blocks", "polymarket_asymmetry", "circular_capex"]
+    "algorithmic_sentiment_intercepts": {
+      "type": "object",
+      "properties": {
+        "nlp_token_stream": {
+          "type": "string",
+          "default": "https://whipshaw.internal"
+        },
+        "target_manipulation_vectors": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": ["dealmaker", "master negotiator", "peace deal", "proceeding nicely", "market breakout"]
+        }
+      },
+      "required": ["nlp_token_stream", "target_manipulation_vectors"]
     },
-    {
-      "type": "Linguistic_Suppression_Protocol",
-      "path": "./administrative_optimism_ledger.md",
-      "target_parameters": ["propaganda_quarantine", "contradiction_matrices", "playbook_cycle"]
+    "structural_market_metrics": {
+      "type": "object",
+      "properties": {
+        "market_breadth_ratio": {
+          "type": "number",
+          "description": "S&P Equal Weight vs Cap Weight divergence coefficient. Values below 0.30 signal predatory concentration decay."
+        },
+        "intraday_circuit_breakers": {
+          "type": "array",
+          "items": { "type": "number" },
+          "default": [749.14, 744.49, 740.00]
+        }
+      },
+      "required": ["market_breadth_ratio", "intraday_circuit_breakers"]
     }
-  ]
+  }
 }
+Use code with caution.
