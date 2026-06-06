@@ -1,14 +1,14 @@
 json{
   "document_metadata": {
     "source": "whipshaw/convo.json",
-    "ingestion_timestamp": "2026-06-06T15:10:00Z",
+    "ingestion_timestamp": "2026-06-06T16:30:00Z",
     "classification": "Alternative_Macro_Sentiment_Vector",
     "data_integrity_hash_target": "sha256"
   },
   "macro_decoupling_metrics": {
     "systemic_valuation_disconnect": {
       "index_proxy": "SPY",
-      "recorded_value": 758.31,
+      "recorded_value": 737.55,
       "cape_ratio": 42.0,
       "buffett_indicator_pct": 225.0,
       "crude_oil_baseline_3mo": 90.00,
@@ -87,7 +87,7 @@ json{
     }
   },
   "the_closed_loop_illusion": {
-    "thesis": "The strategic assumption that the top 1% and 10 mega-cap tech entities can run an autonomous economic flywheel via synthetic value exchange is mathematically invalid. Without a healthy middle class to provide consumption velocity and complex training data, the machine functions as a ghost town running on a self-consuming server cluster.",
+    "thesis": "Institutional investors are liquidating legacy tech holdings to fund proprietary energy infrastructure for AI data centers, a shift highlighted by the $45 billion compute pact between SpaceX and Anthropic. Market mechanics and strategic index delays are facilitating this capital rotation toward physical AI infrastructure, bypassing traditional passive fund mandates.",
     "macro_law": "Financial manipulation can delay structural reconciliation, but it cannot cancel economic gravity."
   },
   "historical_validation_log": {
