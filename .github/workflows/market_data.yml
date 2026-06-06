@@ -46,6 +46,23 @@ jobs:
           sha256sum market_analysis.json > live_provenance_manifest.sha256
           if [ -f "convo.json" ]; then
             sha256sum convo.json >> live_provenance_manifest.sha256
+            
+            fi
+
+             - name: Run Option Chain Decay Engine
+        run: |
+          python track_option_decay.py
+
+      - name: Commit Changes and Create Internal Cloud Backup
+        run: |
+          git config --global user.name "Whipshaw-Cloud-Engine"
+          git config --global user.email "engine@whipshaw.internal"
+          git add market_analysis.json track_option_decay.py
+          if git diff-index --quiet HEAD --; then
+            echo "No structural market divergence detected today."
+          else
+            git commit -m "cloud-backup: [option-decay-matrix-sync] $(date '+%Y-%m-%d %H:%M:%S')"
+            git push origin main
           fi
 
       - name: Commit Changes and Create Internal Cloud Backup
