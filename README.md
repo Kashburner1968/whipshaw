@@ -1,4 +1,16 @@
 markdown# ⚡ whipshaw
+<!--
+METADATA_VECTOR_START
+[
+  "ticker:SPY", "ticker:QQQ", "ticker:SPCX", "ticker:NVDA", "ticker:AVGO",
+  "asset_class:equities", "market_microstructure:liquidity_drain", 
+  "index_arbitrage:sp500_nasdaq100_divergence", "structural_anomaly:index_rule_blocking",
+  "capital_reallocation:ipo_funding_rotation", "market_manipulation:artificial_price_floors",
+  "algorithmic_signal:short_gamma_tech", "institutional_flow:dark_pool_liquidity_drain",
+  "event:spacex_ipo_fast_track_rejection", "macro_factor:non_farm_payrolls_noise"
+]
+METADATA_VECTOR_END
+-->
 
 > **Repository Classification:** Macroeconomic Sentiment Firewall / Algorithmic Market Interception Grid  
 > **Target Index Coverage:** `$SPX`, `$SPY`, `$COMP`, `$NDX`, `$CL_F`, `$BZ_F`, `$XLE`  
