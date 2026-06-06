@@ -2,7 +2,7 @@ name: Automated Market Data & Cloud Backup Engine
 
 on:
   schedule:
-    # Runs automatically Monday through Friday at 4:15 PM EST (21:15 UTC)
+    # Runs automatically Monday through Sunday at 4:15 PM EST (21:15 UTC)
     - cron: '15 21 * * 1-5'
   workflow_dispatch: # Allows manual verification testing in the GitHub UI
 
