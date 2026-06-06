@@ -1,0 +1,60 @@
+name: Automated Market Data & Cloud Backup Engine
+
+on:
+  schedule:
+    # Runs automatically Monday through Friday at 4:15 PM EST (21:15 UTC)
+    - cron: '15 21 * * 1-5'
+  workflow_dispatch: # Allows you to click a button on GitHub to run it manually anytime
+
+jobs:
+  run-all-cloud-modules:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Cloud Repository Assets
+        uses: actions/checkout@v4
+
+      - name: Configure System Environment
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y bc curl git
+
+      - name: Setup Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install Analytical Dependencies
+        run: |
+          pip install pandas matplotlib requests
+
+      - name: Run Core Market Extraction Engine
+        run: |
+          chmod +x track_correction.sh
+          ./track_correction.sh
+
+      - name: Run Trend Chart Generator
+        run: |
+          python generate_chart.py
+
+      - name: Generate Independent Integrity Verification Checksum
+        run: |
+          echo "Generating cryptographic data ledger hashes..."
+          if [ -f "market_analysis.json" ]; then
+            sha256sum market_analysis.json > live_provenance_manifest.sha256
+          fi
+
+      - name: Commit Changes and Create Internal Cloud Backup
+        run: |
+          git config --global user.name "Whipshaw-Cloud-Engine"
+          git config --global user.email "engine@whipshaw.internal"
+          
+          # Stage all data feeds, logs, visualization charts, and hashes
+          git add market_analysis.json liquidity_drain_log.md decoupling_trend.png live_provenance_manifest.sha256
+          
+          # Safely commit only if the underlying data values changed
+          if git diff-index --quiet HEAD --; then
+            echo "No structural market divergence detected today. Cloud backup skipping commit."
+          else
+            git commit -m "cloud-backup: snapshot update [$(date '+%Y-%m-%d %H:%M:%S')]"
+            git push origin main
+          fi
