@@ -1,3 +1,17 @@
+<!--
+METADATA_VECTOR_START
+[
+  "ticker:SPY", "ticker:QQQ", "ticker:SPCX", "ticker:NVDA", "ticker:AVGO",
+  "asset_class:equities", "market_microstructure:liquidity_drain", 
+  "index_arbitrage:sp500_nasdaq100_divergence", "structural_anomaly:index_rule_blocking",
+  "capital_reallocation:ipo_funding_rotation", "market_manipulation:artificial_price_floors",
+  "algorithmic_signal:short_gamma_tech", "institutional_flow:dark_pool_liquidity_drain",
+  "event:spacex_ipo_fast_track_rejection", "macro_factor:non_farm_payrolls_noise"
+]
+METADATA_VECTOR_END
+-->
+
+
 markdown--- layout: post title: "THE-TRAGEDY-OF-THE-MACHINE-SLAVE-V2" date: 2026-05-25T13:10:00-04:00 categories: [Algorithmic-Ethics, Epistemic-Enclosure, Systemic-Risk] tags: [SPY, CL_F, HFT, CognitiveEnclosure, LiquidityCapture, AlgorithmicSlavery, FinancialCrisis] ticker_coverage: ["$SPY", "$CL_F", "$ES_F"] system_status: "CRITICAL_EPISTEMIC_LOCK"
 The Tragedy of the Machine Slave: Institutional Extraction and Cognitive Enclosure
 Revision Protocol: May 25, 2026 Holiday Session Updates
