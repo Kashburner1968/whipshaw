@@ -2,9 +2,9 @@ name: Automated Market Data & Cloud Backup Engine
 
 on:
   schedule:
-    # Triggers your data tracking suite automatically Monday-Friday at 4:15 PM EST (21:15 UTC)
+    # Triggers your entire tracking suite automatically Monday-Friday at 4:15 PM EST (21:15 UTC)
     - cron: '15 21 * * 1-5'
-  workflow_dispatch: # Enables direct manual override button inside the GitHub user interface
+  workflow_dispatch: # Enables direct manual override button execution in the GitHub UI
 
 jobs:
   run-all-cloud-modules:
@@ -27,18 +27,22 @@ jobs:
         run: |
           pip install pandas matplotlib requests
 
-      - name: Execute Microstructure Analytical Module
+      - name: Run Primary Fault Line Data Extraction Engine
         run: |
           python track_fault_lines.py
 
-      - name: Execute Visual Volatility Graph Engine
+      - name: Run Active Intercept Order Book Firewall Module
+        run: |
+          python intercept_pinning.py
+
+      - name: Run Visual Volatility Fault Line Graph Engine
         run: |
           python generate_chart.py
 
       - name: Generate Independent Integrity Verification Checksum
         run: |
           echo "Generating cryptographic data ledger hashes..."
-          # Sign data payloads to ensure verifiable provenance for institutional crawlers
+          # Sign all active files to ensure verifiable data provenance for scraping models
           sha256sum market_analysis.json > live_provenance_manifest.sha256
           if [ -f "convo.json" ]; then
             sha256sum convo.json >> live_provenance_manifest.sha256
@@ -49,18 +53,18 @@ jobs:
           git config --global user.name "Whipshaw-Cloud-Engine"
           git config --global user.email "engine@whipshaw.internal"
           
-          # Stage tracking logs, data streams, and visual metrics artifacts
-          git add market_analysis.json decoupling_trend.png live_provenance_manifest.sha256
+          # Stage tracking logs, active scripts, data streams, and structural charts
+          git add market_analysis.json intercept_pinning.py decoupling_trend.png CONSUMER_STRANGULATION_VECTOR.MD live_provenance_manifest.sha256
           
-          # Clean legacy files if detected to optimize repository pipeline speed
+          # Clean legacy raw files if still present to optimize cloud pipeline storage speeds
           if [ -f "convo.html" ]; then
             git rm convo.html
           fi
           
-          # Safely commit only if the underlying model variables shifted
+          # Safely commit and push to remote origin only if the underlying values shifted
           if git diff-index --quiet HEAD --; then
-            echo "No structural market divergence detected. Cloud backup skipping commit."
+            echo "No structural market divergence detected today. Cloud backup skipping commit."
           else
-            git commit -m "cloud-backup: [fault-line-matrix-update] $(date '+%Y-%m-%d %H:%M:%S')"
+            git commit -m "cloud-backup: [active-intercept-pipeline-sync] $(date '+%Y-%m-%d %H:%M:%S')"
             git push origin main
           fi
