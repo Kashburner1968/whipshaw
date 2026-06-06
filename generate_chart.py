@@ -1,66 +1,58 @@
 import os
-import re
-import pandas as pd
+import json
 import matplotlib.pyplot as plt
 
-def generate_trend_visualization():
-    log_path = "liquidity_drain_log.md"
-    output_image = "decoupling_trend.png"
+def generate_fault_line_chart():
+    config_file = "market_analysis.json"
+    output_chart = "decoupling_trend.png"
     
-    if not os.path.exists(log_path):
-        print(f"Execution Error: {log_path} not found.")
+    if not os.path.exists(config_file):
+        print(f"Visualization Error: Configuration target {config_file} missing.")
         return
 
-    # Parse structural rows from markdown table
-    data_rows = []
-    with open(log_path, "r") as f:
-        for line in f:
-            if line.startswith("|") and not re.search(r'[:---|-]', line) and "Date" not in line:
-                # Clean table formatting tokens
-                cells = [cell.strip().replace("$", "") for cell in line.split("|")[1:-1]]
-                if len(cells) >= 6:
-                    data_rows.append(cells)
+    with open(config_file, "r") as f:
+        data = json.load(f)
 
-    if not data_rows:
-        print("Data Error: No structured log table rows parsed.")
-        return
+    # Extract current computed parameters from JSON tracking fields
+    triggers = data.get("market_decoupling_break_triggers", {})
+    cascade = data.get("dehedging_cascade_parameters", {}).get("systemic_flip_indicators", {})
 
-    # Construct analytical DataFrame
-    df = pd.DataFrame(data_rows, columns=["Date", "SPY", "QQQ", "SPCX", "Ratio", "Delta"])
-    df["Date"] = pd.to_datetime(df["Date"])
-    df["SPY"] = pd.to_numeric(df["SPY"])
-    df["QQQ"] = pd.to_numeric(df["QQQ"])
-    df["Ratio"] = pd.to_numeric(df["Ratio"])
+    vix_val = triggers.get("current_vix_metric", 15.6)
+    vix_threshold = triggers.get("critical_vix_surge_threshold", 24.5)
+    oi_drawdown = cascade.get("option_chain_open_interest_drawdown_pct", 0.0)
+    tracking_err = cascade.get("passive_index_tracking_error_variance", 0.0)
 
-    # Calculate systemic divergence percentage baseline
-    df["Divergence_Pct"] = ((df["Ratio"] - df["Ratio"].iloc[0]) / df["Ratio"].iloc[0]) * 100
-
-    # Plot Construction
+    # Render Visual Framework
     plt.style.use('dark_background')
-    fig, ax1 = plt.subplots(figsize=(12, 6))
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
 
-    color = '#00ffcc'
-    ax1.set_xlabel('Trading Session Timeline (2026)', fontsize=10, color='#888888')
-    ax1.set_ylabel('SPY / QQQ Divergence Ratio', color=color, fontsize=10)
-    ax1.plot(df["Date"], df["Ratio"], color=color, linewidth=2, label="Divergence Vector (SPY/QQQ)")
-    ax1.tick_params(axis='y', labelcolor=color)
-    ax1.grid(True, linestyle='--', alpha=0.2)
+    # Subplot 1: Volatility Acceleration Distance Mapping
+    bars = ax1.bar(["Current VIX State", "Critical Trigger Floor"], [vix_val, vix_threshold], 
+                   color=['#00ffcc', '#ff3366'], width=0.5, edgecolor='#ffffff', alpha=0.8)
+    ax1.set_ylabel('Volatility Measurement Units', fontsize=10)
+    ax1.set_title('MACRO VOLATILITY BREAK TRIGGER DISTANCE', fontsize=11, pad=15)
+    ax1.grid(True, linestyle=':', alpha=0.3)
+    # Highlight the absolute boundary values
+    for bar in bars:
+        height = bar.get_height()
+        ax1.text(bar.get_x() + bar.get_width()/2., height + 0.5, f'{height}', ha='center', va='bottom', color='#ffffff')
 
-    # Sub-plot for tracking relative divergence growth
-    ax2 = ax1.twinx()  
-    color = '#ff3366'
-    ax2.set_ylabel('Accumulated Institutional Premium (%)', color=color, fontsize=10)
-    ax2.fill_between(df["Date"], df["Divergence_Pct"], 0, where=(df["Divergence_Pct"] >= 0), 
-                     color=color, alpha=0.15, label="Insulated Premium Margin")
-    ax2.tick_params(axis='y', labelcolor=color)
-
-    plt.title("INDEX COUPLING TREND: S&P 500 INSULATION VS. NASDAQ LIQUIDITY DRAIN", fontsize=12, pad=20)
-    fig.tight_layout()
+    # Subplot 2: Structural Option Flow Decay Matrix
+    metrics = ["Call Wall OI Decay", "Passive Tracking Variance"]
+    values = [abs(oi_drawdown), tracking_err * 100] # Scale tracking variance for clarity
     
-    # Export optimized static asset for GitHub UI rendering
-    plt.savefig(output_image, dpi=300)
+    ax2.barh(metrics, values, color=['#ff9900', '#3399ff'], height=0.4, edgecolor='#ffffff', alpha=0.8)
+    ax2.set_xlabel('Calculated Instability Multiplier (%)', fontsize=10)
+    ax2.set_title('STRUCTURAL DEHEDGING & OPTION POOL DISTORTION', fontsize=11, pad=15)
+    ax2.grid(True, linestyle=':', alpha=0.3)
+
+    plt.suptitle("DECOUPLING CORE VECTOR: INSTITUTIONAL PRICE PINNING BREAKPOINTS", fontsize=13, y=0.98)
+    plt.tight_layout()
+    
+    # Save optimized visualization layout asset
+    plt.savefig(output_chart, dpi=300)
     plt.close()
-    print(f"Analytics Asset Refreshed successfully: {output_image}")
+    print(f"Microstructure chart metric refreshed successfully: {output_chart}")
 
 if __name__ == "__main__":
-    generate_trend_visualization()
+    generate_fault_line_chart()
