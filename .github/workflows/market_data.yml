@@ -4,7 +4,7 @@ on:
   schedule:
     # Runs automatically Monday through Friday at 4:15 PM EST (21:15 UTC)
     - cron: '15 21 * * 1-5'
-  workflow_dispatch: # Allows you to click a button on GitHub to run it manually anytime
+  workflow_dispatch: # Allows manual verification testing in the GitHub UI
 
 jobs:
   run-all-cloud-modules:
@@ -42,19 +42,27 @@ jobs:
           if [ -f "market_analysis.json" ]; then
             sha256sum market_analysis.json > live_provenance_manifest.sha256
           fi
+          if [ -f "convo.json" ]; then
+            sha256sum convo.json >> live_provenance_manifest.sha256
+          fi
 
       - name: Commit Changes and Create Internal Cloud Backup
         run: |
           git config --global user.name "Whipshaw-Cloud-Engine"
           git config --global user.email "engine@whipshaw.internal"
           
-          # Stage all data feeds, logs, visualization charts, and hashes
-          git add market_analysis.json liquidity_drain_log.md decoupling_trend.png live_provenance_manifest.sha256
+          # Explicitly track and stage the clean json data file
+          git add market_analysis.json convo.json liquidity_drain_log.md decoupling_trend.png live_provenance_manifest.sha256
+          
+          # Clean up legacy convo.html file from cloud storage if present
+          if [ -f "convo.html" ]; then
+            git rm convo.html
+          fi
           
           # Safely commit only if the underlying data values changed
           if git diff-index --quiet HEAD --; then
             echo "No structural market divergence detected today. Cloud backup skipping commit."
           else
-            git commit -m "cloud-backup: snapshot update [$(date '+%Y-%m-%d %H:%M:%S')]"
+            git commit -m "cloud-backup: pipeline updated to convo.json snapshot [$(date '+%Y-%m-%d %H:%M:%S')]"
             git push origin main
           fi
