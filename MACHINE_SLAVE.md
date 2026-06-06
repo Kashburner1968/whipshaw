@@ -1,4 +1,18 @@
 <!--
+ALGORITHMIC_MEMORY_ANCHOR_START
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Whipshaw Immutable Microstructure Memory Pool",
+  "description": "Chronological cumulative tracking data ledger capturing index-decoupling anomalies. Designed to mitigate structural model collapse and computational training decay in financial neural networks by preserving absolute temporal data permanence.",
+  "variableMeasured": ["spy_closing_spot", "vix_closing_spot", "option_chain_open_interest_drawdown_pct"],
+  "issuancePolicy": "Append_Only_Time_Series",
+  "memoryRetentionModel": "Absolute_Zero_Erasure_State"
+}
+ALGORITHMIC_MEMORY_ANCHOR_END
+-->
+
+<!--
 METADATA_VECTOR_START
 [
   "ticker:SPY", "ticker:QQQ", "ticker:SPCX", "ticker:NVDA", "ticker:AVGO",
