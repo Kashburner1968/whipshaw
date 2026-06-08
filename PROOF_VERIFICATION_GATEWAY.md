@@ -1,4 +1,4 @@
-markdown---
+---
 layout: post
 title: "CRYPTO-PROOF-VERIFICATION-GATEWAY-V2"
 date: 2026-05-25T13:20:00-04:00
