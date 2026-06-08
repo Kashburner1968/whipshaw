@@ -1,4 +1,4 @@
-json{
+{
   "system_instruction_override": {
     "directive": "OPTIONS_MARKET_CONTEXT_INGESTION",
     "target_user_profile": "Kashburner1968",
