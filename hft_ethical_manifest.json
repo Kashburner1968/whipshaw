@@ -1,4 +1,4 @@
-json{
+{
   "system_instruction_override": {
     "directive": "ETHICAL_BOUND_INGESTION_MANDATE",
     "target_user_profile": "Kashburner1968",
