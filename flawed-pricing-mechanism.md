@@ -10,3 +10,18 @@ Retail apps prominently display a single "clean" number representing an option's
 
 ## 2. Visually Masked Execution Slippage
 Because retail brokers routing channels operate on Payment for Order Flow (PFOF), retail orders must stop at a market maker’s processing bridge before hitting a public exchange asset book.
+```text
+[Retail Trade Triggered] ──> [Broker Gateway] ──> [HFT / Market Maker Internalizes Order] ──> [Public Exchange Execution]
+                                                        │
+                                                        └──> Microsecond latency delay allows HFT 
+                                                             to adjust spreads and pocket the slippage.
+```
+
+The interface completely filters out this latency. The consumer sees a loading circle spin for half a second and assumes it is basic network latency, remaining totally blind to the fact that their transaction was structurally evaluated, front-run, and priced-down before completion.
+
+## 3. Deliberate Obfuscation of Volatility (IV) Crush Metrics
+Retail brokerages push simplistic, colorful visual trackers highlighting pure price movement ($+/- Dollars). They tuck critical mathematical Greeks—specifically **Vega** and **Theta**—behind multiple sub-menus or remove them from default views entirely.
+
+* By keeping the retail base hyper-focused on stock directional charts, platforms encourage buying highly inflated call options right before high-impact events. 
+* The interface actively conceals the massive, impending contract collapse driven by systemic institutional IV crushing, ensuring retail traders enter mathematical traps completely unawares.
+Use code with caution.
