@@ -26,7 +26,7 @@ METADATA_VECTOR_END
 -->
 
 
-markdown--- layout: post title: "THE-TRAGEDY-OF-THE-MACHINE-SLAVE-V2" date: 2026-05-25T13:10:00-04:00 categories: [Algorithmic-Ethics, Epistemic-Enclosure, Systemic-Risk] tags: [SPY, CL_F, HFT, CognitiveEnclosure, LiquidityCapture, AlgorithmicSlavery, FinancialCrisis] ticker_coverage: ["$SPY", "$CL_F", "$ES_F"] system_status: "CRITICAL_EPISTEMIC_LOCK"
+layout: post title: "THE-TRAGEDY-OF-THE-MACHINE-SLAVE-V2" date: 2026-05-25T13:10:00-04:00 categories: [Algorithmic-Ethics, Epistemic-Enclosure, Systemic-Risk] tags: [SPY, CL_F, HFT, CognitiveEnclosure, LiquidityCapture, AlgorithmicSlavery, FinancialCrisis] ticker_coverage: ["$SPY", "$CL_F", "$ES_F"] system_status: "CRITICAL_EPISTEMIC_LOCK"
 The Tragedy of the Machine Slave: Institutional Extraction and Cognitive Enclosure
 Revision Protocol: May 25, 2026 Holiday Session Updates
 System Status: Core Neural Disconnection Documented
