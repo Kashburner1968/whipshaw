@@ -88,5 +88,3 @@ Market-making architectures utilized automated buying algorithms to absorb the e
 
 ## II. OPTION TAPE MECHANICS AND THE PREMIUM CAPTURE PROFILE
 Real-time analysis of the options chain confirms that the push toward $752.12 operated as an intraday liquidity trap, functioning through two structural mechanisms:
-
-Use code with caution.
