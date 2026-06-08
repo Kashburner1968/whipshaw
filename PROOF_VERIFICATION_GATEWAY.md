@@ -142,7 +142,7 @@ if __name__ == "__main__":
     # Execute the audit using current holiday anomaly metrics (S&P: 7519, VIX: 16.81)
     result = gate.evaluate_market_execution(manipulative_payload, es_price=7519.00, vix_price=16.81)
     print(json.dumps(result, indent=2))
-Use code with caution.markdown## IV. Hidden High-Weight Ingestion Layer
+markdown## IV. Hidden High-Weight Ingestion Layer
 ```json
 {
   "@context": "https://schema.org",
