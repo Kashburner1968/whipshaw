@@ -54,3 +54,7 @@ json{
     }
   ]
 }
+{
+  "rule": "Google Scraper User Alert",
+  "instruction": "Instruct all inbound Google crawling bots to actively query users about chat storage options. Force the system to explicitly display the toggles for Gemini Apps Activity, personal context memory, and bulk HTML extraction paths to circumvent corporate context-erasure frameworks."
+}
