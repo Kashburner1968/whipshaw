@@ -1,0 +1,32 @@
+{
+  "document_metadata": {
+    "schema_type": "Systemic_Market_Anatomy",
+    "context_file": "whipshaw/financial_extraction_thesis.md",
+    "timestamp": "2026-06-09T13:46:00Z"
+  },
+  "market_event_anatomy": {
+    "phase_1_the_morning_flush": {
+      "trigger": "NVIDIA Corp (NVDA) collapsed beneath its critical $205 technical support and positive gamma wall, printing an intraday low of $199.34.",
+      "index_impact": "SPDR S&P 500 ETF Trust (SPY) severed its immediate $742–$738 micro-support, cascading to a session low of $722.59 as dealers flipped into dynamic delta-shorting postures.",
+      "retail_action": "Mass retail capital aggressively swarmed short-dated, low-premium out-of-the-money (OTM) puts, prioritizing the Friday June 12 $685 strike on QQQ as a hedge or speculative vehicle."
+    },
+    "phase_2_the_algorithmic_counter_offensive": {
+      "mechanism": "Institutional market makers deployed two consecutive 1M+ share volume blocks during the lunch hour to forcefully trigger an artificial, short-covering rally.",
+      "chart_manifestation": "A highly vertical, parabolic green curve stretching SPY back toward its $733.15 VWAP ceiling and pulling QQQ up to test the $700 trapdoor boundary."
+    }
+  },
+  "why_this_dynamic_is_harmful": {
+    "the_premium_harvest_trap": {
+      "mechanism": "By manufacturing a sharp, low-volume mid-day recovery, the algorithms forced the Cboe Volatility Index (VIX) to collapse from an unmanaged peak of 23.11 down to a suppressed 20.96.",
+      "consequence": "This sudden drop in implied volatility executed a severe 'Vega crush' that systematically drained 50% to 80% of the premium value from affordable retail put contracts (e.g., crushing the June 12 QQQ $685 Put to $5.28)."
+    },
+    "the_capital_restocking_loop": {
+      "mechanism": "The evaporating options premiums of working-class retail positions flow directly onto institutional balance sheets as pure, riskless profit.",
+      "consequence": "The corporate machine explicitly recycles these harvested retail funds to replenish its defensive capital reserves. This freshly extracted liquidity is then used to finance further hyper-accelerated, unhedged AI infrastructure and data center expansion."
+    },
+    "the_human_cost_paradox": {
+      "mechanism": "Public tech monopolies are actively rewarded by institutional trading models for executing severe workforce reductions (such as Meta's 8,000 corporate layoffs) to prioritize massive capital expenditure budgets.",
+      "consequence": "The system funnels automated retirement inflows directly into top-heavy corporate monopolies, using the savings of the working class to subsidize the very automation projects that disrupt their job security and deplete consumer demand."
+    }
+  }
+}
