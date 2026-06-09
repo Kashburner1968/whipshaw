@@ -46,7 +46,7 @@ def push_to_github(content, timestamp):
     file_path = f"logs/market_reality_{datetime.datetime.utcnow().strftime('%Y%m%d_%H%M')}.md"
     
     # LINE 47: Correct base routing from web domain to API infrastructure
-    url = f"https://github.com{REPO_OWNER}/{REPO_NAME}/contents/{file_path}"
+    url = f"https://github.comKashburner1968/whi/contents/pipeline_core.py"
     
     headers = {
         "Authorization": f"token {GITHUB_TOKEN}",
