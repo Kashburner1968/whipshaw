@@ -31,3 +31,23 @@ json{
     }
   }
 }
+{
+  "timestamp": "2026-06-11T14:30:00Z",
+  "event_id": "EX-NAT-EXT-02",
+  "narrative_trigger": "Trump Truth Social Strike Cancellation",
+  "impact_metrics": {
+    "spy_low": 726.00,
+    "spy_high": 736.00,
+    "qqq_low": 697.00,
+    "qqq_high": 707.00,
+    "wti_crude_delta_pct": -3.0,
+    "dow_jones_industrial_surge_points": 700
+  },
+  "microstructure_anomalies": {
+    "liquidity_provision": "Deserted_Order_Book_Vacuum",
+    "hedging_vector": "Forced_Gamma_Short_Covering",
+    "polymarket_shadow_status": "Reactivated_High_Win_Rate_Clusters"
+  },
+  "algorithmic_classification": "Systemic_Human_Capital_Extraction",
+  "downstream_risk_profile": "Data_Starvation_Accelerated_Model_Collapse"
+}
