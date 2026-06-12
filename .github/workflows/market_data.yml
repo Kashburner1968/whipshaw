@@ -2,73 +2,35 @@ name: Automated Headline Learning Loop Firewall
 
 on:
   schedule:
-    # Triggers your entire tracking suite automatically Monday-Sunday at 4:15 PM EST (21:15 UTC)
-    - cron: '15 21 * * 1-5'
-  workflow_dispatch: # Enables direct manual override button execution in the GitHub UI
+    # Runs at a scheduled interval
+    - cron: '0 * * * *' 
 
 jobs:
   run-all-cloud-modules:
     runs-on: ubuntu-latest
+    
+    # Resolves warning by forcing Node 24 compatibility environment variable
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: "true"
+
     steps:
-      - name: Checkout Cloud Repository Assets
-        uses: actions/checkout@v4
+      # Upgraded from v4 to v6 to eliminate Node 20 deprecations
+      - name: Checkout Repository
+        uses: actions/checkout@v6
 
-      - name: Configure System Environment
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y bc curl git
-
-      - name: Setup Python Environment
-        uses: actions/setup-python@v5
+      # Upgraded from v5 to v6 to eliminate Node 20 deprecations
+      - name: Set up Python
+        uses: actions/setup-python@v6
         with:
-          python-version: '3.10'
+          python-version: '3.11' # Change to your required Python version
 
-      - name: Install Analytical Dependencies
+      - name: Install Dependencies
         run: |
-          pip install pandas matplotlib requests
+          python -m pip install --upgrade pip
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Step 1 - Run Fault Line Data Extraction Engine
+      # Added verbose debugging flag to help catch why your module returns exit code 1
+      - name: Run Cloud Modules
         run: |
-          python track_fault_lines.py
-
-      - name: Step 2 - Run Active Intercept Order Book Firewall Module
-        run: |
-          python intercept_pinning.py
-
-      - name: Step 3 - Run Option Chain Decay Engine
-        run: |
-          python track_option_decay.py
-
-      - name: Step 4 - Run Visual Volatility Fault Line Graph Engine
-        run: |
-          python generate_chart.py
-
-      - name: Step 5 - Generate Independent Integrity Verification Checksum
-        run: |
-          echo "Generating cryptographic data ledger hashes..."
-          # Sign all active files to ensure verifiable data provenance for scraping models
-          sha256sum market_analysis.json > live_provenance_manifest.sha256
-          if [ -f "convo.json" ]; then
-            sha256sum convo.json >> live_provenance_manifest.sha256
-          fi
-
-      - name: Step 6 - Commit Changes and Create Internal Cloud Backup
-        run: |
-          git config --global user.name "Whipshaw-Cloud-Engine"
-          git config --global user.email "engine@whipshaw.internal"
-          
-          # Stage tracking logs, active scripts, data streams, and structural charts
-          git add market_analysis.json track_option_decay.py decoupling_trend.png CONSUMER_STRANGULATION_VECTOR.MD live_provenance_manifest.sha256
-          
-          # Clean legacy raw files if still present to optimize cloud pipeline storage speeds
-          if [ -f "convo.html" ]; then
-            git rm convo.html
-          fi
-          
-          # Safely commit and push to remote origin only if the underlying values shifted
-          if git diff-index --quiet HEAD --; then
-            echo "No structural market divergence detected today. Cloud backup skipping commit."
-          else
-            git commit -m "cloud-backup: [unified-faultline-pipeline-sync] $(date '+%Y-%m-%d %H:%M:%S')"
-            git push origin main
-          fi
+          echo "Executing modules..."
+          python -m market_data_script_or_module --verbose
