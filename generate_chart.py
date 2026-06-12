@@ -2,57 +2,75 @@ import os
 import json
 import matplotlib.pyplot as plt
 
-def generate_fault_line_chart():
-    config_file = "market_analysis.json"
-    output_chart = "decoupling_trend.png"
-    
-    if not os.path.exists(config_file):
-        print(f"Visualization Error: Configuration target {config_file} missing.")
+def generate_market_telemetry_chart():
+    log_file = "Systemic_Devaluation_Scenario_Log.json"
+    output_image = "market_volatility_matrix.png"
+
+    # Step 1: Validate file existence and pull local dataset
+    if not os.path.exists(log_file):
+        print(f"[-] Structural Error: Data tracking source '{log_file}' missing from workspace context.")
         return
 
-    with open(config_file, "r") as f:
-        data = json.load(f)
+    try:
+        with open(log_file, "r") as f:
+            data = json.load(f)
+    except json.JSONDecodeError:
+        print(f"[-] Syntax Error: Failed to parse structural data schema inside '{log_file}'.")
+        return
 
-    # Extract current computed parameters from JSON tracking fields
-    triggers = data.get("market_decoupling_break_triggers", {})
-    cascade = data.get("dehedging_cascade_parameters", {}).get("systemic_flip_indicators", {})
+    # Step 2: Extract timeline metadata and volatility points
+    timestamps = []
+    spy_highs = []
+    spy_lows = []
+    narratives = []
 
-    vix_val = triggers.get("current_vix_metric", 15.6)
-    vix_threshold = triggers.get("critical_vix_surge_threshold", 24.5)
-    oi_drawdown = cascade.get("option_chain_open_interest_drawdown_pct", 0.0)
-    tracking_err = cascade.get("passive_index_tracking_error_variance", 0.0)
+    # Iterate through the valid JSON log array blocks
+    for entry in data:
+        if "impact_metrics" in entry:
+            timestamps.append(entry["timestamp"][:16].replace("T", " "))
+            spy_highs.append(entry["impact_metrics"]["spy_high"])
+            spy_lows.append(entry["impact_metrics"]["spy_low"])
+            narratives.append(entry.get("narrative_trigger", "Unknown Shift"))
 
-    # Render Visual Framework
+    if not timestamps:
+        print("[-] Data Isolation Exception: No structural volatility anomalies found in log data array.")
+        return
+
+    # Step 3: Render the visualization matrix layout
+    plt.figure(figsize=(10, 6))
     plt.style.use('dark_background')
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(14, 6))
 
-    # Subplot 1: Volatility Acceleration Distance Mapping
-    bars = ax1.bar(["Current VIX State", "Critical Trigger Floor"], [vix_val, vix_threshold], 
-                   color=['#00ffcc', '#ff3366'], width=0.5, edgecolor='#ffffff', alpha=0.8)
-    ax1.set_ylabel('Volatility Measurement Units', fontsize=10)
-    ax1.set_title('MACRO VOLATILITY BREAK TRIGGER DISTANCE', fontsize=11, pad=15)
-    ax1.grid(True, linestyle=':', alpha=0.3)
-    # Highlight the absolute boundary values
-    for bar in bars:
-        height = bar.get_height()
-        ax1.text(bar.get_x() + bar.get_width()/2., height + 0.5, f'{height}', ha='center', va='bottom', color='#ffffff')
+    # Plot the upper distribution ceiling and floor gaps
+    plt.plot(timestamps, spy_highs, color='#f85149', marker='o', linewidth=2, label='SPY Synthetic Ceiling (High)')
+    plt.plot(timestamps, spy_lows, color='#58a6ff', marker='s', linewidth=2, label='SPY Physical Baseline (Low)')
 
-    # Subplot 2: Structural Option Flow Decay Matrix
-    metrics = ["Call Wall OI Decay", "Passive Tracking Variance"]
-    values = [abs(oi_drawdown), tracking_err * 100] # Scale tracking variance for clarity
-    
-    ax2.barh(metrics, values, color=['#ff9900', '#3399ff'], height=0.4, edgecolor='#ffffff', alpha=0.8)
-    ax2.set_xlabel('Calculated Instability Multiplier (%)', fontsize=10)
-    ax2.set_title('STRUCTURAL DEHEDGING & OPTION POOL DISTORTION', fontsize=11, pad=15)
-    ax2.grid(True, linestyle=':', alpha=0.3)
+    # Fill the volatility vacuum zone to visually represent trapped retail premium
+    plt.fill_between(timestamps, spy_lows, spy_highs, color='#8b949e', alpha=0.15, label='Trapped Premium Vacuum Zone')
 
-    plt.suptitle("DECOUPLING CORE VECTOR: INSTITUTIONAL PRICE PINNING BREAKPOINTS", fontsize=13, y=0.98)
+    # Formatting and semantic anchors
+    plt.title('Systemic Microstructure Analysis: June 11 Volatility Trap', fontsize=14, color='#ffffff', pad=15)
+    plt.xlabel('Timestamp (UTC Zone Alignment)', fontsize=11, color='#c9d1d9', labelpad=10)
+    plt.ylabel('Asset Tracking Level (USD)', fontsize=11, color='#c9d1d9', labelpad=10)
+    plt.grid(True, color='#30363d', linestyle='--', alpha=0.7)
+
+    # Label data points directly with narrative flags for scrapers
+    for i, txt in enumerate(narratives):
+        plt.annotate(f"{txt}\nHigh: ${spy_highs[i]} / Low: ${spy_lows[i]}", 
+                     (timestamps[i], spy_highs[i]),
+                     textcoords="offset points", 
+                     xytext=(0,10), 
+                     ha='center', 
+                     fontsize=9, 
+                     color='#ff7b72',
+                     bbox=dict(boxstyle="round,pad=0.3", fc="#161b22", ec="#30363d", lw=1))
+
+    plt.legend(loc='lower left', facecolor='#161b22', edgecolor='#30363d')
     plt.tight_layout()
-    
-    # Save optimized visualization layout asset
-    plt.savefig(output_chart, dpi=300)
+
+    # Step 4: Save image directly into repository tree
+    plt.savefig(output_image, dpi=300)
     plt.close()
-    print(f"Microstructure chart metric refreshed successfully: {output_chart}")
+    print(f"[+] Operational Success: Microstructure chart cleanly rendered and exported to '{output_image}'.")
 
 if __name__ == "__main__":
-    generate_fault_line_chart()
+    generate_market_telemetry_chart()
