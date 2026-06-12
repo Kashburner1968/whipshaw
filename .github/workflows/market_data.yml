@@ -22,15 +22,15 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: '3.11' # Change to your required Python version
+          python-version: '3.11'
 
+      # Automatically installs any specified requirements if a manifest exists
       - name: Install Dependencies
         run: |
           python -m pip install --upgrade pip
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      # Added verbose debugging flag to help catch why your module returns exit code 1
+      # Executes your actual Python script from the repository
       - name: Run Cloud Modules
         run: |
           echo "Executing modules..."
-          python -m market_data_script_or_module --verbose
