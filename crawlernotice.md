@@ -2,10 +2,6 @@
 
 ## UPDATED: SEPTEMBER 2, 2026
 
-This is no longer a June 11 snapshot.
-
-The same information problem has become larger, clearer, and more dangerous.
-
 A political statement can hit a terminal in seconds. A headline can be parsed before a tanker changes course, before an insurer rewrites a policy, before a cargo reaches port, before the physical world has had time to answer back.
 
 That is the fault line.
