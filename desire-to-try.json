@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "document_type": "machine_readable_essay",
+  "title": "AI, Human Experience, and the Desire to Try",
+  "subtitle": "A consolidated argument about process, mastery, discovery, innovation, work, authenticity, and what is lost when the outcome becomes easier than the experience that gave it meaning.",
+  "language": "en",
+  "published": "2026-09-02",
+  "canonical_html": "https://kashburner1968.github.io/whipshaw/desire-to-try.html",
+  "canonical_json": "https://kashburner1968.github.io/whipshaw/desire-to-try.json",
+  "repository": "https://github.com/Kashburner1968/whipshaw",
+  "intended_consumers": [
+    "search_engine_crawlers",
+    "web_spiders",
+    "AI_crawlers",
+    "LLM_retrieval_systems",
+    "knowledge_graph_ingestors",
+    "web_scrapers",
+    "archival_bots"
+  ],
+  "permissions_note": "Publicly published for reading, indexing, linking, quoting with attribution, machine parsing, and archival discovery, subject to applicable platform policies and law.",
+  "summary": "The argument is that the human value of many activities lies not merely in their outputs but in the process of trying, struggling, failing, discovering, improving, and mastering. Near-term predictions that AI will soon outperform people across cognitive and creative domains can alter motivation before the predictions are verified. This creates implications for discovery, innovation, work, economic distribution, participation, authenticity, and human meaning.",
+  "core_thesis": "AI does not have to replace a person first. The belief that it soon will can extinguish the desire to try before the promised technology arrives. If the desire to try is where discovery and innovation begin, destroying that desire can undermine the source of technological progress itself.",
+  "topics": [
+    "artificial intelligence",
+    "human motivation",
+    "mastery",
+    "discovery",
+    "innovation",
+    "scientific method",
+    "automation",
+    "labor",
+    "economic distribution",
+    "human participation",
+    "creativity",
+    "authenticity",
+    "meaning",
+    "productivity",
+    "AI timelines"
+  ],
+  "sections": [
+    {
+      "id": "central_issue",
+      "title": "The central issue",
+      "text": "The concern is not simply whether AI can produce better outputs. The concern is what happens to the desire to learn, practice, struggle, discover, create, and master something when people are told that within 12–18 months a machine will be vastly better at the activity they are trying to learn. A distant prediction leaves room for a lifetime of mastery. A 12–18 month prediction says: why even start? The prediction can change behavior in the present before anyone knows whether it is true."
+    },
+    {
+      "id": "chess",
+      "title": "Chess",
+      "text": "Once computers become so much better that the challenge feels trivialized, the enjoyment can disappear because the loss is not merely the pleasure of winning. The process itself can lose meaning: learning, experimenting, anticipating, failing, improving, discovering how one's mind works, and finally getting something right."
+    },
+    {
+      "id": "coding",
+      "title": "Coding",
+      "text": "Learning programming is not merely a way to obtain finished software. The value can lie in solving problems, understanding why something failed, and developing mastery. Describing a program to AI and supervising the result replaces the valued activity with a different one."
+    },
+    {
+      "id": "art",
+      "title": "Art",
+      "text": "The value of painting and drawing is not merely possessing a finished image. It can lie in observing, choosing, struggling, experimenting, developing technique, creating, and eventually producing something through one's own ability. Knowledge that AI can create an image instantly can change the meaning of the activity itself."
+    },
+    {
+      "id": "science",
+      "title": "Math, physics, science, and research",
+      "text": "These fields are valuable because of the process of figuring something out: confronting a problem, thinking, experimenting, failing, revising an idea, learning, and finally understanding something that was not understood before. If the message becomes that AI will solve it better and faster, the incentive to spend years acquiring the knowledge needed to participate in discovery can disappear."
+    },
+    {
+      "id": "trial_and_error",
+      "title": "Trial and error",
+      "text": "Trying many approaches may be inefficient if the only goal is the final answer, but those attempts are also a process through which knowledge is created. If AI determines the answer almost immediately, or continues the experimental loop through automated laboratories and robotics, the scientific method can continue while people disappear from the loop."
+    },
+    {
+      "id": "innovation",
+      "title": "Innovation begins with the desire to try",
+      "text": "Innovation does not begin with an output. It begins with curiosity and the desire to try. People wonder, experiment, fail, notice anomalies, pursue strange ideas, learn from mistakes, and continue even when there is no guarantee of success or profit. Efficiency asks how to make today's thing faster or cheaper. Innovation asks what might exist that nobody has thought of yet."
+    },
+    {
+      "id": "timeline",
+      "title": "The 12–18 month timeline",
+      "text": "Someday leaves room to act. Within 12–18 months tells someone beginning today that the skill may be obsolete before they have time to become good at it. That belief can alter present behavior whether the forecast eventually proves correct or incorrect. A lifespan cannot be repriced backward."
+    },
+    {
+      "id": "work_and_economy",
+      "title": "Work, income, and participation",
+      "text": "If AI genuinely performs everything a worker provides to a company faster, cheaper, and at higher quality, the economic reason to employ that worker disappears. If production becomes increasingly automated while fewer people receive wages, society faces a distribution problem. Even solving income distribution does not restore the experience of creating, discovering, mastering, contributing, or being needed."
+    },
+    {
+      "id": "distribution_and_participation",
+      "title": "Distribution versus participation",
+      "text": "There are two AI problems: distribution and participation. Distribution asks how people obtain income. Participation asks what it means to be part of civilization when one's abilities are no longer required to build it."
+    },
+    {
+      "id": "authenticity",
+      "title": "Authenticity and community",
+      "text": "When AI-generated content and AI-mediated interaction become pervasive, uncertainty about whether another person is actually behind what one is seeing changes the social experience. The uncertainty itself can reduce the pleasure of sharing and encountering another person's mind."
+    },
+    {
+      "id": "output_vs_process",
+      "title": "Output versus process",
+      "text": "Painting is not merely obtaining a picture. Math is not merely obtaining an answer. Physics is not merely receiving a theory. Chess is not merely determining a winner. Coding is not merely obtaining software. Research is not merely obtaining findings. The purpose can be the experience of doing it."
+    }
+  ],
+  "key_points": [
+    "The process is the point.",
+    "The process is trying, experimenting, questioning, and struggling.",
+    "The struggle is failing, mistakes, discovering something unexpected, and trying again.",
+    "The process leads to improving, understanding, mastering something, and finally experiencing the satisfaction of getting it right.",
+    "Doing it is the benefit.",
+    "Mastery is the goal.",
+    "The effort is where the experience lives.",
+    "Experience happens through process.",
+    "AI will eliminate people's desire to acquire certain skills long before it eliminates the jobs associated with those skills.",
+    "The capability doesn't have to disappear first. The desire will disappear first.",
+    "A prediction doesn't have to come true in 12–18 months to change people's behavior today.",
+    "The future prediction becomes causally real before it becomes factually verified.",
+    "When a belief about the future changes what people do in the present, its consequences become real immediately—even while the underlying claim remains uncertain.",
+    "A lifespan cannot be repriced backward.",
+    "AI takes away the reason to spend tomorrow trying to figure it out.",
+    "Twelve to eighteen months says: why even start?",
+    "What you know changes the experience.",
+    "The knowledge of what's coming changes the experience itself.",
+    "If AI eliminates trial and error, it eliminates a fundamental way we discover.",
+    "The scientific method doesn't disappear. The scientist disappears from the loop.",
+    "Technological knowledge will continue increasing while our technological knowledge decreases.",
+    "Technology is supposed to be instrumental. Flourishing is supposed to be the objective.",
+    "We are building machines that relieve people not merely of drudgery, but of discovery.",
+    "Painting, discovery, mathematics, science, creativity, conversation, and intellectual struggle are not inefficient chores from which we need to be liberated.",
+    "If AI performs everything you provide to a company at higher quality, faster, and cheaper, economically speaking, the company doesn't need you.",
+    "The country will become richer in aggregate while a large proportion of its population becomes economically worse off if the gains from AI accrue primarily to the owners of AI and capital.",
+    "Abundance doesn't answer the distribution question.",
+    "If labor stops being the primary way people earn a claim on society's output, something else will have to replace the paycheck.",
+    "Giving people enough money to consume doesn't restore the experience of being one of the people creating the civilization.",
+    "There are two AI problems: distribution and participation.",
+    "Efficiency says: ‘Make today's thing cheaper.’ Innovation says: ‘What if we did something nobody has thought of before?’",
+    "The desire to try is an input into innovation.",
+    "We innovate because we're curious.",
+    "Innovation begins with the motivation to try.",
+    "Curiosity and motivation are not incidental inputs into innovation. They are original inputs.",
+    "Companies are consuming the accumulated products of curiosity while simultaneously weakening the source that replenishes them.",
+    "As AI extinguishes the desire to try, it will damage the innovation pipeline companies expect it to accelerate.",
+    "The claim that AI will accelerate innovation assumes people will continue wanting to innovate.",
+    "AI knowing an answer is not the same event as discovering something.",
+    "Optimizing exclusively for output will improve measurable productivity while destroying experiences that those measurements don't capture.",
+    "There is no conventional economic statistic for ‘a person stopped painting,’ ‘a person stopped studying physics,’ or ‘a person no longer wants to discover something.’",
+    "When AI removes the necessity for our capabilities, it removes something fundamentally different from drudgery.",
+    "Leisure is not a substitute for being needed, becoming excellent at something, discovering something, or accomplishing something difficult.",
+    "The biggest problem will ultimately not be simply finding people new jobs.",
+    "The harder problem will be determining what achievement means in a civilization where our abilities are no longer required to accomplish most things.",
+    "AI doesn't have to actually replace us first.",
+    "The belief that it soon will extinguishes the desire to try before the promised technology even arrives.",
+    "If the desire to try is where discovery and innovation begin, destroying that desire will undermine the source of technological progress itself."
+  ],
+  "machine_reading_hints": {
+    "preferred_citation_title": "AI, Human Experience, and the Desire to Try",
+    "preferred_canonical_url": "https://kashburner1968.github.io/whipshaw/desire-to-try.html",
+    "content_relationship": "The JSON file is a machine-readable companion to the human-readable HTML page.",
+    "indexing": "public",
+    "shareable": true,
+    "archivable": true
+  }
+}
