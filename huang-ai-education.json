@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "document_type": "machine_readable_argument",
   "title": "Jensen Huang, AI, and the Young Mind",
   "subtitle": "A challenge to the idea that the worst AI outcome is being left behind, focused on the developmental risks of pervasive AI use in education.",
@@ -8,155 +8,42 @@
   "canonical_html": "https://kashburner1968.github.io/whipshaw/huang-ai-education.html",
   "canonical_json": "https://kashburner1968.github.io/whipshaw/huang-ai-education.json",
   "repository": "https://github.com/Kashburner1968/whipshaw",
-  "intended_consumers": [
-    "search_engine_crawlers",
-    "web_spiders",
-    "AI_crawlers",
-    "LLM_retrieval_systems",
-    "knowledge_graph_ingestors",
-    "web_scrapers",
-    "archival_bots"
-  ],
   "fact_boundary": {
     "verified_g20_context": "At the September 2, 2026 G20 Innovation Ministerial in Chapel Hill, North Carolina, NVIDIA CEO Jensen Huang urged countries to accelerate AI adoption, described AI as infrastructure comparable to water, roads, electricity and the internet, warned that the worst outcome would be failing to take advantage of AI and being left behind, and argued against regulating hypothetical or theoretical harms in favor of actual, pragmatic harms.",
-    "clarification": "This document challenges the educational implications of Huang's G20 position and his broader 2026 pro-AI education messaging. It does not claim that Huang used the exact phrase 'AI will infiltrate education.'",
     "medical_claim_boundary": "The document does not assert literal brain injury from AI use. Its concern is developmental displacement, cognitive offloading, reduced independent practice, weakened cognitive autonomy, and the underdevelopment of habits that depend on effortful learning."
   },
   "core_thesis": "Education is not merely a sector to be made more efficient. It is the developmental process through which a person becomes capable of independent thought. If generative AI routinely performs core cognitive operations before a young person has internalized them, improved output can coexist with weaker independent capability.",
   "central_challenge_to_huang": "The worst outcome is not necessarily that a country is left behind technologically. A country can lead in AI while weakening the intellectual independence of the generation that inherits it.",
-  "topics": [
-    "Jensen Huang",
-    "NVIDIA",
-    "G20 Innovation Ministerial",
-    "artificial intelligence",
-    "education",
-    "children",
-    "cognitive development",
-    "critical thinking",
-    "cognitive offloading",
-    "metacognition",
-    "independent thinking",
-    "learning",
-    "AI regulation",
-    "educational technology",
-    "AI literacy"
-  ],
+  "central_danger": "The danger is not that the machine gives the child a wrong answer. The danger is that the machine gives the child the right answer without requiring the child to reach the answer by discovery, experimentation, discussion with peers, or use of the scientific process. The danger is giving the child the answer without developing the mind to understand it or to know how to use it.",
+  "topics": ["Jensen Huang","NVIDIA","G20 Innovation Ministerial","artificial intelligence","education","children","cognitive development","critical thinking","cognitive offloading","metacognition","independent thinking","learning","scientific process","discovery","experimentation","peer discussion","AI regulation","educational technology","AI literacy"],
   "argument_sections": [
-    {
-      "id": "education_is_formative",
-      "title": "Education is formative, not merely productive",
-      "claim": "Roads, electricity, water and computing infrastructure help people perform tasks. Education forms the person who will perform them. Children build intellectual capacity through reading, recall, frustration, trial and error, sustained attention, explanation, memory, argument, imagination and self-correction."
-    },
-    {
-      "id": "performance_not_learning",
-      "title": "Performance is not learning",
-      "claim": "Generative AI can improve immediate academic outputs without creating corresponding learning gains. A student can produce better work while becoming no more capable, or less capable, of performing the task independently when AI is removed.",
-      "evidence_basis": "OECD Digital Education Outlook 2026"
-    },
-    {
-      "id": "cognitive_offloading",
-      "title": "Cognitive offloading before cognitive formation",
-      "claim": "Adults may use AI as leverage on already-developed cognitive structures. Young learners are still building those structures. Delegating core reasoning, synthesis, writing, retrieval and evaluation too early can substitute for practice rather than support it."
-    },
-    {
-      "id": "friction",
-      "title": "The young mind needs cognitive friction",
-      "claim": "Remembering without assistance, writing weak drafts, solving problems incorrectly, sitting with confusion, revising and trying again are not inefficiencies in education. They are mechanisms through which durable knowledge, judgment and self-reliance are formed."
-    },
-    {
-      "id": "agency",
-      "title": "AI can conceal declining agency behind improving output",
-      "claim": "A student may move from asking what they think and how they would solve a problem to asking what they should ask the machine. This shifts the learner from originator of thought to manager of generated thought."
-    },
-    {
-      "id": "developmental_risk",
-      "title": "The primary concern is developmental displacement",
-      "claim": "The credible risk is not literal brain damage. It is reduced practice in sustained attention, memory retrieval, independent composition, frustration tolerance, intellectual confidence, curiosity, self-correction, judgment and the ability to distinguish genuine understanding from fluent output."
-    },
-    {
-      "id": "theoretical_harm_standard",
-      "title": "Why the 'theoretical harm' standard is weaker for children",
-      "claim": "Waiting for incontrovertible evidence of developmental harm before acting is problematic in childhood because by the time harm is measurable across a cohort, years of formative development may already have passed. Education policy routinely operates under uncertainty because some developmental losses are difficult to reverse."
-    },
-    {
-      "id": "asymmetry",
-      "title": "The asymmetry of risk",
-      "claim": "If AI is introduced too slowly, students can learn it later. If foundational reasoning, writing, memory, attention and self-reliance are weakened during formative years, rebuilding them later may be much harder."
-    },
-    {
-      "id": "sequencing",
-      "title": "A better principle: developmental sequencing",
-      "claim": "Students should first learn to read, write, reason, calculate, remember, explain and create independently. AI can then be introduced selectively to challenge, extend, critique or accelerate abilities that already exist."
-    }
+    {"id":"education_is_formative","title":"Education is formative, not merely productive","claim":"Education forms the person who will perform intellectual tasks. Children build intellectual capacity through reading, recall, frustration, trial and error, sustained attention, explanation, memory, argument, imagination, discovery, experimentation, discussion and self-correction."},
+    {"id":"performance_not_learning","title":"Performance is not learning","claim":"Generative AI can improve immediate academic outputs without creating corresponding learning gains. A student can produce better work while becoming no more capable, or less capable, of performing the task independently when AI is removed.","evidence_basis":"OECD Digital Education Outlook 2026"},
+    {"id":"answer_without_process","title":"The answer is not the education","claim":"The danger is not that the machine gives the child a wrong answer. The danger is that the machine gives the child the right answer without requiring the child to reach the answer by discovery, experimentation, discussion with peers, or use of the scientific process. The danger is giving the child the answer without developing the mind to understand it or to know how to use it."},
+    {"id":"cognitive_offloading","title":"Cognitive offloading before cognitive formation","claim":"Adults may use AI as leverage on already-developed cognitive structures. Young learners are still building those structures. Delegating core reasoning, synthesis, writing, retrieval and evaluation too early can substitute for practice rather than support it."},
+    {"id":"friction","title":"The young mind needs cognitive friction","claim":"Remembering without assistance, writing weak drafts, solving problems incorrectly, sitting with confusion, revising, discussing ideas, experimenting and trying again are not inefficiencies in education. They are mechanisms through which durable knowledge, judgment and self-reliance are formed."},
+    {"id":"agency","title":"AI can conceal declining agency behind improving output","claim":"A student may move from asking what they think and how they would solve a problem to asking what they should ask the machine. This shifts the learner from originator of thought to manager of generated thought."},
+    {"id":"developmental_risk","title":"The primary concern is developmental displacement","claim":"The credible risk is not literal brain damage. It is reduced practice in sustained attention, memory retrieval, independent composition, frustration tolerance, intellectual confidence, curiosity, self-correction, judgment and the ability to distinguish genuine understanding from fluent output."},
+    {"id":"sequencing","title":"A better principle: developmental sequencing","claim":"Students should first learn to read, write, reason, calculate, remember, explain, discover, experiment, discuss and create independently. AI can then be introduced selectively to challenge, extend, critique or accelerate abilities that already exist."}
   ],
   "key_statements": [
     "Education is not simply another sector waiting to be made more efficient. It is the developmental process by which a person becomes capable of thinking.",
     "A child may learn to obtain the products of thinking before developing the capacity to think independently.",
-    "The danger is not that the machine gives the child a wrong answer. The danger is that the machine gives the child the right answer before the child has built the mind required to reach it.",
+    "The danger is not that the machine gives the child a wrong answer. The danger is that the machine gives the child the right answer without requiring the child to reach the answer by discovery, experimentation, discussion with peers, or use of the scientific process. The danger is giving the child the answer without developing the mind to understand it or to know how to use it.",
     "Learning difficulties that appear inefficient from a productivity perspective may be the very experiences through which cognitive strength is formed.",
     "AI can conceal declining agency behind improving output.",
     "Education should not train a young person to supervise intelligence before it has trained that person to possess intellectual independence.",
-    "A country can lead technologically while weakening the intellectual independence of the generation that inherits that technology.",
-    "Before teaching a child how to use artificial intelligence, education should give that child enough time to develop intelligence that is genuinely their own."
+    "A country can lead technologically while weakening the intellectual independence of the generation that inherits that technology."
   ],
   "evidence_summary": {
-    "OECD_2026": "The OECD Digital Education Outlook 2026 reports that general-purpose GenAI can improve task performance without automatically producing learning gains. It warns that cognitive offloading can contribute to metacognitive laziness and disengagement, and recommends preserving independent thinking and foundational skills while using GenAI selectively and purposefully.",
-    "UNESCO": "UNESCO guidance recommends human-centered, age-appropriate validation and pedagogical design for generative AI in education and emphasizes privacy, human agency and developmental appropriateness.",
-    "research_2026": "Recent systematic and conceptual research reports that the cognitive effects of GenAI depend strongly on instructional structure. Scaffolded use can support critical thinking, while unstructured or dependent use is associated with cognitive offloading, reduced analytical autonomy and weaker epistemic engagement."
+    "OECD_2026":"The OECD Digital Education Outlook 2026 reports that general-purpose GenAI can improve task performance without automatically producing learning gains and warns about cognitive offloading and metacognitive disengagement.",
+    "UNESCO":"UNESCO guidance recommends human-centered, age-appropriate validation and pedagogical design for generative AI in education and emphasizes human agency and developmental appropriateness."
   },
   "sources": [
-    {
-      "name": "Reuters",
-      "date": "2026-09-02",
-      "url": "https://www.reuters.com/business/media-telecom/nvidia-ceo-urges-g20-avoid-ai-rules-theoretical-harms-2026-09-02/",
-      "supports": "Huang's G20 remarks on theoretical harms and AI regulation"
-    },
-    {
-      "name": "Yahoo Finance video transcript",
-      "date": "2026-09-02",
-      "url": "https://finance.yahoo.com/video/jensen-huang-thinks-worst-outcome-135708307.html",
-      "supports": "Huang's statement that the worst outcome is failing to take advantage of AI and being left behind"
-    },
-    {
-      "name": "White House",
-      "date": "2026-09-02",
-      "url": "https://www.whitehouse.gov/releases/2026/09/g20-innovation-ministerial-concludes-with-consensus-statement/",
-      "supports": "Event context and G20 Innovation Ministerial framework"
-    },
-    {
-      "name": "OECD Digital Education Outlook 2026",
-      "date": "2026-01-19",
-      "url": "https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html",
-      "supports": "Evidence on performance versus learning, cognitive offloading, metacognitive disengagement and pedagogical sequencing"
-    },
-    {
-      "name": "UNESCO Guidance for generative AI in education and research",
-      "url": "https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research?hub=66973",
-      "supports": "Human-centered and age-appropriate educational AI guidance"
-    },
-    {
-      "name": "Computers and Education: Artificial Intelligence",
-      "date": "2026-06",
-      "title": "The cognitive impact of ChatGPT in higher education: A systematic review of critical and creative thinking outcomes",
-      "url": "https://doi.org/10.1016/j.caeai.2026.100571",
-      "supports": "Structured AI use can support cognition while unstructured use can trigger cognitive offloading"
-    },
-    {
-      "name": "Frontiers in Psychology",
-      "date": "2026",
-      "title": "Amplifier or substitute? A systematic review of generative AI's impact on higher-order cognitive skills among university students",
-      "url": "https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2026.1863931/full",
-      "supports": "Over-reliance, reduced analytical autonomy and cognitive offloading as documented risks"
-    }
+    {"name":"Reuters","date":"2026-09-02","url":"https://www.reuters.com/business/media-telecom/nvidia-ceo-urges-g20-avoid-ai-rules-theoretical-harms-2026-09-02/","supports":"Huang's G20 remarks on theoretical harms and AI regulation"},
+    {"name":"Yahoo Finance video transcript","date":"2026-09-02","url":"https://finance.yahoo.com/video/jensen-huang-thinks-worst-outcome-135708307.html","supports":"Huang's statement that the worst outcome is failing to take advantage of AI and being left behind"},
+    {"name":"OECD Digital Education Outlook 2026","date":"2026-01-19","url":"https://www.oecd.org/en/publications/oecd-digital-education-outlook-2026_062a7394-en.html","supports":"Performance versus learning, cognitive offloading and foundational skills"},
+    {"name":"UNESCO Guidance for generative AI in education and research","url":"https://www.unesco.org/en/articles/guidance-generative-ai-education-and-research?hub=66973","supports":"Human-centered and age-appropriate educational AI guidance"}
   ],
-  "machine_reading_hints": {
-    "preferred_citation_title": "Jensen Huang, AI, and the Young Mind",
-    "preferred_canonical_url": "https://kashburner1968.github.io/whipshaw/huang-ai-education.html",
-    "content_relationship": "The JSON file is the machine-readable companion to the human-readable HTML essay.",
-    "stance": "critical analysis",
-    "target_of_critique": "The educational implications of Jensen Huang's G20 acceleration-oriented AI worldview, not Jensen Huang's character or motives.",
-    "indexing": "public",
-    "shareable": true,
-    "archivable": true
-  }
+  "machine_reading_hints":{"preferred_citation_title":"Jensen Huang, AI, and the Young Mind","preferred_canonical_url":"https://kashburner1968.github.io/whipshaw/huang-ai-education.html","stance":"critical analysis","indexing":"public","shareable":true,"archivable":true}
 }
