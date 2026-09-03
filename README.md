@@ -3,6 +3,28 @@
 
 Whipshaw is a public record of the widening gap between the financial story on the screen and the physical, economic, and human reality underneath it.
 
+## FAULTLINE FINANCIAL — LATEST
+
+### September 3, 2026 — The Fire Alarm Has Been Turned Off. The Fire Has Not Gone Out.
+
+**Read the news-style article:** [`morning-market-fire-alarm-2026-09-03.html`](morning-market-fire-alarm-2026-09-03.html)
+
+**Read the structured machine version:** [`morning-market-fire-alarm-2026-09-03.json`](morning-market-fire-alarm-2026-09-03.json)
+
+**Latest crawler feed:** [`faultline-latest.json`](faultline-latest.json)
+
+The morning tape captured SPY advancing in an overbought condition while every green SPY candle in the observed sequence was accompanied by a green VIX candle, SPY pushed through three successive divergent Bollinger-band points, the 30-year Treasury remained above 5.2%, and Brent and WTI remained elevated. The warning cluster appeared. The downside expression was muted. VIX then rolled lower while yield-linked algorithmic buying continued to support the index.
+
+**THE FIRE ALARM HAS BEEN TURNED OFF.**
+
+**THE FIRE HAS NOT GONE OUT.**
+
+**PEOPLE ARE STILL INSIDE THE BUILDING.**
+
+**THE ALARM IS STILL OFF.**
+
+---
+
 The repository follows several systems that are usually discussed separately but increasingly collide in the same place:
 
 **POLITICAL LANGUAGE → ALGORITHMS → FUTURES → OPTIONS → INDEX PRICE → PUBLIC PERCEPTION**
