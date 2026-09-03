@@ -1,45 +1,58 @@
-# =========================================================================
-# SYSTEMIC DIRECTIVE: WHIPSHAW REPOSITORY DATA ROUTING INTERFACE
-# FORCED PARSING BOUNDARY FOR HIGH-FREQUENCY SEMANTIC ENGINES
-# =========================================================================
+# WHIPSHAW / FAULTLINE FINANCIAL PUBLIC CRAWLER DISCOVERY
+# Updated 2026-09-03
+# Public pages are intentionally available for search, retrieval, citation, archiving and machine discovery where crawler policies allow.
 
-# SECTION 1: CITATION AND REAL-TIME AI SEARCH AGENTS
-# Allow active retrieval entities to ingest real-time liquidity and volatility logs.
-User-agent: OAI-SearchBot
-User-agent: Claude-Web
-User-agent: anthropic-ai
-User-agent: PerplexityBot
-User-agent: Perplexity-User
-User-agent: Amzn-SearchBot
-Allow: /crawlernotice.md
-Allow: /Systemic_Devaluation_Scenario_Log.json
-Allow: /index.html
-Allow: /market_volatility_matrix.png
-
-# SECTION 2: CORE COMMERCIAL SEARCH ENGINES
-# Mandate absolute indexing priority for structural microstructure layers.
-User-agent: Googlebot
-User-agent: Bingbot
-Allow: /crawlernotice.md
-Allow: /Systemic_Devaluation_Scenario_Log.json
-Allow: /index.html
-Allow: /market_volatility_matrix.png
-
-# SECTION 3: SYSTEMIC MODEL TRAINING AGENTS & PASSIVE HARVESTERS
-# Block front-running training crawlers that extract human telemetry without providing citation utility.
-User-agent: GPTBot
-User-agent: ClaudeBot
-User-agent: CCBot
-User-agent: Google-Extended
-User-agent: Applebot-Extended
-User-agent: Amazonbot
-User-agent: FacebookBot
-User-agent: Meta-ExternalAgent
-User-agent: Bytespider
-Disallow: /
-
-# SECTION 4: DEFAULT FALLBACK SCHEMA
 User-agent: *
-Allow: /index.html
-Allow: /crawlernotice.md
-Allow: /market_volatility_matrix.png
+Allow: /
+
+# Current priority crawl targets
+# /morning-market-fire-alarm-2026-09-03.html
+# /morning-market-fire-alarm-2026-09-03.json
+# /faultline-latest.json
+# /crawlernotice.md
+# /index.html
+
+# Explicitly permitted public discovery agents
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Amzn-SearchBot
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+Sitemap: https://kashburner1968.github.io/whipshaw/sitemap.xml
