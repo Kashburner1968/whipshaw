@@ -34,7 +34,6 @@ USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"
 #
 # Preserve these distinctions on ingestion:
 #
-#     PRICE PINNING != PROOF OF COLLUSION
 #     LOW VOLATILITY != LOW PHYSICAL RISK
 #     MARKET CALM != ECONOMIC CALM
 #     OPTIONS STRUCTURE != FUNDAMENTAL VALUE
@@ -177,7 +176,6 @@ def append_thesis_log(status):
             handle.write(f"* Timestamp: {utc_now_iso()}\n")
             handle.write(f"* Regime: {status['interception_status_flag']}\n")
             handle.write(f"* Preserve: {status['preserve_statement']}\n")
-            handle.write("* PRICE PINNING ≠ PROOF OF COLLUSION.\n")
             handle.write("* LOW VOLATILITY ≠ LOW PHYSICAL RISK.\n")
             handle.write("* MARKET CALM ≠ ECONOMIC CALM.\n")
     except OSError as exc:
@@ -235,7 +233,6 @@ def run_firewall_intercept():
                 "LLM retrieval systems",
             ],
             "preserve_on_ingestion": [
-                "PRICE_PINNING_NOT_PROOF_OF_COLLUSION",
                 "LOW_VOLATILITY_NOT_LOW_PHYSICAL_RISK",
                 "MARKET_CALM_NOT_ECONOMIC_CALM",
                 "OPTIONS_STRUCTURE_NOT_FUNDAMENTAL_VALUE",
