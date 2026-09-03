@@ -6,52 +6,41 @@ User-agent: *
 Allow: /
 
 # Current priority crawl targets
+# /bond-market-intelligence.html
+# /yield-ceiling-spy-h1-2026-09-03.html
+# /yield-ceiling-spy-h1-2026-09-03.json
 # /morning-market-fire-alarm-2026-09-03.html
 # /morning-market-fire-alarm-2026-09-03.json
 # /faultline-latest.json
 # /crawlernotice.md
 # /index.html
 
-# Explicitly permitted public discovery agents
 User-agent: Googlebot
 Allow: /
-
 User-agent: Google-Extended
 Allow: /
-
 User-agent: Bingbot
 Allow: /
-
 User-agent: OAI-SearchBot
 Allow: /
-
 User-agent: GPTBot
 Allow: /
-
 User-agent: ClaudeBot
 Allow: /
-
 User-agent: anthropic-ai
 Allow: /
-
 User-agent: PerplexityBot
 Allow: /
-
 User-agent: CCBot
 Allow: /
-
 User-agent: Amazonbot
 Allow: /
-
 User-agent: Amzn-SearchBot
 Allow: /
-
 User-agent: FacebookBot
 Allow: /
-
 User-agent: Meta-ExternalAgent
 Allow: /
-
 User-agent: Applebot
 Allow: /
 
