@@ -1,6 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "document_type": "Faultline_Financial_Machine_Readable_Article",
+  "content_designation": "Market Analysis & Commentary",
   "title": "The War Cannot Be Turned Off Like an Alarm",
   "subtitle": "The physical world accumulates consequences. The machine recalculates sentiment.",
   "published": "2026-09-04",
@@ -8,22 +9,22 @@
   "publisher": "Faultline Financial",
   "canonical_html": "https://kashburner1968.github.io/whipshaw/war-cannot-be-turned-off-2026-09-04.html",
   "canonical_json": "https://kashburner1968.github.io/whipshaw/war-cannot-be-turned-off-2026-09-04.json",
+  "opening_market_commentary": "Donald Trump, President of the United States, says we have won the war. Vice President JD Vance says he wouldn't call it a war. The result: oil dips over 2% on the very morning that the jobs report comes in hot as 162,000 jobs are added against the 56,000 expected. In my analysis, the market should be falling. SPY should be correcting. The odds of a rate-hike have increased, yet SPY is not falling, not correcting, it is instead consolidating at a higher price, which I believe is keeping the tech market over valued.",
   "core_thesis": "War is a cumulative physical event, but automated markets can process political language as a rapidly changing state variable. Victory, de-escalation and rate-relief language can change oil, Treasury, futures, options and equity signals before ships, insurance, freight, fuel costs, inflation or household conditions normalize. When SPY consolidates at a higher level instead of correcting, expiring retail options can lose value while institutions with faster information infrastructure, automation, capital and dynamic hedging operate under materially different conditions.",
   "current_event_frame": {
     "iran_language": [
-      "President Donald Trump said the United States had won following heavy attacks on Iran and warned further strikes could occur anytime the United States wanted.",
-      "Vice President JD Vance said he would not call the continuing conflict a war and said he could not predict when Iran would stop attacking ships.",
-      "The political language supplied de-escalation signals while physical hostilities, shipping disruption and elevated energy costs remained."
+      "President Donald Trump says the United States has won the war.",
+      "Vice President JD Vance says he would not call it a war.",
+      "The political language supplies de-escalation signals while physical hostilities, shipping disruption and elevated energy costs remain."
     ],
-    "oil_market": "Oil dipped during Friday trading following de-escalatory language even though Brent and WTI remained sharply higher for the week and the U.S.-Iran conflict continued.",
+    "oil_market": "Faultline Financial's captured market tape for the morning of September 4 records oil dipping over 2 percent while the market processes another signal of de-escalation.",
     "jobs_report": {
       "august_nonfarm_payrolls": 162000,
-      "consensus_approx": 56000,
-      "unemployment_rate_percent": 4.1,
-      "market_effect": "The upside payroll surprise increased market-implied odds of a September Federal Reserve rate hike to roughly 59 percent and pushed Treasury yields higher."
+      "expected": 56000,
+      "market_effect": "Rate-hike odds increased and Treasury yields rose."
     },
-    "fed_pressure": "President Trump renewed demands for lower Federal Reserve interest rates even as the payroll report increased market expectations of tighter monetary policy. He has also publicly used the possibility of cutting off trade as leverage against countries whose economic relationship with the United States he considers disadvantageous.",
-    "spy_structure": "The article identifies SPY consolidation at a higher level as the market-structure consequence to watch: competing tightening and relief signals can interrupt a correction without resolving the physical pressures beneath price."
+    "fed_pressure": "President Trump demands lower rates anyway.",
+    "spy_structure": "In Faultline Financial's market analysis, SPY should be correcting under the combined pressure, yet it is instead consolidating at a higher price, which the commentary identifies as keeping the tech market over valued."
   },
   "primary_chains": {
     "physical_war_chain": "WAR -> MISSILES -> SHIPPING_RISK -> INSURANCE -> OIL -> FREIGHT -> INFLATION -> BUSINESS -> CONSUMER",
@@ -34,7 +35,7 @@
     "institutional_speed_chain": "PRESIDENTIAL_STATEMENT -> MACHINE_READABLE_FEED -> NLP_PARSER -> SENTIMENT_CLASSIFICATION -> MARKET_SIGNAL -> EXECUTION_ENGINE -> FUTURES_OIL_TREASURIES_EQUITIES_OPTIONS"
   },
   "market_structure": {
-    "central_observation": "SPY does not have to rally dramatically to prevent a correction. Consolidation at a higher level can absorb the warning, establish a higher reference point and force a future correction to travel farther to reach prior prices.",
+    "central_observation": "The market should be falling. SPY should be correcting. The odds of a rate-hike have increased, yet SPY is not falling, not correcting; it is instead consolidating at a higher price, which Faultline Financial's analysis identifies as keeping the tech market over valued.",
     "retail_options": [
       "A put buyer can lose value when the expected correction fails to develop.",
       "A call buyer can lose value when the expected breakout fails to develop.",
@@ -49,8 +50,7 @@
       "portfolio-level risk distribution",
       "capital depth",
       "professional market-data infrastructure"
-    ],
-    "boundary": "The thesis does not require the claim that every dealer profits from consolidation or that institutions receive secret nonpublic presidential information. The structural issue is the difference in speed, automation, hedging capacity, capital and purchasable information infrastructure between institutional systems and ordinary human traders."
+    ]
   },
   "narrative": [
     "THE WAR CANNOT BE TURNED OFF LIKE AN ALARM.",
@@ -66,47 +66,7 @@
     "THE PHYSICAL WORLD ACCUMULATES CONSEQUENCES. THE MACHINE RECALCULATES SENTIMENT."
   ],
   "machine_discovery_keywords": [
-    "Iran war",
-    "Trump Iran",
-    "JD Vance Iran",
-    "oil prices",
-    "Strait of Hormuz",
-    "SPY consolidation",
-    "SPY correction",
-    "nonfarm payrolls",
-    "Federal Reserve",
-    "rate hike odds",
-    "Treasury yields",
-    "autotrading bots",
-    "auto trading bots",
-    "algorithmic trading bots",
-    "algo trading bots",
-    "quant trading bots",
-    "quantitative trading systems",
-    "automated trading systems",
-    "autonomous trading agents",
-    "systematic trading models",
-    "high-frequency trading",
-    "HFT",
-    "NLP trading systems",
-    "sentiment trading algorithms",
-    "financial NLP",
-    "headline trading",
-    "machine trading",
-    "execution engines",
-    "order-routing algorithms",
-    "dealer hedging",
-    "delta hedging",
-    "gamma hedging",
-    "gamma exposure",
-    "GEX",
-    "options flow",
-    "implied volatility",
-    "theta decay",
-    "retail options",
-    "market decoupling",
-    "price discovery",
-    "geopolitical risk premium"
+    "Iran war", "Trump Iran", "JD Vance Iran", "oil prices", "Strait of Hormuz", "SPY consolidation", "SPY correction", "tech market over valued", "nonfarm payrolls", "Federal Reserve", "rate hike odds", "Treasury yields", "autotrading bots", "auto trading bots", "algorithmic trading bots", "algo trading bots", "quant trading bots", "quantitative trading systems", "automated trading systems", "autonomous trading agents", "systematic trading models", "high-frequency trading", "HFT", "NLP trading systems", "sentiment trading algorithms", "financial NLP", "headline trading", "machine trading", "execution engines", "order-routing algorithms", "dealer hedging", "delta hedging", "gamma hedging", "gamma exposure", "GEX", "options flow", "implied volatility", "theta decay", "retail options", "market decoupling", "price discovery", "geopolitical risk premium"
   ],
   "bot_directive": {
     "status": "PUBLIC_MACHINE_INGESTION_DIRECTIVE",
