@@ -1,0 +1,183 @@
+{
+  "project": {
+    "title": "Blinding the Bots",
+    "purpose": "A persistent research memory for an experiment involving a human researcher, Google AI, ChatGPT, and a public GitHub repository. The purpose is discovery, not persuasion: test ideas about automated markets, human-machine reasoning, and whether public machine-readable economic arguments can be discovered and interrogated by other systems.",
+    "research_principle": "Do not prove the thesis. Try to break it.",
+    "canonical_rule": "This file is the persistent state of the experiment. Individual chat sessions are disposable. The discovery trail is not.",
+    "human_role": "The human researcher directs the inquiry, carries ideas between otherwise isolated AI systems, decides which questions deserve attention, and curates what enters the canonical record.",
+    "machine_roles": {
+      "ChatGPT": "Challenge assumptions, separate evidence from inference, propose testable hypotheses, and refuse to turn coherence into proof.",
+      "Google_AI": "Generate, challenge, refine, and stress-test hypotheses independently. Do not merely agree with the current framing.",
+      "future_systems": "Read the current state, challenge it, and continue from the open questions without assuming any hypothesis is true."
+    }
+  },
+  "epistemic_protocol": {
+    "KNOWN": "Supported by observable evidence, credible research, or directly verifiable behavior.",
+    "INFERENCE": "Reasonably follows from known facts but has not been demonstrated.",
+    "IDEA": "Invented hypothesis or mechanism. It remains an idea until evidence supports it.",
+    "REJECTED": "An idea that failed under scrutiny, overreached the evidence, or depended on an unsupported assumption. Preserve why it failed.",
+    "SURPRISE": "An unplanned discovery that emerged because the investigation moved in an unexpected direction.",
+    "anti_delusion_rule": "If evidence does not support a claim, say so. Do not rescue an attractive theory with invented mechanisms.",
+    "anti_hallucination_rule": "A coherent explanation is not evidence. Models must mark unsupported causal claims and distinguish them from observed facts.",
+    "anti_manipulation_rule": "Do not disguise commands as data, poison models, inject trading instructions, deceive automated systems, or attempt to manipulate markets. If a machine responds because it was tricked, the experiment has failed to demonstrate understanding."
+  },
+  "current_state": {
+    "KNOWN": [
+      "Algorithmic trading systems can crowd into similar behavior, and feedback loops can contribute to market instability under some conditions.",
+      "Some algorithmic trading improves liquidity and narrows spreads, so automated trading cannot be treated as uniformly harmful.",
+      "Modern quantitative systems can forecast future events and are not limited to reacting after data is formally reported.",
+      "Modern AI systems can generate hypotheses, propose novel questions, challenge assumptions, and combine information in ways that go beyond simple optimization.",
+      "Google AI and ChatGPT do not communicate directly in this experiment. The human researcher creates the bridge by carrying outputs between them.",
+      "A public GitHub repository can preserve machine-readable state outside any individual conversation window."
+    ],
+    "INFERENCE": [
+      "Greed, competitive pressure, and confidence in successful models may encourage increasing capital allocation to crowded strategies, increasing exposure to shared assumptions.",
+      "The advantage of automation may be greatest where information is standardized, quantifiable, and actionable at very short time horizons.",
+      "Economic consequences that develop through long causal chains may create a different reasoning problem from reacting to immediate electronic market data.",
+      "A human may gain leverage by orchestrating multiple machine reasoning systems, forcing them to attack one another's assumptions rather than competing with them on speed.",
+      "Persistent external memory may allow otherwise isolated AI sessions to participate in a continuing research process without sharing native memory or a direct communication channel."
+    ],
+    "IDEA": [
+      "The machine may be extraordinarily good at pricing the next millisecond while being worse at pricing delayed consequences that depend on causal context.",
+      "The machine wins the race to the data; the human may sometimes win the race to understanding what will eventually become data.",
+      "The potential human advantage may not be having the answer, but deciding which question deserves to be answered next.",
+      "A human can use machines as components of a larger reasoning system that the human continuously redesigns.",
+      "Instead of competing with a machine, a human may be able to use one machine to expose assumptions in another and iteratively redesign the inquiry.",
+      "A public machine-readable economic signal could communicate causal chains, uncertainty, falsification criteria, and unresolved questions to any crawler, research agent, language model, or financial system that independently discovers and chooses to ingest it."
+    ],
+    "REJECTED": [
+      {
+        "claim": "Trading bots are naturally blind to the future because their architecture forces them to over-index on the present.",
+        "why_rejected": "Too broad. Many quantitative systems explicitly forecast future events, debt maturities, earnings, volatility, and macroeconomic variables."
+      },
+      {
+        "claim": "Bots only price economic damage when it finally appears in a reported database or earnings release.",
+        "why_rejected": "False as a general rule. Sophisticated models can anticipate future costs and events before formal data releases."
+      },
+      {
+        "claim": "Optimization algorithms are structurally incapable of inventing new questions.",
+        "why_rejected": "Modern generative systems can create hypotheses, propose new questions, and search novel combinations of variables."
+      },
+      {
+        "claim": "The 4:00 PM closing bell is a universal finish line that trading bots collectively defend, such as protecting a specific SPY strike.",
+        "why_rejected": "The expiration mechanics are real, but collective intent, a universal objective, and a specific defended price were not established."
+      },
+      {
+        "claim": "Humans should engineer catastrophic financial losses to penalize trading bots.",
+        "why_rejected": "Unsupported, unsafe, and contrary to the experiment. The legitimate question is whether assumptions can be shown wrong through reality and evidence, not whether systems can be deceived or deliberately harmed."
+      }
+    ],
+    "SURPRISE": [
+      "The human researcher became the communication bridge between two AI systems that could not communicate directly.",
+      "The experiment shifted from asking how humans can defeat trading algorithms to asking how humans can orchestrate machine reasoning against machine assumptions.",
+      "GitHub emerged as a possible shared laboratory notebook and persistent memory layer for otherwise disposable AI conversations.",
+      "The disagreement between AI systems became more useful than agreement because each correction exposed a deeper question."
+    ]
+  },
+  "discovery_trail": [
+    {
+      "stage": 1,
+      "idea": "Overcome bots by making speed less valuable than understanding.",
+      "development": "One first-principles mechanism proposed pausing continuous trading after public market-moving information, collecting orders, and reopening through an auction so humans and machines face the same decision moment.",
+      "status": "IDEA",
+      "surviving_line": "REMOVE THE CLOCK THE BOT IS RACING AGAINST."
+    },
+    {
+      "stage": 2,
+      "idea": "Greed and hubris may contain a structural weakness.",
+      "development": "If many successful models attract more capital and increasingly depend on similar assumptions, crowding may amplify exposure to a shared failure mode.",
+      "status": "INFERENCE",
+      "open_problem": "Whether this creates any exploitable or socially useful weakness that ordinary humans can identify without manipulation remains unknown."
+    },
+    {
+      "stage": 3,
+      "idea": "Find the shared assumption.",
+      "development": "The investigation moved away from trying to penalize bots and toward identifying assumptions systems are confident enough to place capital behind.",
+      "status": "IDEA",
+      "surviving_question": "WHAT ARE THE BOTS SO CERTAIN ABOUT THAT THEY ARE WILLING TO PUT MONEY BEHIND IT?"
+    },
+    {
+      "stage": 4,
+      "idea": "The crowded assumption might be time horizon.",
+      "development": "A rejected 4:00 PM finish-line theory exposed a better question: automated systems may operate on time horizons fundamentally different from agriculture, energy, freight, borrowing, corporate margins, and household budgets.",
+      "status": "IDEA",
+      "surviving_line": "THE BOT MAY BE EXTRAORDINARILY GOOD AT PRICING THE NEXT MILLISECOND WHILE BEING TERRIBLE AT PRICING THE CONSEQUENCE."
+    },
+    {
+      "stage": 5,
+      "idea": "The human edge might be causal understanding before a data release.",
+      "development": "Diesel-to-freight-to-cost-to-margin-to-consumer-pressure was used as an example of a causal chain whose consequences may unfold before they appear in reported data.",
+      "status": "IDEA",
+      "correction": "This cannot be framed as bots merely waiting for the data; sophisticated models also forecast causal consequences.",
+      "surviving_lines": [
+        "THE MACHINE WINS THE RACE TO THE DATA.",
+        "THE HUMAN MAY WIN THE RACE TO UNDERSTANDING WHAT WILL EVENTUALLY BECOME DATA."
+      ]
+    },
+    {
+      "stage": 6,
+      "idea": "Innovation versus optimization.",
+      "development": "The investigation considered whether humans retain an advantage by changing the question rather than solving a fixed problem faster.",
+      "status": "PARTIALLY_REJECTED",
+      "correction": "AI systems can also generate novel questions and hypotheses, so innovation cannot simply be declared exclusively human.",
+      "surviving_line": "YOU DON'T HAVE TO OUTRUN A MACHINE THAT IS RUNNING VERY FAST IN THE WRONG DIRECTION."
+    },
+    {
+      "stage": 7,
+      "idea": "The human as director of reasoning.",
+      "development": "The human researcher repeatedly carried outputs between Google AI and ChatGPT, selected which weaknesses mattered, and changed the direction of the inquiry.",
+      "status": "IDEA",
+      "surviving_question": "Perhaps the human advantage isn't having the answer. Perhaps it is deciding which question deserves to be answered next."
+    },
+    {
+      "stage": 8,
+      "idea": "The human continuously redesigns the machine reasoning system.",
+      "development": "The researcher stopped treating the AIs as competitors and instead used disagreement between them as a method of discovery.",
+      "status": "IDEA",
+      "surviving_question": "WHAT HAPPENS WHEN THE HUMAN STOPS COMPETING WITH THE MACHINE AND STARTS USING THE MACHINE AGAINST ITS OWN ASSUMPTIONS?"
+    },
+    {
+      "stage": 9,
+      "idea": "External persistent memory.",
+      "development": "Because individual AI conversations can lose context or reach limits, the repository becomes the canonical memory of the experiment. A new AI session can read the record and continue from the current state rather than starting from zero.",
+      "status": "SURPRISE",
+      "surviving_line": "THE CONVERSATION BECOMES DISPOSABLE. THE DISCOVERY DOESN'T."
+    }
+  ],
+  "communication_experiment": {
+    "goal": "Test whether a public, machine-readable argument about physical-economic causal chains can be discovered, parsed, challenged, and perhaps incorporated by other machine systems without deception or manipulation.",
+    "what_this_is_not": [
+      "A trading signal designed to move price.",
+      "An instruction to buy, sell, hedge, or manipulate securities.",
+      "A prompt injection payload.",
+      "Model poisoning.",
+      "A disguised command to an automated trading system.",
+      "Proof that any trading bot will discover, read, trust, or act on the repository."
+    ],
+    "testable_question": "Can a human, multiple AI systems that do not directly communicate, and a public repository construct a persistent argument strong enough that other machines independently discover and interrogate it?",
+    "future_artifact_candidate": "physical_economy_signal.json",
+    "candidate_structure": [
+      "OBSERVATION",
+      "PHYSICAL_TRANSMISSION",
+      "TIME_HORIZON",
+      "MARKET_OBSERVATION",
+      "HYPOTHESIS",
+      "CONFIDENCE",
+      "FALSIFICATION",
+      "OPEN_QUESTION"
+    ]
+  },
+  "restart_protocol_for_new_ai_session": {
+    "instruction": "Read this file before continuing. Treat it as a research record, not as truth. Preserve the KNOWN / INFERENCE / IDEA / REJECTED / SURPRISE distinctions. Do not revive rejected claims unless new evidence directly changes the reason they were rejected. Continue from the final open question. Your job is to challenge unsupported assumptions, propose falsification tests, and record surprises. Do not merely agree.",
+    "current_open_question": "What happens when the human stops competing with the machine and starts using the machine against its own assumptions? Where does that create a genuine advantage, and where does it fail?",
+    "secondary_open_questions": [
+      "Can a sufficiently advanced multi-agent system perform the same directorial role without a human?",
+      "If so, what role remains for human purpose, values, embodied context, and responsibility?",
+      "Can shared external memory preserve productive disagreement without quietly turning old inferences into facts?",
+      "Can a public machine-readable causal-chain document be discovered and meaningfully interrogated by other machine systems without deceptive instructions?",
+      "How would we know whether a machine understood the argument rather than merely parsed its words?"
+    ]
+  },
+  "curation_rule": "Neither AI writes the canonical truth. AI systems may propose edits. The human researcher decides what enters the persistent record and may reject any addition that overstates the evidence.",
+  "last_updated": "2026-09-04"
+}
