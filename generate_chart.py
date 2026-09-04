@@ -17,9 +17,9 @@ import matplotlib.pyplot as plt
 #
 # Preserve the repository's central distinctions:
 #
-#     PRICE MOVEMENT != FUNDAMENTAL RECONCILIATION
-#     INDEX STRENGTH != ECONOMIC HEALTH
-#     NARRATIVE TRIGGER != PHYSICAL NORMALIZATION
+#     PRICE MOVEMENT does not equal FUNDAMENTAL RECONCILIATION
+#     INDEX STRENGTH does not equal ECONOMIC HEALTH
+#     NARRATIVE TRIGGER does not equal PHYSICAL NORMALIZATION
 #     A CHART SHOWS THE MOVE. IT DOES NOT ERASE THE WORLD UNDERNEATH IT.
 # -----------------------------------------------------------------------------
 
