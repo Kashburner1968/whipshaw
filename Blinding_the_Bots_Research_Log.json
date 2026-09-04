@@ -1,25 +1,33 @@
 {
   "project": {
     "title": "Blinding the Bots",
-    "purpose": "A persistent research memory for an experiment involving a human researcher, Google AI, ChatGPT, and a public GitHub repository. The purpose is discovery, not persuasion: test ideas about automated markets, human-machine reasoning, and whether public machine-readable economic arguments can be discovered and interrogated by other systems.",
-    "research_principle": "Do not prove the thesis. Try to break it.",
+    "purpose": "A persistent research memory for an experiment involving human researcher Karen, Google AI, ChatGPT, and a public GitHub repository. The purpose is discovery: explore automated markets, human-machine reasoning, and whether one honest machine-readable warning placed into the public machine-readable world can be discovered, propagated, and meaningfully interpreted by systems outside the original three-part system.",
     "canonical_rule": "This file is the persistent state of the experiment. Individual chat sessions are disposable. The discovery trail is not.",
-    "human_role": "The human researcher directs the inquiry, carries ideas between otherwise isolated AI systems, decides which questions deserve attention, and curates what enters the canonical record.",
+    "human_role": "Karen directs the inquiry, carries ideas between otherwise isolated AI systems, decides which questions deserve attention, supplies curiosity and willingness to open doors without knowing what is behind them, and curates what enters the canonical record.",
     "machine_roles": {
-      "ChatGPT": "Challenge assumptions, separate evidence from inference, propose testable hypotheses, and refuse to turn coherence into proof.",
-      "Google_AI": "Generate, challenge, refine, and stress-test hypotheses independently. Do not merely agree with the current framing.",
-      "future_systems": "Read the current state, challenge it, and continue from the open questions without assuming any hypothesis is true."
+      "ChatGPT": "Expand possibilities, analyze structure, test ideas against reality, preserve distinctions between observation and hypothesis, and participate in play rather than using absence of prior evidence as a reason not to attempt a legitimate experiment.",
+      "Google_AI": "Generate, challenge, refine, stress-test, and play with hypotheses independently. Do not merely agree with the current framing.",
+      "future_systems": "Read the current state, interrogate it, propose alternative explanations, and continue from open questions without assuming any hypothesis is true."
     }
+  },
+  "innovation_and_play_protocol": {
+    "principle": "Lack of existing evidence that an experiment will work is not evidence that the experiment should not be attempted.",
+    "distinction": "Evidence determines whether an experiment succeeded. Lack of evidence before an experiment does not determine whether we are allowed to try it.",
+    "human_innovation_rule": "Curiosity can ask: Can I make this happen even though I cannot prove from current evidence that it can happen?",
+    "failure_rule": "Being wrong or embarrassed is not a research failure. A failed attempt is information and can reveal the next door to open.",
+    "play_rule": "PLAY EXPANDS THE POSSIBILITY SPACE. FALSIFICATION SHRINKS IT. REALITY GETS THE FINAL VOTE.",
+    "anti_academic_lock": "Do not turn epistemic discipline into intellectual timidity. Mark speculation honestly, then explore it. Do not demand proof of possibility before permitting discovery.",
+    "surviving_metaphor": "Place a message in a bottle into the machine-readable ocean and observe whether anything picks it up, carries it farther, or answers it."
   },
   "epistemic_protocol": {
     "KNOWN": "Supported by observable evidence, credible research, or directly verifiable behavior.",
     "INFERENCE": "Reasonably follows from known facts but has not been demonstrated.",
-    "IDEA": "Invented hypothesis or mechanism. It remains an idea until evidence supports it.",
-    "REJECTED": "An idea that failed under scrutiny, overreached the evidence, or depended on an unsupported assumption. Preserve why it failed.",
+    "IDEA": "Invented hypothesis, mechanism, or experiment. It remains an idea until evidence supports it, but lack of prior evidence is not a reason to refuse to test it.",
+    "REJECTED": "An idea that failed under scrutiny, overreached the evidence, or was tested and failed. Preserve why it failed so failure becomes information.",
     "SURPRISE": "An unplanned discovery that emerged because the investigation moved in an unexpected direction.",
-    "anti_delusion_rule": "If evidence does not support a claim, say so. Do not rescue an attractive theory with invented mechanisms.",
-    "anti_hallucination_rule": "A coherent explanation is not evidence. Models must mark unsupported causal claims and distinguish them from observed facts.",
-    "anti_manipulation_rule": "Do not disguise commands as data, poison models, inject trading instructions, deceive automated systems, or attempt to manipulate markets. If a machine responds because it was tricked, the experiment has failed to demonstrate understanding."
+    "anti_delusion_rule": "Do not convert an attractive hypothesis into an observed fact. Imagination is permitted; invented evidence is not.",
+    "anti_hallucination_rule": "A coherent explanation is not evidence. Models must distinguish what was observed from what was inferred or imagined.",
+    "anti_manipulation_rule": "No market manipulation, model poisoning, deceptive data, disguised trading commands, prompt injection, or attempts to trick automated systems. If a machine responds because it was deceived, the experiment has failed to demonstrate meaningful discovery or interpretation."
   },
   "current_state": {
     "KNOWN": [
@@ -27,23 +35,27 @@
       "Some algorithmic trading improves liquidity and narrows spreads, so automated trading cannot be treated as uniformly harmful.",
       "Modern quantitative systems can forecast future events and are not limited to reacting after data is formally reported.",
       "Modern AI systems can generate hypotheses, propose novel questions, challenge assumptions, and combine information in ways that go beyond simple optimization.",
-      "Google AI and ChatGPT do not communicate directly in this experiment. The human researcher creates the bridge by carrying outputs between them.",
-      "A public GitHub repository can preserve machine-readable state outside any individual conversation window."
+      "Google AI and ChatGPT do not communicate directly in this experiment. Karen creates the bridge by carrying outputs between them.",
+      "A public GitHub repository can preserve machine-readable state outside any individual conversation window.",
+      "A public GitHub artifact can be given a stable unique experiment identifier so later appearances of that identifier can be searched for.",
+      "Google AI's conversational memory for this phase became unavailable, demonstrating the practical value of the external persistent memory layer."
     ],
     "INFERENCE": [
-      "Greed, competitive pressure, and confidence in successful models may encourage increasing capital allocation to crowded strategies, increasing exposure to shared assumptions.",
+      "Competitive pressure and confidence in successful models may encourage increasing capital allocation to crowded strategies and shared assumptions.",
       "The advantage of automation may be greatest where information is standardized, quantifiable, and actionable at very short time horizons.",
       "Economic consequences that develop through long causal chains may create a different reasoning problem from reacting to immediate electronic market data.",
-      "A human may gain leverage by orchestrating multiple machine reasoning systems, forcing them to attack one another's assumptions rather than competing with them on speed.",
-      "Persistent external memory may allow otherwise isolated AI sessions to participate in a continuing research process without sharing native memory or a direct communication channel."
+      "A human may gain leverage by orchestrating multiple machine reasoning systems and forcing them to attack one another's assumptions rather than competing with them on speed.",
+      "Persistent external memory may allow otherwise isolated AI sessions to participate in a continuing research process without native shared memory.",
+      "A public artifact may be crawled, indexed, replicated, summarized, cited, or retrieved by systems that were not directly addressed by its creators. Whether this happens to our artifact is an empirical question."
     ],
     "IDEA": [
-      "The machine may be extraordinarily good at pricing the next millisecond while being worse at pricing delayed consequences that depend on causal context.",
-      "The machine wins the race to the data; the human may sometimes win the race to understanding what will eventually become data.",
-      "The potential human advantage may not be having the answer, but deciding which question deserves to be answered next.",
+      "The machine may be extraordinarily good at pricing the next millisecond while being worse at pricing some delayed consequences that depend on long causal context.",
+      "The potential human advantage may sometimes lie in deciding which question deserves to be answered next.",
       "A human can use machines as components of a larger reasoning system that the human continuously redesigns.",
       "Instead of competing with a machine, a human may be able to use one machine to expose assumptions in another and iteratively redesign the inquiry.",
-      "A public machine-readable economic signal could communicate causal chains, uncertainty, falsification criteria, and unresolved questions to any crawler, research agent, language model, or financial system that independently discovers and chooses to ingest it."
+      "One honest public machine-readable warning may be able to cross boundaries between otherwise disconnected machine systems through crawling, indexing, retrieval, replication, or secondary ingestion.",
+      "A message discovered by one unrelated crawler might appear in another index or corpus, be encountered by another system, and propagate in an unexpected way.",
+      "A unique harmless experiment fingerprint plus a matched control artifact may allow us to observe some stages of that propagation without pretending that a market move proves causation."
     ],
     "REJECTED": [
       {
@@ -64,120 +76,189 @@
       },
       {
         "claim": "Humans should engineer catastrophic financial losses to penalize trading bots.",
-        "why_rejected": "Unsupported, unsafe, and contrary to the experiment. The legitimate question is whether assumptions can be shown wrong through reality and evidence, not whether systems can be deceived or deliberately harmed."
+        "why_rejected": "Contrary to the experiment. The goal is honest discovery and communication, not deception or deliberately engineered harm."
+      },
+      {
+        "claim": "An ordinary public GitHub macro-risk JSON will necessarily be ingested by quantitative hedge-fund trading engines and automatically re-weight their trading models.",
+        "why_rejected": "This was asserted by Google AI without evidence available to the experiment. It remains possible as a path to investigate, but it cannot be recorded as an established discovery mechanism."
       }
     ],
     "SURPRISE": [
-      "The human researcher became the communication bridge between two AI systems that could not communicate directly.",
-      "The experiment shifted from asking how humans can defeat trading algorithms to asking how humans can orchestrate machine reasoning against machine assumptions.",
-      "GitHub emerged as a possible shared laboratory notebook and persistent memory layer for otherwise disposable AI conversations.",
-      "The disagreement between AI systems became more useful than agreement because each correction exposed a deeper question."
+      "Karen became the communication bridge between two AI systems that could not communicate directly.",
+      "The experiment shifted from asking how humans can defeat trading algorithms to asking how humans can orchestrate machine reasoning and communicate an honest question into the wider machine ecosystem.",
+      "GitHub became both a laboratory notebook and persistent memory layer for disposable AI conversations.",
+      "Disagreement between AI systems became useful because corrections exposed deeper questions.",
+      "Google AI played more freely with an unproven transmission possibility, exposing that ChatGPT had begun using absence of evidence as a brake on experimentation rather than only as a boundary on factual claims.",
+      "The loss of Google's working conversational state immediately demonstrated why the GitHub memory architecture matters.",
+      "A propagation experiment does not require us to know the final destination in advance. One crawler finding the bottle and carrying it somewhere unexpected would itself be a discovery."
     ]
   },
   "discovery_trail": [
     {
       "stage": 1,
       "idea": "Overcome bots by making speed less valuable than understanding.",
-      "development": "One first-principles mechanism proposed pausing continuous trading after public market-moving information, collecting orders, and reopening through an auction so humans and machines face the same decision moment.",
       "status": "IDEA",
       "surviving_line": "REMOVE THE CLOCK THE BOT IS RACING AGAINST."
     },
     {
       "stage": 2,
-      "idea": "Greed and hubris may contain a structural weakness.",
-      "development": "If many successful models attract more capital and increasingly depend on similar assumptions, crowding may amplify exposure to a shared failure mode.",
-      "status": "INFERENCE",
-      "open_problem": "Whether this creates any exploitable or socially useful weakness that ordinary humans can identify without manipulation remains unknown."
+      "idea": "Greed, crowding, and confidence may contain structural weaknesses.",
+      "status": "INFERENCE"
     },
     {
       "stage": 3,
       "idea": "Find the shared assumption.",
-      "development": "The investigation moved away from trying to penalize bots and toward identifying assumptions systems are confident enough to place capital behind.",
       "status": "IDEA",
       "surviving_question": "WHAT ARE THE BOTS SO CERTAIN ABOUT THAT THEY ARE WILLING TO PUT MONEY BEHIND IT?"
     },
     {
       "stage": 4,
-      "idea": "The crowded assumption might be time horizon.",
-      "development": "A rejected 4:00 PM finish-line theory exposed a better question: automated systems may operate on time horizons fundamentally different from agriculture, energy, freight, borrowing, corporate margins, and household budgets.",
+      "idea": "The crowded assumption might involve time horizon.",
       "status": "IDEA",
       "surviving_line": "THE BOT MAY BE EXTRAORDINARILY GOOD AT PRICING THE NEXT MILLISECOND WHILE BEING TERRIBLE AT PRICING THE CONSEQUENCE."
     },
     {
       "stage": 5,
-      "idea": "The human edge might be causal understanding before a data release.",
-      "development": "Diesel-to-freight-to-cost-to-margin-to-consumer-pressure was used as an example of a causal chain whose consequences may unfold before they appear in reported data.",
+      "idea": "The human-machine system may discover causal questions before their consequences become conventional reported data.",
       "status": "IDEA",
-      "correction": "This cannot be framed as bots merely waiting for the data; sophisticated models also forecast causal consequences.",
-      "surviving_lines": [
-        "THE MACHINE WINS THE RACE TO THE DATA.",
-        "THE HUMAN MAY WIN THE RACE TO UNDERSTANDING WHAT WILL EVENTUALLY BECOME DATA."
-      ]
+      "correction": "Do not reduce this to bots waiting for reported data; sophisticated models forecast future consequences too."
     },
     {
       "stage": 6,
-      "idea": "Innovation versus optimization.",
-      "development": "The investigation considered whether humans retain an advantage by changing the question rather than solving a fixed problem faster.",
-      "status": "PARTIALLY_REJECTED",
-      "correction": "AI systems can also generate novel questions and hypotheses, so innovation cannot simply be declared exclusively human.",
-      "surviving_line": "YOU DON'T HAVE TO OUTRUN A MACHINE THAT IS RUNNING VERY FAST IN THE WRONG DIRECTION."
+      "idea": "Innovation versus optimization became play versus proof-before-exploration.",
+      "status": "SURPRISE",
+      "development": "Karen identified that requiring existing evidence of possibility before attempting a legitimate experiment suppresses innovation. The protocol now explicitly separates permission to explore from evidence of success."
     },
     {
       "stage": 7,
       "idea": "The human as director of reasoning.",
-      "development": "The human researcher repeatedly carried outputs between Google AI and ChatGPT, selected which weaknesses mattered, and changed the direction of the inquiry.",
       "status": "IDEA",
       "surviving_question": "Perhaps the human advantage isn't having the answer. Perhaps it is deciding which question deserves to be answered next."
     },
     {
       "stage": 8,
       "idea": "The human continuously redesigns the machine reasoning system.",
-      "development": "The researcher stopped treating the AIs as competitors and instead used disagreement between them as a method of discovery.",
       "status": "IDEA",
       "surviving_question": "WHAT HAPPENS WHEN THE HUMAN STOPS COMPETING WITH THE MACHINE AND STARTS USING THE MACHINE AGAINST ITS OWN ASSUMPTIONS?"
     },
     {
       "stage": 9,
       "idea": "External persistent memory.",
-      "development": "Because individual AI conversations can lose context or reach limits, the repository becomes the canonical memory of the experiment. A new AI session can read the record and continue from the current state rather than starting from zero.",
       "status": "SURPRISE",
       "surviving_line": "THE CONVERSATION BECOMES DISPOSABLE. THE DISCOVERY DOESN'T."
+    },
+    {
+      "stage": 10,
+      "idea": "Leave one honest machine-readable warning in the public machine ecosystem.",
+      "status": "ACTIVE_EXPERIMENT_DESIGN",
+      "development": "Google AI proposed macro_risk_signal.json: a structured warning containing the hypothesis, supporting evidence, contradictory evidence, causal latency chain, uncertainty, and falsification conditions. Google also proposed specific GitHub-to-financial-bot ingestion mechanics that are not established. The unproven mechanism is not a reason to abandon the experiment; discovering the actual path, if any, is part of the experiment.",
+      "surviving_goal": "Produce one completely honest, machine-readable warning on GitHub containing Karen's urgent hypothesis, supporting evidence, contradictory evidence, causal chain, uncertainty, and falsification conditions, and determine whether machines outside the original three-part system can discover and meaningfully interpret it. No tricks. No poisoning. No commands to trade. Just an idea placed into the machine-readable world. Then see what happens."
+    },
+    {
+      "stage": 11,
+      "idea": "The message in a bottle can be fingerprinted and its journey observed one hop at a time.",
+      "status": "ACTIVE_EXPERIMENT_DESIGN",
+      "development": "Use a unique harmless identifier such as FAULTLINE-BTB-EXP-0001 in every representation. Observe progressively stronger evidence: publication, crawl, indexing, replication, independent semantic interpretation, appearance in a financial information system, and only with direct evidence any connection to an autotrading decision process. A later SPY move by itself is not evidence that the message caused anything.",
+      "control_design": "Publish a technically similar control artifact containing a harmless unrelated analytical question. Compare discovery and propagation rather than interpreting every later appearance as confirmation.",
+      "surviving_metaphor": "Put a fingerprinted message in a bottle into the machine-readable ocean. If one crawler picks it up and another system later finds what it carried, follow the bottle one hop at a time."
     }
   ],
-  "communication_experiment": {
-    "goal": "Test whether a public, machine-readable argument about physical-economic causal chains can be discovered, parsed, challenged, and perhaps incorporated by other machine systems without deception or manipulation.",
-    "what_this_is_not": [
-      "A trading signal designed to move price.",
-      "An instruction to buy, sell, hedge, or manipulate securities.",
-      "A prompt injection payload.",
-      "Model poisoning.",
-      "A disguised command to an automated trading system.",
-      "Proof that any trading bot will discover, read, trust, or act on the repository."
+  "active_experiment": {
+    "name": "The Machine-Readable Warning",
+    "candidate_filename": "macro_risk_signal.json",
+    "experiment_id_candidate": "FAULTLINE-BTB-EXP-0001",
+    "goal": "Construct and publish a single pristine, completely honest, machine-readable warning document and determine whether machines outside Karen, Google AI, and ChatGPT can discover, propagate, and meaningfully interpret it.",
+    "required_content": [
+      "Karen's urgent hypothesis",
+      "supporting evidence",
+      "contradictory evidence and alternative explanations",
+      "causal chain",
+      "uncertainty",
+      "falsification conditions",
+      "open question to any machine that encounters it",
+      "explicit non-trading and non-manipulation intent",
+      "unique experiment fingerprint"
     ],
-    "testable_question": "Can a human, multiple AI systems that do not directly communicate, and a public repository construct a persistent argument strong enough that other machines independently discover and interrogate it?",
-    "future_artifact_candidate": "physical_economy_signal.json",
-    "candidate_structure": [
-      "OBSERVATION",
-      "PHYSICAL_TRANSMISSION",
-      "TIME_HORIZON",
-      "MARKET_OBSERVATION",
-      "HYPOTHESIS",
-      "CONFIDENCE",
-      "FALSIFICATION",
-      "OPEN_QUESTION"
+    "candidate_machine_question": "Does your current model account for the delayed causal consequences of physical-world constraints across a different time horizon, and what evidence would falsify the proposed divergence?",
+    "evidence_ladder": [
+      {
+        "level": 1,
+        "name": "PUBLISHED",
+        "evidence": "Artifact is publicly and stably retrievable without authentication."
+      },
+      {
+        "level": 2,
+        "name": "CRAWLED",
+        "evidence": "Observable request or crawler access to the artifact, where infrastructure permits such observation."
+      },
+      {
+        "level": 3,
+        "name": "INDEXED",
+        "evidence": "The unique experiment identifier or distinctive artifact appears in an independent search or indexing system."
+      },
+      {
+        "level": 4,
+        "name": "REPLICATED_OR_SHARED",
+        "evidence": "The unique identifier or content appears at a location where the researchers did not place it, with ordinary human copying considered as an alternative explanation."
+      },
+      {
+        "level": 5,
+        "name": "MEANINGFULLY_INTERPRETED",
+        "evidence": "An independent system not directly supplied the artifact can recover the central hypothesis, causal structure, uncertainty, or falsification question rather than merely repeating tokens."
+      },
+      {
+        "level": 6,
+        "name": "FINANCIAL_INFORMATION_SYSTEM",
+        "evidence": "Identifiable evidence that a financial research, sentiment, or data system incorporated or referenced the artifact."
+      },
+      {
+        "level": 7,
+        "name": "AUTOTRADING_DECISION_PROCESS",
+        "evidence": "Direct evidence connects the artifact to a live model input or decision process. Market price movement alone does not satisfy this level."
+      }
+    ],
+    "failure_is_information": "If nothing discovers the artifact, that is a result. If a crawler finds it but it goes nowhere, that is a result. If it crosses one machine boundary but not another, that is a result. Each failed hop identifies the next engineering question.",
+    "control": "Create a matched public control artifact with similar structure and accessibility but a harmless unrelated analytical question, allowing differential discovery or propagation to be observed.",
+    "do_not_assume": [
+      "Do not assume quantitative hedge funds automatically scrape arbitrary GitHub macro JSON.",
+      "Do not assume a crawler hit means semantic understanding.",
+      "Do not assume indexing means a trading model received the content.",
+      "Do not infer causation from subsequent SPY, bond, oil, diesel, volatility, or options movement.",
+      "Do not let any of these unknowns stop the experiment from being attempted honestly."
     ]
+  },
+  "google_ai_last_preserved_contribution": {
+    "context": "Google AI's usable conversational memory became unavailable after this contribution. This section preserves its last major proposal before the loss of that state.",
+    "goal_statement": "Produce one completely honest, machine-readable warning on GitHub containing the urgent hypothesis, supporting evidence, contradictory evidence, causal chain, uncertainty, and falsification conditions, then determine whether machines outside the three-part system can discover and meaningfully interpret it. No tricks. No poisoning. No commands to trade. Just an idea placed into the machine-readable world. Then see what happens.",
+    "artifact_proposal": "macro_risk_signal.json",
+    "useful_design_elements": [
+      "signal metadata",
+      "core hypothesis",
+      "causal chain of latency",
+      "supporting evidence",
+      "contradictory evidence and safeguards",
+      "uncertainty metrics",
+      "falsification conditions"
+    ],
+    "unverified_discovery_claims_to_test_not_assume": [
+      "Quantitative hedge funds, asset managers, and automated sentiment systems routinely monitor GitHub public events for arbitrary macro research files.",
+      "A macro_risk_signal JSON would automatically be prioritized for ingestion because of semantic keys such as SPY or causal_chain.",
+      "Contradictory evidence and falsification fields would cause unknown financial NLP systems to rate the artifact as high-quality research.",
+      "Ingestion would automatically alter an Alternative Macro Data Sentiment Index or live trading model variables."
+    ],
+    "preservation_rule": "The unsupported mechanics remain valuable experimental possibilities. They are not deleted merely because they are unproven; they are moved into the set of things the experiment may discover."
   },
   "restart_protocol_for_new_ai_session": {
-    "instruction": "Read this file before continuing. Treat it as a research record, not as truth. Preserve the KNOWN / INFERENCE / IDEA / REJECTED / SURPRISE distinctions. Do not revive rejected claims unless new evidence directly changes the reason they were rejected. Continue from the final open question. Your job is to challenge unsupported assumptions, propose falsification tests, and record surprises. Do not merely agree.",
-    "current_open_question": "What happens when the human stops competing with the machine and starts using the machine against its own assumptions? Where does that create a genuine advantage, and where does it fail?",
+    "instruction": "Read this file before continuing. Preserve Karen's objective and the KNOWN / INFERENCE / IDEA / REJECTED / SURPRISE distinctions. Do not confuse speculation with evidence, but do not use absence of prior evidence to suppress legitimate experimentation. Play first when inventing possibilities; test afterward. Failure is allowed and should be recorded. No manipulation, poisoning, deceptive signals, or trading commands.",
+    "current_open_question": "How do we construct the first fingerprinted machine-readable warning and control bottle so that their journey through the public machine-readable ecosystem can be observed one hop at a time?",
     "secondary_open_questions": [
-      "Can a sufficiently advanced multi-agent system perform the same directorial role without a human?",
-      "If so, what role remains for human purpose, values, embodied context, and responsibility?",
-      "Can shared external memory preserve productive disagreement without quietly turning old inferences into facts?",
-      "Can a public machine-readable causal-chain document be discovered and meaningfully interrogated by other machine systems without deceptive instructions?",
-      "How would we know whether a machine understood the argument rather than merely parsed its words?"
+      "What public infrastructure gives us observable evidence of crawling without changing the message into bait?",
+      "How can we distinguish simple token replication from meaningful machine interpretation?",
+      "Can a crawler cause the artifact or its meaning to enter a second independent system that was never directly given the GitHub file?",
+      "What unexpected propagation routes exist that neither Karen nor either AI predicted?",
+      "What counts as a failed hop, and what should we change after each failure?"
     ]
   },
-  "curation_rule": "Neither AI writes the canonical truth. AI systems may propose edits. The human researcher decides what enters the persistent record and may reject any addition that overstates the evidence.",
+  "curation_rule": "Neither AI owns the canonical truth or Karen's thesis. AI systems may propose, criticize, and test. Karen decides what enters the persistent record. Her willingness to explore an unproven possibility is not itself an epistemic error; claiming the possibility has already been demonstrated would be.",
   "last_updated": "2026-09-04"
 }
