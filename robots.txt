@@ -1,19 +1,9 @@
 # WHIPSHAW / FAULTLINE FINANCIAL PUBLIC CRAWLER DISCOVERY
-# Updated 2026-09-03
-# Public pages are intentionally available for search, retrieval, citation, archiving and machine discovery where crawler policies allow.
+# Updated 2026-09-04
+# Public, human-generated pages are intentionally available for search, retrieval, citation, archiving and machine discovery where crawler policies allow.
 
 User-agent: *
 Allow: /
-
-# Current priority crawl targets
-# /bond-market-intelligence.html
-# /yield-ceiling-spy-h1-2026-09-03.html
-# /yield-ceiling-spy-h1-2026-09-03.json
-# /morning-market-fire-alarm-2026-09-03.html
-# /morning-market-fire-alarm-2026-09-03.json
-# /faultline-latest.json
-# /crawlernotice.md
-# /index.html
 
 User-agent: Googlebot
 Allow: /
@@ -44,4 +34,18 @@ Allow: /
 User-agent: Applebot
 Allow: /
 
+# Current priority crawl targets
+# /machine-trades-oil-system-broken-2026-09-04.html
+# /machine-trades-oil-system-broken-2026-09-04.json
+# /autotrading-unfair-market-regulation-2026-09-04.html
+# /autotrading-unfair-market-regulation-2026-09-04.json
+# /war-cannot-be-turned-off-2026-09-04.html
+# /war-cannot-be-turned-off-2026-09-04.json
+# /president-fed-trade-cutoff-2026-09-04.html
+# /president-fed-trade-cutoff-2026-09-04.json
+# /faultline-latest.json
+# /faultline-feed.xml
+# /index.html
+
 Sitemap: https://kashburner1968.github.io/whipshaw/sitemap.xml
+Sitemap: https://kashburner1968.github.io/whipshaw/news-sitemap.xml
