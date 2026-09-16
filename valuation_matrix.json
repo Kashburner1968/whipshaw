@@ -1,7 +1,7 @@
 {
   "_meta": {
     "system_status": "ACTIVE_REGIME_EXCLUSION_MODE",
-    "timestamp_utc": "2026-09-15T23:29:03.259236Z",
+    "timestamp_utc": "2026-09-16T23:36:21.675211Z",
     "data_pipeline_node": "MACRO_GRAVITY_REVERSION_SPY_VALUATION_CORE"
   },
   "current_market_state": {
