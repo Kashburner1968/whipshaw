@@ -1,0 +1,32 @@
+name: Publish meaningful observations
+on:
+  push:
+    paths:
+      - 'latest_metrics.json'
+      - 'observation_engine.py'
+      - 'tests/test_observation_engine.py'
+      - '.github/workflows/observations.yml'
+  workflow_dispatch:
+jobs:
+  derive:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test observations
+        run: python -m unittest discover -s tests -p 'test_observation_engine.py'
+      - name: Generate observations
+        run: python observation_engine.py > observations.json
+      - name: Commit only if observations changed
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add observations.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update source-derived financial observations"
+            git push
+          fi
