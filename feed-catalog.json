@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "recurring_market_brief",
+      "path": "latest_briefing.json",
+      "media_type": "application/json",
+      "cadence": "on new observed market data; 5-minute weekday target",
+      "live": true,
+      "description": "Current sourced prices, latest measured changes, related evidence and next questions for automated readers"
+    },
+    {
       "id": "latest_metrics",
       "path": "latest_metrics.json",
       "media_type": "application/json",
