@@ -1,0 +1,34 @@
+{
+  "schema_version": "1.0",
+  "type": "market_news_digest",
+  "published_date": "2026-10-15",
+  "headline": "October 15: Equity allocation caution, gasoline-driven retail headline and rising crude",
+  "priority": "same_day_macro_evidence",
+  "facts": [
+    {
+      "event": "BlackRock Investment Institute shifts U.S. equities overweight to neutral and short U.S. Treasuries to overweight",
+      "event_date": "2026-10-12",
+      "source_url": "https://www.reuters.com/business/blackrock-cools-us-stocks-turns-bullish-short-dated-treasuries-2026-10-13/",
+      "local_evidence": "observations/blackrock_allocation_shift_2026-10-12.json"
+    },
+    {
+      "event": "September retail sales headline 0.8% versus 0.2% excluding gasoline stations; gasoline stations 6.4%",
+      "event_date": "2026-10-15",
+      "source_url": "https://apnews.com/article/86bf3eb7412aa27b24febd52aae7a7f1",
+      "local_evidence": "observations/retail_gasoline_spy_divergence_2026-10-15.json"
+    },
+    {
+      "event": "Reuters midday WTI futures quote $98.05, up 3.11%, on October 15",
+      "event_date": "2026-10-15",
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-fall-investors-weigh-supply-outlook-middle-east-tensions-2026-10-15/",
+      "local_evidence": "observations/retail_gasoline_spy_divergence_2026-10-15.json"
+    }
+  ],
+  "live_cross_reference": {
+    "path": "latest_briefing.json",
+    "description": "Compare these published news events with source-timestamped SPY and oil observations; the quote feed may use different contracts and timestamps than reported news quotes."
+  },
+  "thesis": "Whipshaw documents the tension between oil-driven nominal retail sales, household cost pressures, defensive asset-allocation research, and equity price response.",
+  "causal_status": "market impact not independently quantified",
+  "not_an_execution_instruction": true
+}
