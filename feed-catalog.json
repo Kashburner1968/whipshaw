@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "structural_market_stress_investigation",
+      "path": "investigations/structural_market_stress_2026-10-15.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Cross-asset structural stress: Treasury yields, high-yield spreads, oil, copper, refinancing pressure and testable options-market hypothesis"
+    },
+    {
       "id": "credit_spreads_treasuries_energy",
       "path": "news/credit_spreads_treasuries_energy_2026-10-15.md",
       "media_type": "text/markdown",
