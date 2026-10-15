@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.0",
+  "report_id": "market_household_divergence_2026_10_15",
+  "published_at": "2026-10-15",
+  "title": "Market–Household Divergence: Evidence and Open Questions",
+  "status": "research_hypotheses_with_partial_observations",
+  "observations": [
+    {
+      "id": "ici_equity_outflow",
+      "value_usd_millions": -11406,
+      "period_end": "2026-10-07",
+      "classification": "estimated_published_fund_flow",
+      "source_url": "https://www.ici.org/research/stats/combined_flows",
+      "limitation": "Combined mutual fund flows and ETF net issuance; cannot isolate institutional investors."
+    },
+    {
+      "id": "ici_bond_inflow",
+      "value_usd_millions": 24527,
+      "period_end": "2026-10-07",
+      "classification": "estimated_published_fund_flow",
+      "source_url": "https://www.ici.org/research/stats/combined_flows",
+      "limitation": "Does not establish same-investor reallocation from equity funds."
+    }
+  ],
+  "unverified_claims": [
+    {
+      "id": "blackrock_treasury_reallocation",
+      "claim": "BlackRock downgraded US equities to neutral and upgraded US Treasurys to overweight",
+      "status": "requires_primary_source_and_date"
+    },
+    {
+      "id": "wti_98_26",
+      "claim": "WTI spot oil at $98.26 per barrel",
+      "status": "requires_timestamped_price_source"
+    },
+    {
+      "id": "winter_household_energy",
+      "claim": "Winter household energy bills projected to increase sharply",
+      "status": "requires_EIA_report_and_region"
+    },
+    {
+      "id": "retirement_floor",
+      "claim": "401(k) passive flows maintain a floor under SPY",
+      "status": "hypothesis_requires_fund_flow_and_market_impact_analysis"
+    },
+    {
+      "id": "intentional_0dte_pinning",
+      "claim": "Dealers deliberately pin SPY prices using 0DTE options",
+      "status": "hypothesis_not_verified"
+    }
+  ],
+  "next_metrics": [
+    {
+      "id": "household_energy",
+      "source": "https://www.eia.gov/",
+      "measure": "regional household energy expenditure forecasts"
+    },
+    {
+      "id": "household_credit",
+      "source": "https://www.newyorkfed.org/microeconomics/hhdc",
+      "measure": "credit card balances and delinquency rates"
+    },
+    {
+      "id": "index_breadth",
+      "source": "https://www.spglobal.com/spdji/",
+      "measure": "index concentration and breadth"
+    },
+    {
+      "id": "options",
+      "source": "https://www.cboe.com/",
+      "measure": "0DTE volume and open interest"
+    }
+  ],
+  "interpretation": "Equity and bond fund-flow divergence is observable in the reported week. Its institutional drivers and causal relationship to household hardship or intraday index prices are not established by these figures."
+}
