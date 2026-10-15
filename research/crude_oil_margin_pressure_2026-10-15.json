@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0",
+  "report_id": "crude_oil_margin_pressure_2026_10_15",
+  "title": "Crude Oil Margin Pressure Monitor",
+  "published_at": "2026-10-15",
+  "status": "mechanism_analysis_pending_live_market_verification",
+  "trigger": {
+    "metric": "WTI_USD_PER_BARREL",
+    "reported_value": 98.26,
+    "unit": "USD/barrel",
+    "source_status": "user_reported_unverified",
+    "observed_at": null,
+    "source_url": null,
+    "trigger_confirmed": false
+  },
+  "channels": [
+    {
+      "id": "logistics",
+      "transmission": "crude_to_diesel_to_freight",
+      "exposed_sectors": [
+        "industrials",
+        "consumer_staples",
+        "consumer_discretionary"
+      ],
+      "indicators": [
+        "EIA diesel retail prices",
+        "BLS freight price indexes"
+      ],
+      "limitations": "Crude-to-diesel pass-through varies with refining spreads, inventory and contract pricing."
+    },
+    {
+      "id": "petrochemical_inputs",
+      "transmission": "feedstocks_and_energy_to_chemicals_packaging_and_synthetics",
+      "exposed_sectors": [
+        "materials",
+        "consumer_discretionary",
+        "industrials"
+      ],
+      "indicators": [
+        "BLS producer price indexes for chemicals and plastics"
+      ],
+      "limitations": "Input costs differ by feedstock, natural gas prices, geography and hedging."
+    },
+    {
+      "id": "consumer_demand",
+      "transmission": "gasoline_and_heating_costs_to_discretionary_spending",
+      "exposed_sectors": [
+        "consumer_discretionary",
+        "retail"
+      ],
+      "indicators": [
+        "EIA gasoline prices",
+        "BLS real retail purchasing power",
+        "BEA real personal consumption expenditures"
+      ],
+      "limitations": "Demand response depends on income, savings, wage growth and substitution."
+    }
+  ],
+  "hypotheses": [
+    {
+      "id": "non_energy_margin_compression",
+      "claim": "Sustained higher petroleum-related costs may pressure margins for firms unable to pass costs to customers",
+      "status": "testable_not_confirmed",
+      "test": "Compare sector-level gross margins and earnings guidance with lagged oil and diesel prices, controlling for demand and hedging."
+    },
+    {
+      "id": "energy_rotation_index_insulation",
+      "claim": "Energy-sector buying can partly offset non-energy declines in a capitalization-weighted index",
+      "status": "testable_not_confirmed",
+      "test": "Decompose SPY daily return into sector contribution using contemporaneous index weights and returns."
+    }
+  ],
+  "sources": [
+    "https://www.eia.gov/petroleum/",
+    "https://www.bls.gov/ppi/",
+    "https://www.bea.gov/data/consumer-spending/main"
+  ],
+  "warnings": [
+    "Do not equate oil price level with an observed margin decline.",
+    "Do not assume energy sector has exactly ten S&P 500 constituents.",
+    "Do not infer intentional index support from sector return attribution."
+  ]
+}
