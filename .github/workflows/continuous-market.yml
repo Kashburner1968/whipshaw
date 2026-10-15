@@ -1,0 +1,50 @@
+name: Continuous market observation
+on:
+  schedule:
+    - cron: '*/5 * * * 1-5'
+  workflow_dispatch:
+  push:
+    paths:
+      - 'live_market_collector.py'
+      - 'market_change_detector.py'
+      - '.github/workflows/continuous-market.yml'
+permissions:
+  contents: write
+concurrency:
+  group: market-observation
+  cancel-in-progress: false
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Test detector
+        run: python -m unittest discover -s tests -p 'test_market_change_detector.py'
+      - name: Preserve previous snapshot
+        run: |
+          if [ -f live_market_snapshot.json ]; then cp live_market_snapshot.json /tmp/previous_market_snapshot.json; fi
+      - name: Collect public quotes
+        run: python live_market_collector.py
+      - name: Compare fresh observations
+        run: |
+          if [ -f /tmp/previous_market_snapshot.json ]; then
+            python market_change_detector.py --previous /tmp/previous_market_snapshot.json --current live_market_snapshot.json --output /tmp/market_changes.json
+            python -c 'import json,pathlib; p=pathlib.Path("/tmp/market_changes.json"); d=json.loads(p.read_text()); out=pathlib.Path("market_changes.json"); d.pop("generated_at",None); out.write_text(json.dumps(d,indent=2)+"\\n") if d["finding_count"] else None'
+          fi
+      - name: Publish changed observations
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add live_market_snapshot.json
+          if [ -f market_changes.json ]; then git add market_changes.json; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update observed SPY oil and sector prices'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
