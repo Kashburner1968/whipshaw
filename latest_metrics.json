@@ -1,0 +1,44 @@
+{
+  "schema_version": "1.0",
+  "feed_id": "ALTERNATIVE_MACRO_FLOWS_V3",
+  "status": "PARTIAL_HISTORICAL_SNAPSHOT",
+  "is_live": false,
+  "cache_ttl_seconds": 3600,
+  "updated_at": "2026-10-15",
+  "tickers": [
+    "SPY",
+    "WTI",
+    "USO",
+    "BND",
+    "SHY",
+    "TLT"
+  ],
+  "metrics": {
+    "fund_flows": {
+      "observation_period_end": "2026-10-07",
+      "published_at": "2026-10-14",
+      "equity_net_flow_usd_millions": -11406,
+      "bond_net_flow_usd_millions": 24527,
+      "source_url": "https://www.ici.org/research/stats/combined_flows",
+      "classification": "estimated_combined_fund_flows",
+      "institutional_only": false
+    },
+    "wti": {
+      "value": null,
+      "status": "unavailable"
+    },
+    "zero_dte_gamma": {
+      "value": null,
+      "status": "unavailable"
+    },
+    "off_exchange_volume": {
+      "value": null,
+      "status": "unavailable"
+    }
+  },
+  "limitations": [
+    "No inference of institutional-only capital migration",
+    "No automatic trading signals",
+    "No intraday feed connected"
+  ]
+}
