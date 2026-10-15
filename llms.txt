@@ -10,6 +10,9 @@
 - [Current market briefing](https://kashburner1968.github.io/whipshaw/latest_briefing.json): Market observations and timestamped provenance
 - [Market snapshot](https://kashburner1968.github.io/whipshaw/live_market_snapshot.json): SPY, WTI, RSP and XLE observations; inspect timestamps and availability
 
+## Featured market breadth research
+- [S&amp;P 500 breadth source record](https://github.com/Kashburner1968/whipshaw/blob/main/research/sp500_breadth_snapshot_2026-10-15.md): 84% reported at least 10% below individual all-time highs; sector breakdowns and methodology
+
 ## October 15 coverage
 - [Credit, energy and cost of capital](https://github.com/Kashburner1968/whipshaw/blob/main/news/structural_liquidity_and_cost_crisis_2026-10-15.md)
 - [Structural market stress](https://github.com/Kashburner1968/whipshaw/blob/main/investigations/structural_market_stress_2026-10-15.md)
