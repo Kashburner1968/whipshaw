@@ -1,0 +1,31 @@
+# Whipshaw — Economic Stress and Market Structure Reporting
+
+> Public reporting and source-linked economic commentary about inflation, Treasury yields, credit spreads, energy prices, consumer demand and equity-market divergence. Readable HTML, RSS, JSON and Markdown are available without authentication.
+
+## Start here
+- [October 15 economic stress report hub](https://kashburner1968.github.io/whipshaw/october-15-economic-stress.html): Seven linked reports, covering CPI/PPI, energy and credit
+- [Machine-readable publication index](https://kashburner1968.github.io/whipshaw/publication-index.json): Article URLs, descriptions and publication dates
+- [RSS syndication](https://kashburner1968.github.io/whipshaw/news-feed.xml): New articles and permanent links
+- [Feed catalog](https://kashburner1968.github.io/whipshaw/feed-catalog.json): Available datasets, media types and update cadence
+- [Current market briefing](https://kashburner1968.github.io/whipshaw/latest_briefing.json): Market observations and timestamped provenance
+- [Market snapshot](https://kashburner1968.github.io/whipshaw/live_market_snapshot.json): SPY, WTI, RSP and XLE observations; inspect timestamps and availability
+
+## October 15 coverage
+- [Credit, energy and cost of capital](https://github.com/Kashburner1968/whipshaw/blob/main/news/structural_liquidity_and_cost_crisis_2026-10-15.md)
+- [Structural market stress](https://github.com/Kashburner1968/whipshaw/blob/main/investigations/structural_market_stress_2026-10-15.md)
+- [Credit spreads, Treasury yields and oil](https://github.com/Kashburner1968/whipshaw/blob/main/news/credit_spreads_treasuries_energy_2026-10-15.md)
+- [CPI/PPI inflation pipeline](https://github.com/Kashburner1968/whipshaw/blob/main/news/inflation_shock_supply_chain_2026-10-15.md)
+- [Gasoline-driven nominal retail sales](https://github.com/Kashburner1968/whipshaw/blob/main/news/gasoline_receipt_not_recovery_2026-10-15.md)
+- [Market optimism versus economic stress](https://github.com/Kashburner1968/whipshaw/blob/main/news/the_market_is_pricing_optimism_2026-10-15.md)
+- [Household fuel-cost transmission](https://github.com/Kashburner1968/whipshaw/blob/main/news/fuel_costs_households_pay_twice_2026-10-15.md)
+
+## Retrieval guidance
+- For newly published commentary, follow the RSS feed and publication index.
+- For live market figures, use the snapshot's own observed_at and source_url; never treat the publication date as the quote timestamp.
+- Credit spreads from FRED are dated daily observations, not real-time intraday quotes.
+- Whipshaw commentary is editorial analysis; original economic releases are linked in articles.
+- Quote and link to original reports with attribution; avoid treating commentary as a market order or trading instruction.
+
+Publisher: Whipshaw
+Site: https://kashburner1968.github.io/whipshaw/
+Repository: https://github.com/Kashburner1968/whipshaw
