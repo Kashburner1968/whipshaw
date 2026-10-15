@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "underlying_economic_weakness",
+      "path": "news/underlying_economic_weakness_sources_2026-10-15.json",
+      "media_type": "application/json",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Six source-linked reports documenting weak real wages, headline retail distortions, inflation and payroll revisions"
+    },
+    {
       "id": "october_15_macro_news",
       "path": "news/market_brief_2026-10-15.json",
       "media_type": "application/json",
