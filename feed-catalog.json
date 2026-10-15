@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "whipshaw_publication_index",
+      "path": "publication-index.json",
+      "media_type": "application/json",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Machine-readable publication index with article URLs and summaries"
+    },
+    {
       "id": "october_15_economic_stress_hub",
       "path": "october-15-economic-stress.html",
       "media_type": "text/html",
