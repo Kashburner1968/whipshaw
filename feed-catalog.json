@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "inflation_shock_supply_chain",
+      "path": "news/inflation_shock_supply_chain_2026-10-15.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "September CPI PPI gasoline diesel and freight inflation with BLS sources"
+    },
+    {
       "id": "gasoline_receipt_not_recovery",
       "path": "news/gasoline_receipt_not_recovery_2026-10-15.md",
       "media_type": "text/markdown",
