@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "october_15_macro_news",
+      "path": "news/market_brief_2026-10-15.json",
+      "media_type": "application/json",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "BlackRock, retail-sales gasoline divergence and WTI source-linked news digest"
+    },
+    {
       "id": "recurring_market_brief",
       "path": "latest_briefing.json",
       "media_type": "application/json",
