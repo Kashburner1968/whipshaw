@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "credit_spreads_treasuries_energy",
+      "path": "news/credit_spreads_treasuries_energy_2026-10-15.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "October 15 sourced cross-asset warning: widening high-yield spreads, falling Treasury yields, elevated oil and weaker copper"
+    },
+    {
       "id": "inflation_shock_supply_chain",
       "path": "news/inflation_shock_supply_chain_2026-10-15.md",
       "media_type": "text/markdown",
