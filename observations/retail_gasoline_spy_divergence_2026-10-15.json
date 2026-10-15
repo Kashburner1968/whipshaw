@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0",
+  "observation_id": "retail_sales_gasoline_divergence_2026_10_15",
+  "publication_date": "2026-10-15",
+  "title": "Headline retail sales outpace ex-gasoline sales amid oil surge and defensive asset allocation",
+  "classification": "source_attributed_macro_divergence",
+  "data": [
+    {
+      "metric": "september_retail_sales_monthly_change",
+      "value": 0.8,
+      "units": "percent",
+      "source_url": "https://apnews.com/article/86bf3eb7412aa27b24febd52aae7a7f1",
+      "status": "reported"
+    },
+    {
+      "metric": "september_retail_sales_ex_gas_stations",
+      "value": 0.2,
+      "units": "percent",
+      "source_url": "https://apnews.com/article/86bf3eb7412aa27b24febd52aae7a7f1",
+      "status": "reported"
+    },
+    {
+      "metric": "september_gas_station_sales_change",
+      "value": 6.4,
+      "units": "percent",
+      "source_url": "https://apnews.com/article/86bf3eb7412aa27b24febd52aae7a7f1",
+      "status": "reported"
+    },
+    {
+      "metric": "WTI_futures_oct_15_quote",
+      "value": 98.05,
+      "units": "USD/barrel",
+      "observation_time": "2026-10-15T12:14:00-04:00",
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-fall-investors-weigh-supply-outlook-middle-east-tensions-2026-10-15/",
+      "status": "reported"
+    },
+    {
+      "metric": "WTI_futures_session_change",
+      "value": 3.11,
+      "units": "percent",
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-fall-investors-weigh-supply-outlook-middle-east-tensions-2026-10-15/",
+      "status": "reported"
+    },
+    {
+      "metric": "us_crude_inventory_weekly_change",
+      "value": -8.6,
+      "units": "million barrels",
+      "source_url": "https://www.reuters.com/business/energy/oil-prices-fall-investors-weigh-supply-outlook-middle-east-tensions-2026-10-15/",
+      "status": "reported"
+    }
+  ],
+  "derived": [
+    {
+      "metric": "retail_headline_ex_gas_growth_gap",
+      "value": 0.6,
+      "units": "percentage_points",
+      "method": "0.8 - 0.2",
+      "caveat": "Difference between category growth rates; not a decomposition of contributions or real inflation-adjusted spending."
+    }
+  ],
+  "asset_allocation_context": {
+    "entity": "BlackRock Investment Institute",
+    "us_equities": "neutral_from_overweight",
+    "short_treasuries": "overweight",
+    "source_url": "https://www.blackrock.com/us/individual/insights/blackrock-investment-institute/weekly-commentary",
+    "interpretation": "Research tactical view, not a disclosed executed transaction."
+  },
+  "market_reaction": {
+    "spy_intraday_direction": "not independently attributed to these releases",
+    "causal_attribution": "unresolved",
+    "test": "Compare time-stamped release windows with SPY, RSP, XLE, yields and index constituent contributions."
+  },
+  "conclusion": "Gasoline-related nominal spending is materially stronger than other retail sales growth; higher oil prices and a defensive research allocation shift coexist with mixed equity price performance. This does not independently establish price manipulation."
+}
