@@ -1,0 +1,1 @@
+{"schema_version":"1.0","policy":"All observations require sources and timestamps. Missing values remain null."}
