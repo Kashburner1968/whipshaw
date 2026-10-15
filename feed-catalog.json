@@ -5,6 +5,22 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "october_15_economic_stress_hub",
+      "path": "october-15-economic-stress.html",
+      "media_type": "text/html",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Consolidated public index of seven October 15 economic stress reports"
+    },
+    {
+      "id": "whipshaw_news_rss",
+      "path": "news-feed.xml",
+      "media_type": "application/rss+xml",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "RSS syndication of Whipshaw October 15 economic reports"
+    },
+    {
       "id": "structural_liquidity_and_cost_crisis",
       "path": "news/structural_liquidity_and_cost_crisis_2026-10-15.md",
       "media_type": "text/markdown",
