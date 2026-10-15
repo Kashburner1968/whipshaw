@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0",
+  "event_id": "blackrock_bii_us_equities_neutral_treasuries_overweight_2026_10_12",
+  "event_date": "2026-10-12",
+  "reported_date": "2026-10-13",
+  "entity": "BlackRock Investment Institute",
+  "event_type": "investment_outlook_allocation_change",
+  "headline": "BlackRock Investment Institute moves U.S. equities to neutral, short-term U.S. Treasuries to overweight",
+  "verified_by": "Reuters reporting on October 13, 2026",
+  "source_url": "https://www.reuters.com/business/blackrock-cools-us-stocks-turns-bullish-short-dated-treasuries-2026-10-13/",
+  "changes": [
+    {
+      "asset": "US_equities",
+      "previous": "overweight",
+      "current": "neutral",
+      "rationale": "Manage potential volatility around AI infrastructure buildout"
+    },
+    {
+      "asset": "short_duration_US_treasuries",
+      "previous": "underweight",
+      "current": "overweight",
+      "rationale": "Rate hike expectations viewed as overdone"
+    },
+    {
+      "asset": "long_duration_US_treasuries",
+      "previous": "underweight",
+      "current": "neutral",
+      "rationale": "Improved risk/reward"
+    }
+  ],
+  "context": "BlackRock Investment Institute closed a long-held U.S. equity overweight view and unwound a Treasury underweight maintained for much of the prior six years.",
+  "evidence_classification": "reported_investment_research_positioning",
+  "does_not_establish": [
+    "BlackRock executed a quantified sale of U.S. equities",
+    "BlackRock or another institution manipulated SPY prices",
+    "A direct causal link between this commentary and intraday SPY price movements"
+  ],
+  "market_relevance": "Documented change in a major research institution's relative asset-class preference; may be compared with fund flows, ETF issuance and SPY price data without assuming execution.",
+  "review_status": "secondary_source_verified_primary_commentary_not_directly_inspected"
+}
