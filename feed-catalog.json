@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "market_optimism_economic_stress_article",
+      "path": "news/the_market_is_pricing_optimism_2026-10-15.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "October 15 sourced report on nominal retail sales, weak control group, PPI inflation and BlackRock Treasury shift"
+    },
+    {
       "id": "underlying_economic_weakness",
       "path": "news/underlying_economic_weakness_sources_2026-10-15.json",
       "media_type": "application/json",
