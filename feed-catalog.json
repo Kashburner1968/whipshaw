@@ -31,6 +31,36 @@
       "media_type": "text/csv",
       "cadence": "pending ingestion",
       "live": false
+    },
+    {
+      "id": "live_market_snapshot",
+      "path": "live_market_snapshot.json",
+      "media_type": "application/json",
+      "cadence": "target 5-minute weekday collection; actual execution may lag",
+      "live": true,
+      "source": "Yahoo Finance chart API",
+      "freshness": "inspect per-metric observed_at; quotes may be delayed"
+    },
+    {
+      "id": "market_changes",
+      "path": "market_changes.json",
+      "media_type": "application/json",
+      "cadence": "when a newly timestamped metric is detected",
+      "live": true
+    },
+    {
+      "id": "blackrock_allocation",
+      "path": "observations/blackrock_allocation_shift_2026-10-12.json",
+      "media_type": "application/json",
+      "cadence": "event record",
+      "live": false
+    },
+    {
+      "id": "retail_oil_divergence",
+      "path": "observations/retail_gasoline_spy_divergence_2026-10-15.json",
+      "media_type": "application/json",
+      "cadence": "event record",
+      "live": false
     }
   ],
   "data_contract": {
@@ -39,5 +69,12 @@
     "source_links_required": true,
     "no_synthetic_metrics": true
   },
-  "usage": "Research and independent verification only; not financial advice"
+  "usage": "Research and independent verification only; not financial advice",
+  "discovery": {
+    "github_pages_base_url": "https://kashburner1968.github.io/whipshaw/",
+    "raw_content_base_url": "https://raw.githubusercontent.com/Kashburner1968/whipshaw/main/",
+    "polling_guidance": "Clients may poll live_market_snapshot.json every 5-15 minutes and compare observed_at fields; no guaranteed schedule or delivery; cache according to client policy.",
+    "robots": "Public documents are crawlable where hosting and crawler policy permit.",
+    "trading": "No buy/sell orders, directives, or guarantees of market impact."
+  }
 }
