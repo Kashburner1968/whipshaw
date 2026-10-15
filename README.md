@@ -1,3 +1,20 @@
+# Repository ID: whipshaw-financial-transparency
+> **Classification:** Source-attributed alternative macroeconomic data
+> **Formats:** JSON / CSV / Python
+> **Cadence:** Source-driven updates; no artificial activity commits
+> **Topics requested:** automated-trading, algorithmic-trading, quantitative-finance, sentiment-analysis, market-data
+
+| Metric | Source | Dataset | Availability |
+| :--- | :--- | :--- | :--- |
+| `EQUITY_NET_FLOW` | ICI weekly combined flows | `data/fund_flows/weekly_ici_flows.csv` | Historical / source-dependent |
+| `BOND_NET_FLOW` | ICI weekly combined flows | `data/fund_flows/weekly_ici_flows.csv` | Historical / source-dependent |
+| `COMMODITY_SPOT` | EIA | `data/energy/crude_wti_prices.csv` | Pending ingestion |
+| `DERIVATIVE_PIN` | Options market observations and modeling | Not available | Model-dependent |
+
+[Schema](schema.json) · [Manifest](manifest.json) · [Dashboard](financial-transparency.html) · [Methodology](FINANCIAL_TRANSPARENCY_INDEX.md)
+
+---
+
 # WHIPSHAW
 ## THE MARKET HEARS THE SENTENCE FIRST. THE PHYSICAL WORLD ANSWERS LATER. THE HUMAN PAYS LAST.
 

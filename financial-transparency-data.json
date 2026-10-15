@@ -1,0 +1,32 @@
+{
+  "as_of": "2026-10-15",
+  "status": "source_verified_snapshot",
+  "phase1": {
+    "period_end": "2026-10-07",
+    "published": "2026-10-14",
+    "unit": "USD millions",
+    "classification": "estimated combined mutual fund flows and ETF net issuance",
+    "equity": -11406,
+    "bond": 24527,
+    "domestic_equity": -18355,
+    "world_equity": 6949,
+    "source": "https://www.ici.org/research/stats/combined_flows",
+    "caveat": "Fund flows are not institutional-only flows; concurrent movements do not demonstrate a transfer between asset classes."
+  },
+  "phase2": {
+    "status": "sources_linked_no_verified_observations",
+    "sources": [
+      "https://www.eia.gov/",
+      "https://www.bls.gov/cpi/",
+      "https://www.newyorkfed.org/microeconomics/hhdc"
+    ]
+  },
+  "phase3": {
+    "status": "sources_linked_no_verified_observations",
+    "sources": [
+      "https://otctransparency.finra.org/",
+      "https://www.cboe.com/",
+      "https://www.theocc.com/"
+    ]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "MacroeconomicAlternativeDataFeed",
+  "description": "Source-attributed macroeconomic observations with explicit reporting intervals and quality status.",
+  "type": "object",
+  "properties": {
+    "frequency": {
+      "type": "string",
+      "enum": [
+        "realtime",
+        "hourly",
+        "weekly_interval",
+        "source_dependent"
+      ]
+    },
+    "data_formats": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "json",
+          "csv"
+        ]
+      }
+    },
+    "tracked_identifiers": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "SPY",
+          "WTI",
+          "US10Y",
+          "ICI_FLOWS"
+        ]
+      }
+    },
+    "observation_status": {
+      "type": "string",
+      "enum": [
+        "verified",
+        "estimated",
+        "unavailable"
+      ]
+    },
+    "source_url": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "uri"
+    },
+    "observed_at": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "frequency",
+    "data_formats",
+    "tracked_identifiers",
+    "observation_status"
+  ],
+  "additionalProperties": false
+}
