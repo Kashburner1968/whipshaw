@@ -1,0 +1,37 @@
+name: Validate public financial feed
+on:
+  push:
+    paths:
+      - 'latest_metrics.json'
+      - 'feed-catalog.json'
+      - 'pipeline_ingest.py'
+      - '.github/workflows/validate-public-feed.yml'
+  pull_request:
+    paths:
+      - 'latest_metrics.json'
+      - 'feed-catalog.json'
+      - 'pipeline_ingest.py'
+      - '.github/workflows/validate-public-feed.yml'
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check JSON and parser contract
+        run: |
+          python -m json.tool latest_metrics.json > /dev/null
+          python -m json.tool feed-catalog.json > /dev/null
+          python -m py_compile pipeline_ingest.py
+          python pipeline_ingest.py > /tmp/flows.json
+          python -m json.tool /tmp/flows.json > /dev/null
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          feed=json.loads(Path('latest_metrics.json').read_text())
+          assert feed['is_live'] is False
+          assert feed['metrics']['fund_flows']['source_url'].startswith('https://')
+          assert feed['metrics']['wti']['value'] is None
+          PY
