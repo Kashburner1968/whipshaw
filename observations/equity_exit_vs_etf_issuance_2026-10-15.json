@@ -1,0 +1,66 @@
+{
+  "schema_version": "1.0",
+  "id": "equity_exit_vs_etf_issuance_2026_10_15",
+  "published_at": "2026-10-15",
+  "period_end": "2026-10-07",
+  "classification": "primary_source_comparison",
+  "headline": "Equity mutual funds and ETFs show different flow directions; broad institutional exit is not established",
+  "measurements": [
+    {
+      "metric": "combined_equity_fund_flows",
+      "value_usd_millions": -11406,
+      "source": "https://www.ici.org/research/stats/combined_flows",
+      "status": "estimated"
+    },
+    {
+      "metric": "equity_etf_net_issuance",
+      "value_usd_millions": 21175,
+      "source": "https://www.ici.org/research/stats/etf_flows",
+      "status": "estimated"
+    },
+    {
+      "metric": "implied_equity_mutual_fund_flow",
+      "value_usd_millions": -32581,
+      "derivation": "combined equity flow minus equity ETF net issuance",
+      "source": "https://www.ici.org/research/stats/combined_flows",
+      "status": "derived"
+    },
+    {
+      "metric": "combined_bond_fund_flows",
+      "value_usd_millions": 24527,
+      "source": "https://www.ici.org/research/stats/combined_flows",
+      "status": "estimated"
+    },
+    {
+      "metric": "total_combined_long_term_fund_flows",
+      "value_usd_millions": 12350,
+      "source": "https://www.ici.org/research/stats/combined_flows",
+      "status": "rounded_estimate"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "equity_fund_wow",
+      "current_usd_millions": -11406,
+      "previous_usd_millions": -4502,
+      "delta_usd_millions": -6904,
+      "interpretation": "Combined equity fund flows became more negative week over week."
+    },
+    {
+      "id": "bond_fund_wow",
+      "current_usd_millions": 24527,
+      "previous_usd_millions": 2978,
+      "delta_usd_millions": 21549,
+      "interpretation": "Estimated combined bond fund inflows increased week over week."
+    }
+  ],
+  "counterevidence": "Equity ETFs recorded positive net issuance even as the combined equity category recorded outflows. ETF issuance and mutual fund redemptions should not be collapsed into an unqualified institutional selling claim.",
+  "related_energy": {
+    "reuters_wti_futures_quote_usd": 98.05,
+    "quote_date": "2026-10-15",
+    "source": "https://www.reuters.com/business/energy/oil-prices-fall-investors-weigh-supply-outlook-middle-east-tensions-2026-10-15/",
+    "note": "Futures quote; not the same series as EIA WTI spot or the user's $98.26 reference."
+  },
+  "unresolved_question": "Why SPY remains supported cannot be determined from weekly fund flows alone; requires intraday price, sector contribution, ETF creation/redemption and dealer hedge data.",
+  "no_trade_directive": true
+}
