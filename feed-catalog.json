@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "ai_research_guide",
+      "path": "llms.txt",
+      "media_type": "text/plain",
+      "cadence": "on editorial updates",
+      "live": false,
+      "description": "Direct AI-agent retrieval guide to RSS, publication index, latest briefing, source citations and seven October 15 reports"
+    },
+    {
       "id": "whipshaw_publication_index",
       "path": "publication-index.json",
       "media_type": "application/json",
