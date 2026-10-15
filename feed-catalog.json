@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "gasoline_receipt_not_recovery",
+      "path": "news/gasoline_receipt_not_recovery_2026-10-15.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Direct BLS and Reuters evidence on producer inflation, fuel-driven nominal sales and household pressure"
+    },
+    {
       "id": "market_optimism_economic_stress_article",
       "path": "news/the_market_is_pricing_optimism_2026-10-15.md",
       "media_type": "text/markdown",
