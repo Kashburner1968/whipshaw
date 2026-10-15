@@ -1,0 +1,73 @@
+{
+  "schema_version": "1.0",
+  "published_date": "2026-10-15",
+  "title": "The Economy Beneath the Headlines: Evidence of Weak Underlying Demand and Household Purchasing Power",
+  "classification": "source_attributed_economic_reporting",
+  "editorial_thesis": "Headline nominal sales and aggregate market strength can obscure stagnant real earnings, weakening labor growth and rising energy expenses.",
+  "sources": [
+    {
+      "title": "Strong top-line retail sales mask weakness as producer prices rise",
+      "publisher": "RSM US",
+      "date": "2026-10-15",
+      "url": "https://realeconomy.rsmus.com/strong-top-line-retail-sales-mask-weakness-as-producer-prices-rise/",
+      "findings": [
+        "September retail sales +0.8% nominal; control group +0.1%",
+        "September producer prices +1.3% month-over-month",
+        "Gasoline stations +6.4%; excluding gasoline +0.2%"
+      ]
+    },
+    {
+      "title": "US Retail Sales Rise 0.8%, but Spending Excluding Gasoline Barely Grows",
+      "publisher": "ActionForex",
+      "date": "2026-10-15",
+      "url": "https://www.actionforex.com/live-comments/657646-us-retail-sales-rise-0-8-but-spending-excluding-gasoline-barely-grows/",
+      "findings": [
+        "Estimated gasoline stations contributed roughly 71% of the retail-sales monthly increase",
+        "Ex-auto-and-gas retail sales +0.2% and not statistically distinguishable from zero at 90% confidence"
+      ]
+    },
+    {
+      "title": "Americans have seen no real wage growth on average during Trump's second term",
+      "publisher": "Washington Post",
+      "date": "2026-10-14",
+      "url": "https://www.washingtonpost.com/business/2026/10/14/americans-have-seen-no-real-wage-growth-average-during-trumps-second-term/",
+      "findings": [
+        "Average hourly wage growth approximately matched price increases January 2025 through September 2026",
+        "September real hourly earnings fell 0.5% month over month"
+      ]
+    },
+    {
+      "title": "Employment Situation Summary - September 2026",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "date": "2026-10",
+      "url": "https://www.bls.gov/news.release/empsit.nr0.htm",
+      "findings": [
+        "September payroll growth +29,000",
+        "July and August payroll estimates revised downward by combined 60,000"
+      ]
+    },
+    {
+      "title": "Consumer Price Index - September 2026",
+      "publisher": "U.S. Bureau of Labor Statistics",
+      "date": "2026-10-14",
+      "url": "https://www.bls.gov/news.release/archives/cpi_10142026.htm",
+      "findings": [
+        "All-items CPI +3.7% year-over-year",
+        "Gasoline +34.2% year-over-year",
+        "Energy +20.4% year-over-year"
+      ]
+    },
+    {
+      "title": "Nominal Gains, Real Strain: Fall in Real Retail Sales Means Weaker Q2 GDP",
+      "publisher": "The Conference Board",
+      "date": "2026-05",
+      "url": "https://www.conference-board.org/research/global-economy-briefs/retail-sales-insights-april-2026",
+      "findings": [
+        "Positive nominal retail sales can coexist with negative inflation-adjusted spending"
+      ]
+    }
+  ],
+  "methodology": "Separate nominal and inflation-adjusted growth; identify control-group changes and revisions; cite dates and sources. Sources may use different periods and cannot be directly summed.",
+  "limitations": "These reports document underlying economic weakness and limitations of headline interpretation; they do not independently establish that official data were falsified or prove intentional SPY price manipulation.",
+  "related_live_feed": "latest_briefing.json"
+}
