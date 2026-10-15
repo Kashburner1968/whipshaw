@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "as_of": "2026-10-15",
+  "is_live": false,
+  "source_period_age_days": 8,
+  "observations": [
+    {
+      "id": "opposing_equity_bond_flows",
+      "classification": "derived_observation",
+      "headline": "Estimated equity fund outflows coincide with bond fund inflows",
+      "equity_net_flow_usd_millions": -11406,
+      "bond_net_flow_usd_millions": 24527,
+      "absolute_flow_difference_usd_millions": 35933,
+      "observation_period_end": "2026-10-07",
+      "source_url": "https://www.ici.org/research/stats/combined_flows",
+      "interpretation_limit": "Does not establish that the same investors moved money from equities to bonds or identify institutional-only flows."
+    },
+    {
+      "id": "negative_equity_fund_flows",
+      "classification": "observed_estimate",
+      "headline": "Estimated net equity fund flows were negative",
+      "value_usd_millions": -11406,
+      "observation_period_end": "2026-10-07",
+      "source_url": "https://www.ici.org/research/stats/combined_flows"
+    },
+    {
+      "id": "missing_market_structure_data",
+      "classification": "data_coverage",
+      "headline": "Intraday market-structure inputs are not yet available",
+      "missing_metric_ids": [
+        "wti",
+        "zero_dte_gamma",
+        "off_exchange_volume"
+      ],
+      "interpretation_limit": "No intraday market claim or signal is generated from absent observations."
+    }
+  ],
+  "methodology": "Deterministic comparisons of source-attributed values; not predictive trading signals."
+}
