@@ -5,6 +5,14 @@
   "updated_at": "2026-10-15",
   "endpoints": [
     {
+      "id": "sp500_market_breadth_october_15",
+      "path": "research/sp500_breadth_snapshot_2026-10-15.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "S&P 500 constituent drawdown distribution and sector-level breadth with sourced methodology"
+    },
+    {
       "id": "ai_research_guide",
       "path": "llms.txt",
       "media_type": "text/plain",
