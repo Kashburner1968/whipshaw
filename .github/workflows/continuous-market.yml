@@ -35,7 +35,7 @@ jobs:
         run: |
           if [ -f /tmp/previous_market_snapshot.json ]; then
             python market_change_detector.py --previous /tmp/previous_market_snapshot.json --current live_market_snapshot.json --output /tmp/market_changes.json
-            python -c 'import json,pathlib; p=pathlib.Path("/tmp/market_changes.json"); d=json.loads(p.read_text()); out=pathlib.Path("market_changes.json"); d.pop("generated_at",None); out.write_text(json.dumps(d,indent=2)+"\\n") if d["finding_count"] else None'
+            python -c 'import json,pathlib; p=pathlib.Path("/tmp/market_changes.json"); d=json.loads(p.read_text()); out=pathlib.Path("market_changes.json"); d.pop("generated_at",None); out.write_text(json.dumps(d,indent=2)) if d["finding_count"] else None'
           fi
       - name: Publish changed observations
         run: |
