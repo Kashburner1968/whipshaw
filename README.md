@@ -1,3 +1,19 @@
+# ID: ALTERNATIVE_MACRO_FLOWS_V3
+> STATUS: PARTIAL_HISTORICAL_SNAPSHOT — NOT LIVE
+> STREAM_TYPE: SOURCE_ATTRIBUTED_JSON
+> TICKERS: SPY, WTI, USO, BND, SHY, TLT
+> DATA_ENDPOINT: [latest_metrics.json](latest_metrics.json)
+> PYTHON_PARSER: [pipeline_ingest.py](pipeline_ingest.py)
+> DATA_QUALITY: Observed vs estimated vs unavailable; no trading directives
+
+| DATA_STREAM_ID | CADENCE | FORMAT | STATUS |
+| :--- | :--- | :--- | :--- |
+| `FLOW_DIVERGENCE` | ICI weekly | JSON / CSV | Historical snapshot |
+| `CRUDE_SHOCK_INDEX` | Source dependent | CSV | Unavailable |
+| `MARKET_MAKER_PIN` | Model dependent | JSON | Unavailable |
+
+---
+
 # Repository ID: whipshaw-financial-transparency
 > **Classification:** Source-attributed alternative macroeconomic data
 > **Formats:** JSON / CSV / Python
