@@ -12,8 +12,7 @@ def get_market_truth_feed() -> dict:
         manifest = json.load(f)
     with (ROOT / "data/fund_flows/weekly_ici_flows.csv").open(newline="", encoding="utf-8") as f:
         rows = list(csv.DictReader(f))
-    with (ROOT / "data/derivatives/0dte_gamma_levels.json").open(encoding="utf-8") as f:
-        derivatives = json.load(f)
+    derivatives = {"status": "unavailable", "levels": []}
     flows = rows[-1] if rows else None
     if flows:
         for key in ("equity_net_flow_usd_millions", "bond_net_flow_usd_millions", "domestic_equity_net_flow_usd_millions", "world_equity_net_flow_usd_millions"):
