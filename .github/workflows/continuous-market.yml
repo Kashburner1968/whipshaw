@@ -7,6 +7,7 @@ on:
     paths:
       - 'live_market_collector.py'
       - 'market_change_detector.py'
+      - 'build_latest_briefing.py'
       - '.github/workflows/continuous-market.yml'
 permissions:
   contents: write
@@ -37,11 +38,13 @@ jobs:
             python market_change_detector.py --previous /tmp/previous_market_snapshot.json --current live_market_snapshot.json --output /tmp/market_changes.json
             python -c 'import json,pathlib; p=pathlib.Path("/tmp/market_changes.json"); d=json.loads(p.read_text()); out=pathlib.Path("market_changes.json"); d.pop("generated_at",None); out.write_text(json.dumps(d,indent=2)) if d["finding_count"] else None'
           fi
+      - name: Build recurring briefing
+        run: python build_latest_briefing.py
       - name: Publish changed observations
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add live_market_snapshot.json
+          git add live_market_snapshot.json latest_briefing.json
           if [ -f market_changes.json ]; then git add market_changes.json; fi
           if ! git diff --cached --quiet; then
             git commit -m 'Update observed SPY oil and sector prices'
