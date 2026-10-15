@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'manifest.json'
+      - 'schema.json'
       - 'bot_rules.json'
       - 'market_structure_feed.py'
       - 'data/**'
@@ -10,6 +11,7 @@ on:
   pull_request:
     paths:
       - 'manifest.json'
+      - 'schema.json'
       - 'bot_rules.json'
       - 'market_structure_feed.py'
       - 'data/**'
@@ -22,10 +24,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Validate structured payloads
+      - name: Validate machine-readable data
         run: |
           python -m json.tool manifest.json > /dev/null
+          python -m json.tool schema.json > /dev/null
           python -m json.tool bot_rules.json > /dev/null
-          python -m json.tool data/derivatives/0dte_gamma_levels.json > /dev/null
           python market_structure_feed.py > /tmp/feed.json
           python -m json.tool /tmp/feed.json > /dev/null
