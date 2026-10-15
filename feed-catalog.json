@@ -1,0 +1,43 @@
+{
+  "schema_version": "1.0",
+  "publisher": "Whipshaw",
+  "description": "Public source-attributed market-structure observations; no execution directives",
+  "updated_at": "2026-10-15",
+  "endpoints": [
+    {
+      "id": "latest_metrics",
+      "path": "latest_metrics.json",
+      "media_type": "application/json",
+      "cadence": "on verified source updates",
+      "live": false
+    },
+    {
+      "id": "financial_transparency",
+      "path": "financial-transparency-data.json",
+      "media_type": "application/json",
+      "cadence": "source-dependent",
+      "live": false
+    },
+    {
+      "id": "fund_flows",
+      "path": "data/fund_flows/weekly_ici_flows.csv",
+      "media_type": "text/csv",
+      "cadence": "weekly when published",
+      "live": false
+    },
+    {
+      "id": "energy",
+      "path": "data/energy/crude_wti_prices.csv",
+      "media_type": "text/csv",
+      "cadence": "pending ingestion",
+      "live": false
+    }
+  ],
+  "data_contract": {
+    "missing": "null",
+    "observed_and_published_timestamps": true,
+    "source_links_required": true,
+    "no_synthetic_metrics": true
+  },
+  "usage": "Research and independent verification only; not financial advice"
+}
