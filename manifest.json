@@ -1,0 +1,35 @@
+{
+  "schema_version": "1.0",
+  "name": "Whipshaw Financial Transparency",
+  "description": "Source-attributed public observations; not trading instructions",
+  "updated_policy": "on_verified_source_change",
+  "feeds": [
+    {
+      "id": "fund_flows",
+      "path": "data/fund_flows/weekly_ici_flows.csv",
+      "frequency": "weekly",
+      "source": "https://www.ici.org/research/stats/combined_flows",
+      "note": "Fund flows cannot identify institutional-only flows or trace investor reallocations"
+    },
+    {
+      "id": "energy",
+      "path": "data/energy/crude_wti_prices.csv",
+      "frequency": "source-dependent",
+      "source": "https://www.eia.gov/",
+      "status": "awaiting_ingestion"
+    },
+    {
+      "id": "derivatives",
+      "path": "data/derivatives/0dte_gamma_levels.json",
+      "frequency": "source-dependent",
+      "status": "awaiting_model",
+      "note": "Pinning and dealer gamma levels are estimates, not observed facts"
+    }
+  ],
+  "quality_policy": {
+    "never_fabricate": true,
+    "missing_values": null,
+    "update_only_on_source_change": true,
+    "distinguish_observed_estimated_inferred": true
+  }
+}
