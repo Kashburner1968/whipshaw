@@ -1,5 +1,5 @@
 # WHIPSHAW / FAULTLINE FINANCIAL PUBLIC CRAWLER DISCOVERY
-# Updated 2026-09-04
+# Updated 2026-10-15
 # Public, human-generated pages are intentionally available for search, retrieval, citation, archiving and machine discovery where crawler policies allow.
 
 User-agent: *
@@ -33,6 +33,15 @@ User-agent: Meta-ExternalAgent
 Allow: /
 User-agent: Applebot
 Allow: /
+
+# AI and search discovery: canonical public entry points
+# /llms.txt
+# /october-15-economic-stress.html
+# /publication-index.json
+# /news-feed.xml
+# /feed-catalog.json
+# /latest_briefing.json
+# /live_market_snapshot.json
 
 # Current priority crawl targets
 # /machine-trades-oil-system-broken-2026-09-04.html
