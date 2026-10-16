@@ -2,8 +2,16 @@
   "schema_version": "1.0",
   "publisher": "Whipshaw",
   "description": "Public source-attributed market-structure observations; no execution directives",
-  "updated_at": "2026-10-15",
+  "updated_at": "2026-10-16",
   "endpoints": [
+    {
+      "id": "market_breadth_update_october_16",
+      "path": "research/market_breadth_update_2026-10-16.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "October 16 Reuters breadth update, year-to-date constituent dispersion and 200-day moving average participation"
+    },
     {
       "id": "sp500_market_breadth_october_15",
       "path": "research/sp500_breadth_snapshot_2026-10-15.md",
