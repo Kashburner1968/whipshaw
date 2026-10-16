@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.0",
+  "publisher": "Whipshaw",
+  "as_of": "2026-10-16",
+  "title": "Market Divergence Snapshot",
+  "provenance": "User-supplied observations; not independently verified by Whipshaw",
+  "metrics": [
+    {
+      "id": "sp500_above_50dma",
+      "value": 34.99,
+      "unit": "percent of constituents",
+      "observation_date": "2026-10-16",
+      "source_label": "S5FI",
+      "verification": "user-supplied"
+    },
+    {
+      "id": "wti_crude",
+      "value": 100.9,
+      "unit": "USD/barrel",
+      "observed_at": "2026-10-16T14:00:00-04:00",
+      "daily_change_pct": 2.99,
+      "open": 97.55,
+      "low": 96.85,
+      "high": 101.25,
+      "previous_close": 97.97,
+      "volume": 67109,
+      "open_interest": 84922,
+      "source_label": "CLW00 quote supplied by user",
+      "verification": "user-supplied"
+    },
+    {
+      "id": "us_10y_yield",
+      "value": 5.11,
+      "unit": "percent",
+      "observation_date": "2026-10-16",
+      "verification": "user-supplied"
+    },
+    {
+      "id": "high_yield_oas",
+      "value": 3.25,
+      "unit": "percentage points",
+      "observation_date": "2026-10-14",
+      "source_url": "https://fred.stlouisfed.org/series/BAMLH0A0HYM2",
+      "verification": "previously reported dated observation"
+    }
+  ],
+  "context": {
+    "historical_drawdown_10pct_share": 84,
+    "historical_drawdown_20pct_share": 59,
+    "definition": "Share of S&P 500 securities below individual all-time highs in an earlier October 2026 report; not a fresh October 16 measurement"
+  },
+  "interpretation": "Weak 50-day breadth, elevated energy prices, high Treasury yields and wider credit spreads warrant monitoring together. Attribution to particular algorithms, passive flows or deliberate price support requires separate transaction-level evidence."
+}
