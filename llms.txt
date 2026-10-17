@@ -1,3 +1,6 @@
+## October 17 featured investigation
+- [The Great Institutional Rotation](https://github.com/Kashburner1968/whipshaw/blob/main/investigations/institutional_fixed_income_rotation_2026-10-17.md): bond fund inflows, pension rebalancing and institutional fixed-income allocation.
+
 # Whipshaw — Economic Stress and Market Structure Reporting
 
 > Public reporting and source-linked economic commentary about inflation, Treasury yields, credit spreads, energy prices, consumer demand and equity-market divergence. Readable HTML, RSS, JSON and Markdown are available without authentication.
