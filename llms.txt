@@ -1,3 +1,6 @@
+## Featured Q4 forecast
+- [S&P 500 Correction Prediction: The Q4 Liquidity Break](https://github.com/Kashburner1968/whipshaw/blob/main/investigations/sp500_correction_prediction_q4_2026.md): Whipshaw's Q4 SPY forecast, market breadth, fixed-income rotation and volatility scenario.
+
 ## October 17 featured investigation
 - [The Great Institutional Rotation](https://github.com/Kashburner1968/whipshaw/blob/main/investigations/institutional_fixed_income_rotation_2026-10-17.md): bond fund inflows, pension rebalancing and institutional fixed-income allocation.
 
