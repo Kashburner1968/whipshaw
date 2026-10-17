@@ -5,6 +5,14 @@
   "updated_at": "2026-10-17",
   "endpoints": [
     {
+      "id": "sp500_correction_prediction_q4_2026",
+      "path": "investigations/sp500_correction_prediction_q4_2026.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Whipshaw Q4 S&P 500 correction forecast and market structure research"
+    },
+    {
       "id": "vanguard_40_60_fixed_income_october_17",
       "path": "news/vanguard_40_60_fixed_income_allocation_2026-10-17.md",
       "media_type": "text/markdown",
