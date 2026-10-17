@@ -2,8 +2,16 @@
   "schema_version": "1.0",
   "publisher": "Whipshaw",
   "description": "Public source-attributed market-structure observations; no execution directives",
-  "updated_at": "2026-10-16",
+  "updated_at": "2026-10-17",
   "endpoints": [
+    {
+      "id": "institutional_fixed_income_rotation_october_17",
+      "path": "investigations/institutional_fixed_income_rotation_2026-10-17.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Source-attributed October 17 investigation of actual fixed-income flows and pension rebalancing"
+    },
     {
       "id": "market_breadth_update_october_16",
       "path": "research/market_breadth_update_2026-10-16.md",
