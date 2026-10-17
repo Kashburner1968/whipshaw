@@ -1,10 +1,18 @@
 {
   "publisher": "Whipshaw",
-  "updated_date": "2026-10-16",
+  "updated_date": "2026-10-17",
   "homepage": "https://kashburner1968.github.io/whipshaw/",
   "rss": "https://kashburner1968.github.io/whipshaw/news-feed.xml",
   "landing_page": "https://kashburner1968.github.io/whipshaw/october-15-economic-stress.html",
   "articles": [
+    {
+      "id": "institutional_fixed_income_rotation_october_17",
+      "title": "The Great Institutional Rotation: Capital Is Flowing Into Fixed Income",
+      "url": "https://github.com/Kashburner1968/whipshaw/blob/main/investigations/institutional_fixed_income_rotation_2026-10-17.md",
+      "path": "investigations/institutional_fixed_income_rotation_2026-10-17.md",
+      "published_date": "2026-10-17",
+      "format": "text/markdown"
+    },
     {
       "id": "market_breadth_update_october_16",
       "title": "The Index Is Not the Market: October 16 Breadth Update",
