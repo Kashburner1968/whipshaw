@@ -5,6 +5,14 @@
   "updated_at": "2026-10-17",
   "endpoints": [
     {
+      "id": "vanguard_40_60_fixed_income_october_17",
+      "path": "news/vanguard_40_60_fixed_income_allocation_2026-10-17.md",
+      "media_type": "text/markdown",
+      "cadence": "event-driven",
+      "live": false,
+      "description": "Vanguard time-varying 40/60 equity-bond allocation and Treasury overweight"
+    },
+    {
       "id": "institutional_fixed_income_rotation_october_17",
       "path": "investigations/institutional_fixed_income_rotation_2026-10-17.md",
       "media_type": "text/markdown",
