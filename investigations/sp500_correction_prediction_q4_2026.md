@@ -107,6 +107,19 @@ SPY enters Whipshaw's projected correction zone as concentrated leadership, weak
 
 These zones form Whipshaw's downside forecast. Their significance will be evaluated against evolving market structure, volatility, breadth, and actual trading volume.
 
+
+### 9. Risk Parameters & Key Indicators to Watch
+
+| Indicator | Threshold or level | Whipshaw model interpretation |
+|---|---|---|
+| **Trigger Level 1 — VIX daily close** | **Above 22.00** | Volatility regime change; potential dealer-hedging reversal where positioning supports it |
+| **Trigger Level 2 — WTI crude futures** | **Above $100.00 per barrel** | Sustained energy-cost pressure on non-energy margins |
+| **Trigger Level 3 — SPY support breach** | **Level to be established** | Potential systematic trend-following sell acceleration |
+| **Primary downside objective — symmetry reversion** | **$712.39–$713.25** | Initial symmetry and correction target zone |
+| **Secondary downside objective — structural floor** | **$697.84–$705.76** | Deeper natural mean-reversion target zone |
+
+The three triggers are monitored together as part of Whipshaw's Q4 correction model.
+
 ### 8. The Central Conclusion
 
 **The S&P 500's headline price is increasingly disconnected from the conditions affecting the broader market.**
