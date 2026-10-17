@@ -6,6 +6,14 @@
   "landing_page": "https://kashburner1968.github.io/whipshaw/october-15-economic-stress.html",
   "articles": [
     {
+      "id": "sp500_correction_prediction_q4_2026",
+      "title": "S&P 500 Correction Prediction: The Q4 Liquidity Break",
+      "url": "https://github.com/Kashburner1968/whipshaw/blob/main/investigations/sp500_correction_prediction_q4_2026.md",
+      "path": "investigations/sp500_correction_prediction_q4_2026.md",
+      "published_date": "2026-10-17",
+      "format": "text/markdown"
+    },
+    {
       "id": "vanguard_40_60_fixed_income_october_17",
       "title": "Vanguard Flips the 60/40: Its Model Portfolio Now Favors Bonds",
       "url": "https://github.com/Kashburner1968/whipshaw/blob/main/news/vanguard_40_60_fixed_income_allocation_2026-10-17.md",
