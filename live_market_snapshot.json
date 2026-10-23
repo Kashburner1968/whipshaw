@@ -2,7 +2,7 @@
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_MARKET_QUOTES",
   "is_live": true,
-  "retrieved_at": "2026-10-22T22:42:35.830337+00:00",
+  "retrieved_at": "2026-10-23T00:59:14.024962+00:00",
   "metrics": {
     "spy_price": {
       "value": 763.960022,
@@ -14,9 +14,9 @@
       "exchange_delay_unknown": true
     },
     "wti_price": {
-      "value": 99.029999,
+      "value": 99.139999,
       "units": "USD",
-      "observed_at": "2026-10-22T22:32:19+00:00",
+      "observed_at": "2026-10-23T00:49:07+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
