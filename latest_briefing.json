@@ -1,51 +1,62 @@
 {
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_RECURRING_MARKET_BRIEF",
-  "retrieved_at": "2026-10-26T09:18:09.617817+00:00",
+  "retrieved_at": "2026-10-26T16:12:42.426884+00:00",
   "headline": "SPY, oil and market breadth proxies: latest observed prices and sourced context",
   "market_observations": [
     {
-      "metric": "wti_price",
-      "value": 100.82,
+      "metric": "spy_price",
+      "value": 765.320007,
       "units": "USD",
-      "observed_at": "2026-10-26T09:08:06+00:00",
+      "observed_at": "2026-10-26T16:12:40+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
+      "status": "observed"
+    },
+    {
+      "metric": "wti_price",
+      "value": 102.849998,
+      "units": "USD",
+      "observed_at": "2026-10-26T16:02:39+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "status": "observed"
     },
     {
-      "metric": "spy_price",
-      "value": 759.969971,
-      "units": "USD",
-      "observed_at": "2026-10-23T20:00:00+00:00",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
-      "status": "stale_previous_observation"
-    },
-    {
       "metric": "equal_weight_price",
-      "value": 216.539993,
+      "value": 217.324997,
       "units": "USD",
-      "observed_at": "2026-10-23T20:00:00+00:00",
+      "observed_at": "2026-10-26T16:11:59+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?interval=1m&range=1d",
-      "status": "stale_previous_observation"
+      "status": "observed"
     },
     {
       "metric": "energy_sector_price",
-      "value": 69.330002,
+      "value": 69.464996,
       "units": "USD",
-      "observed_at": "2026-10-23T20:00:00+00:00",
+      "observed_at": "2026-10-26T16:12:41+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?interval=1m&range=1d",
-      "status": "stale_previous_observation"
+      "status": "observed"
     }
   ],
   "recent_measured_changes": [
     {
-      "metric": "wti_price",
-      "previous": 100.889999,
-      "current": 100.82,
-      "delta": -0.069999,
+      "metric": "spy_price",
+      "previous": 759.969971,
+      "current": 765.320007,
+      "delta": 5.350036,
       "units": "USD",
-      "previous_observed_at": "2026-10-26T03:17:30+00:00",
-      "observed_at": "2026-10-26T09:08:06+00:00",
+      "previous_observed_at": "2026-10-23T20:00:00+00:00",
+      "observed_at": "2026-10-26T16:12:40+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
+      "classification": "measured_change"
+    },
+    {
+      "metric": "wti_price",
+      "previous": 100.82,
+      "current": 102.849998,
+      "delta": 2.029998,
+      "units": "USD",
+      "previous_observed_at": "2026-10-26T09:08:06+00:00",
+      "observed_at": "2026-10-26T16:02:39+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "measured_change"
     }
