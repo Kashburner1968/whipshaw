@@ -1,14 +1,22 @@
 {
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_RECURRING_MARKET_BRIEF",
-  "retrieved_at": "2026-10-27T00:22:12.632367+00:00",
+  "retrieved_at": "2026-10-27T05:20:34.215995+00:00",
   "headline": "SPY, oil and market breadth proxies: latest observed prices and sourced context",
   "market_observations": [
     {
-      "metric": "wti_price",
-      "value": 101.269997,
+      "metric": "spy_price",
+      "value": 765.369995,
       "units": "USD",
-      "observed_at": "2026-10-27T00:11:53+00:00",
+      "observed_at": "2026-10-26T20:00:00+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
+      "status": "observed"
+    },
+    {
+      "metric": "wti_price",
+      "value": 100.68,
+      "units": "USD",
+      "observed_at": "2026-10-27T05:10:09+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "status": "observed"
     },
@@ -27,25 +35,17 @@
       "observed_at": "2026-10-26T20:00:00+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?interval=1m&range=1d",
       "status": "observed"
-    },
-    {
-      "metric": "spy_price",
-      "value": 765.369995,
-      "units": "USD",
-      "observed_at": "2026-10-26T20:00:00+00:00",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
-      "status": "stale_previous_observation"
     }
   ],
   "recent_measured_changes": [
     {
       "metric": "wti_price",
-      "previous": 101.300003,
-      "current": 101.269997,
-      "delta": -0.030006,
+      "previous": 101.269997,
+      "current": 100.68,
+      "delta": -0.589997,
       "units": "USD",
-      "previous_observed_at": "2026-10-26T20:52:30+00:00",
-      "observed_at": "2026-10-27T00:11:53+00:00",
+      "previous_observed_at": "2026-10-27T00:11:53+00:00",
+      "observed_at": "2026-10-27T05:10:09+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "measured_change"
     }
