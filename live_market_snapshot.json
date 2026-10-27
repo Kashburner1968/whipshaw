@@ -2,21 +2,12 @@
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_MARKET_QUOTES",
   "is_live": true,
-  "retrieved_at": "2026-10-26T21:02:38.270099+00:00",
+  "retrieved_at": "2026-10-27T00:22:12.632367+00:00",
   "metrics": {
-    "spy_price": {
-      "value": 765.369995,
-      "units": "USD",
-      "observed_at": "2026-10-26T20:00:00+00:00",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
-      "classification": "delayed_or_realtime_provider_quote",
-      "provider": "Yahoo Finance chart endpoint",
-      "exchange_delay_unknown": true
-    },
     "wti_price": {
-      "value": 101.300003,
+      "value": 101.269997,
       "units": "USD",
-      "observed_at": "2026-10-26T20:52:30+00:00",
+      "observed_at": "2026-10-27T00:11:53+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
@@ -39,8 +30,20 @@
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
       "exchange_delay_unknown": true
+    },
+    "spy_price": {
+      "value": 765.369995,
+      "units": "USD",
+      "observed_at": "2026-10-26T20:00:00+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
+      "classification": "delayed_or_realtime_provider_quote",
+      "provider": "Yahoo Finance chart endpoint",
+      "exchange_delay_unknown": true,
+      "status": "stale_previous_observation"
     }
   },
-  "fetch_errors": {},
+  "fetch_errors": {
+    "spy_price": "HTTPError: HTTP Error 429: Too Many Requests"
+  },
   "warning": "Public provider quotes may be delayed. Not a consolidated SIP feed."
 }

@@ -1,22 +1,14 @@
 {
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_RECURRING_MARKET_BRIEF",
-  "retrieved_at": "2026-10-26T21:02:38.270099+00:00",
+  "retrieved_at": "2026-10-27T00:22:12.632367+00:00",
   "headline": "SPY, oil and market breadth proxies: latest observed prices and sourced context",
   "market_observations": [
     {
-      "metric": "spy_price",
-      "value": 765.369995,
-      "units": "USD",
-      "observed_at": "2026-10-26T20:00:00+00:00",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
-      "status": "observed"
-    },
-    {
       "metric": "wti_price",
-      "value": 101.300003,
+      "value": 101.269997,
       "units": "USD",
-      "observed_at": "2026-10-26T20:52:30+00:00",
+      "observed_at": "2026-10-27T00:11:53+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "status": "observed"
     },
@@ -35,28 +27,25 @@
       "observed_at": "2026-10-26T20:00:00+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?interval=1m&range=1d",
       "status": "observed"
+    },
+    {
+      "metric": "spy_price",
+      "value": 765.369995,
+      "units": "USD",
+      "observed_at": "2026-10-26T20:00:00+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
+      "status": "stale_previous_observation"
     }
   ],
   "recent_measured_changes": [
     {
-      "metric": "spy_price",
-      "previous": 765.320007,
-      "current": 765.369995,
-      "delta": 0.049988,
-      "units": "USD",
-      "previous_observed_at": "2026-10-26T16:12:40+00:00",
-      "observed_at": "2026-10-26T20:00:00+00:00",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
-      "classification": "measured_change"
-    },
-    {
       "metric": "wti_price",
-      "previous": 102.849998,
-      "current": 101.300003,
-      "delta": -1.549995,
+      "previous": 101.300003,
+      "current": 101.269997,
+      "delta": -0.030006,
       "units": "USD",
-      "previous_observed_at": "2026-10-26T16:02:39+00:00",
-      "observed_at": "2026-10-26T20:52:30+00:00",
+      "previous_observed_at": "2026-10-26T20:52:30+00:00",
+      "observed_at": "2026-10-27T00:11:53+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "measured_change"
     }
