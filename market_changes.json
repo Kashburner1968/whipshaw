@@ -3,23 +3,23 @@
   "findings": [
     {
       "metric": "spy_price",
-      "previous": 769.330017,
-      "current": 768.030029,
-      "delta": -1.299988,
+      "previous": 768.030029,
+      "current": 769.359985,
+      "delta": 1.329956,
       "units": "USD",
-      "previous_observed_at": "2026-10-29T14:26:42+00:00",
-      "observed_at": "2026-10-29T19:46:14+00:00",
+      "previous_observed_at": "2026-10-29T19:46:14+00:00",
+      "observed_at": "2026-10-29T20:00:00+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
       "classification": "measured_change"
     },
     {
       "metric": "wti_price",
-      "previous": 101.019997,
-      "current": 102.260002,
-      "delta": 1.240005,
+      "previous": 102.260002,
+      "current": 102.699997,
+      "delta": 0.439995,
       "units": "USD",
-      "previous_observed_at": "2026-10-29T14:16:42+00:00",
-      "observed_at": "2026-10-29T19:36:12+00:00",
+      "previous_observed_at": "2026-10-29T19:36:12+00:00",
+      "observed_at": "2026-10-29T23:28:45+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "measured_change"
     }
