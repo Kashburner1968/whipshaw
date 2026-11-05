@@ -2,28 +2,17 @@
   "schema_version": "1.0",
   "findings": [
     {
-      "metric": "spy_price",
-      "previous": 768.080017,
-      "current": 766.809998,
-      "delta": -1.270019,
-      "units": "USD",
-      "previous_observed_at": "2026-11-04T18:36:56+00:00",
-      "observed_at": "2026-11-04T21:00:00+00:00",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
-      "classification": "measured_change"
-    },
-    {
       "metric": "wti_price",
-      "previous": 88.800003,
-      "current": 88.260002,
-      "delta": -0.540001,
+      "previous": 88.260002,
+      "current": 87.0,
+      "delta": -1.260002,
       "units": "USD",
-      "previous_observed_at": "2026-11-04T18:26:55+00:00",
-      "observed_at": "2026-11-04T23:45:19+00:00",
+      "previous_observed_at": "2026-11-04T23:45:19+00:00",
+      "observed_at": "2026-11-05T05:18:30+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "measured_change"
     }
   ],
-  "finding_count": 2,
+  "finding_count": 1,
   "conclusion": "Measured changes only; cannot establish investor identity, intent, or manipulation."
 }
