@@ -3,12 +3,12 @@
   "findings": [
     {
       "metric": "wti_price",
-      "previous": 86.459999,
-      "current": 85.849998,
-      "delta": -0.610001,
+      "previous": 85.849998,
+      "current": 85.730003,
+      "delta": -0.119995,
       "units": "USD",
-      "previous_observed_at": "2026-11-11T21:55:55+00:00",
-      "observed_at": "2026-11-12T02:45:06+00:00",
+      "previous_observed_at": "2026-11-12T02:45:06+00:00",
+      "observed_at": "2026-11-12T10:33:38+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "measured_change"
     }
