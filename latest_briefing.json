@@ -1,14 +1,14 @@
 {
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_RECURRING_MARKET_BRIEF",
-  "retrieved_at": "2026-11-16T04:59:12.822341+00:00",
+  "retrieved_at": "2026-11-16T13:30:15.766958+00:00",
   "headline": "SPY, oil and market breadth proxies: latest observed prices and sourced context",
   "market_observations": [
     {
       "metric": "wti_price",
-      "value": 88.339996,
+      "value": 87.790001,
       "units": "USD",
-      "observed_at": "2026-11-16T04:58:00+00:00",
+      "observed_at": "2026-11-16T13:20:10+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "status": "observed"
     },
@@ -40,12 +40,12 @@
   "recent_measured_changes": [
     {
       "metric": "wti_price",
-      "previous": 88.919998,
-      "current": 88.339996,
-      "delta": -0.580002,
+      "previous": 88.339996,
+      "current": 87.790001,
+      "delta": -0.549995,
       "units": "USD",
-      "previous_observed_at": "2026-11-13T22:00:00+00:00",
-      "observed_at": "2026-11-16T04:58:00+00:00",
+      "previous_observed_at": "2026-11-16T04:58:00+00:00",
+      "observed_at": "2026-11-16T13:20:10+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "measured_change"
     }
