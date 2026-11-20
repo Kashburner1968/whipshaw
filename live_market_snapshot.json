@@ -2,39 +2,39 @@
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_MARKET_QUOTES",
   "is_live": true,
-  "retrieved_at": "2026-11-20T08:33:24.709507+00:00",
+  "retrieved_at": "2026-11-20T17:14:19.411289+00:00",
   "metrics": {
     "spy_price": {
-      "value": 715.869995,
+      "value": 701.820007,
       "units": "USD",
-      "observed_at": "2026-11-19T21:00:00+00:00",
+      "observed_at": "2026-11-20T17:14:15+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
       "exchange_delay_unknown": true
     },
     "wti_price": {
-      "value": 82.190002,
+      "value": 82.480003,
       "units": "USD",
-      "observed_at": "2026-11-20T08:23:20+00:00",
+      "observed_at": "2026-11-20T17:04:16+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/CL%3DF?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
       "exchange_delay_unknown": true
     },
     "equal_weight_price": {
-      "value": 211.630005,
+      "value": 210.509995,
       "units": "USD",
-      "observed_at": "2026-11-19T21:00:00+00:00",
+      "observed_at": "2026-11-20T17:14:14+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
       "exchange_delay_unknown": true
     },
     "energy_sector_price": {
-      "value": 60.889999,
+      "value": 61.193298,
       "units": "USD",
-      "observed_at": "2026-11-19T21:00:00+00:00",
+      "observed_at": "2026-11-20T17:14:13+00:00",
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
