@@ -2,17 +2,8 @@
   "schema_version": "1.0",
   "feed_id": "WHIPSHAW_MARKET_QUOTES",
   "is_live": true,
-  "retrieved_at": "2026-11-26T08:36:40.225544+00:00",
+  "retrieved_at": "2026-11-27T01:56:03.682074+00:00",
   "metrics": {
-    "spy_price": {
-      "value": 716.700012,
-      "units": "USD",
-      "observed_at": "2026-11-25T21:00:00+00:00",
-      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
-      "classification": "delayed_or_realtime_provider_quote",
-      "provider": "Yahoo Finance chart endpoint",
-      "exchange_delay_unknown": true
-    },
     "wti_price": {
       "value": 84.419998,
       "units": "USD",
@@ -22,6 +13,16 @@
       "provider": "Yahoo Finance chart endpoint",
       "exchange_delay_unknown": true
     },
+    "spy_price": {
+      "value": 716.700012,
+      "units": "USD",
+      "observed_at": "2026-11-25T21:00:00+00:00",
+      "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/SPY?interval=1m&range=1d",
+      "classification": "delayed_or_realtime_provider_quote",
+      "provider": "Yahoo Finance chart endpoint",
+      "exchange_delay_unknown": true,
+      "status": "stale_previous_observation"
+    },
     "equal_weight_price": {
       "value": 215.740005,
       "units": "USD",
@@ -29,7 +30,8 @@
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/RSP?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
-      "exchange_delay_unknown": true
+      "exchange_delay_unknown": true,
+      "status": "stale_previous_observation"
     },
     "energy_sector_price": {
       "value": 60.900002,
@@ -38,9 +40,14 @@
       "source_url": "https://query1.finance.yahoo.com/v8/finance/chart/XLE?interval=1m&range=1d",
       "classification": "delayed_or_realtime_provider_quote",
       "provider": "Yahoo Finance chart endpoint",
-      "exchange_delay_unknown": true
+      "exchange_delay_unknown": true,
+      "status": "stale_previous_observation"
     }
   },
-  "fetch_errors": {},
+  "fetch_errors": {
+    "spy_price": "ValueError: Quote outside freshness window",
+    "equal_weight_price": "ValueError: Quote outside freshness window",
+    "energy_sector_price": "ValueError: Quote outside freshness window"
+  },
   "warning": "Public provider quotes may be delayed. Not a consolidated SIP feed."
 }
